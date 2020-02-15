@@ -14,6 +14,7 @@ public class sceneManager : MonoBehaviour
     public Text test_txt,debug_txt;
     public Button btn_startSpeak;
     public string hasilSpeech;
+    static string testNama;
     static Boolean isStart;
     static List<Words> word = new List<Words>();
     public GameObject imgCheckmark0,imgCheckmark1, imgCheckmark2, imgCheckmark3, 
@@ -22,8 +23,8 @@ public class sceneManager : MonoBehaviour
     public GameObject fCanvas;
     // Start is called before the first frame update
     void Start()
-
     {
+        testNama = PlayerPrefs.GetString("Nama" + Profilling.session_nik);
         isStart = false;
         hasilSpeech = " ";
         m_sceneName = SceneManager.GetActiveScene();
@@ -45,7 +46,8 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //string dbg_text = PlayerPrefs.GetString("Nama"+session_nik);
+        Debug.Log(testNama);
         test_txt.text ="";            
         foreach (var x in word)
         {

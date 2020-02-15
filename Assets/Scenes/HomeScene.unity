@@ -1323,7 +1323,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test_txt: {fileID: 0}
+  debug_txt: {fileID: 0}
   btn_startSpeak: {fileID: 0}
+  hasilSpeech: 
   imgCheckmark0: {fileID: 0}
   imgCheckmark1: {fileID: 0}
   imgCheckmark2: {fileID: 0}

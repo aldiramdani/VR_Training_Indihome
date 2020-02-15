@@ -1,0 +1,29 @@
+﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo]
+
+-- simple text --
+andri|1|assalamualaikum|10|TestScene2|todo1
+andri|1|pagi|10|TestScene2|todo1
+andri|1|siang|10|TestScene2|todo1
+andri|1|sore|10|TestScene2|todo1
+sebaiknya|1|assalamualaikum|10|TestScene2|todo1
+sebaiknya|1|pagi|10|TestScene2|todo1
+sebaiknya|1|siang|10|TestScene2|todo1
+sebaiknya|1|sore|10|TestScene2|todo1
+enaknya|1|assalamualaikum|10|TestScene2|todo1
+enaknya|1|pagi|10|TestScene2|todo1
+enaknya|1|siang|10|TestScene2|todo1
+enaknya|1|sore|10|TestScene2|todo1
+memanggil|1|assalamualaikum|10|TestScene2|todo1
+memanggil|1|pagi|10|TestScene2|todo1
+memanggil|1|siang|10|TestScene2|todo1
+memanggil|1|sore|10|TestScene2|todo1
+nomor antrian|1|assalamualaikum|10|TestScene2|todo1
+keluhan|0|null|10|TestScene3|todo2
+gangguan|0|null|10|TestScene3|todo2
+error|0|null|10|TestScene3|todo2
+meminta|1|nomor|10|TestScene4|todo3
+memberitahu|1|nomor|10|TestScene4|todo3
+nomor|1|nomor|10|TestScene4|todo3
+
+

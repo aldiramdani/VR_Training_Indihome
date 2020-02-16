@@ -2171,6 +2171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747526206}
   - component: {fileID: 1747526205}
+  - component: {fileID: 1747526207}
   m_Layer: 0
   m_Name: Profilling
   m_TagString: Untagged
@@ -2190,6 +2191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f008b250bd1fd4a92d555d491807ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  welcome_text: {fileID: 0}
   btn_mulai: {fileID: 0}
   inputNama: {fileID: 2121578735}
   inputNik: {fileID: 1317585960}
@@ -2208,6 +2210,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1747526207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747526204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3117e5149fc5db6478a7b0397239fd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txt_debug: {fileID: 1495572679}
 --- !u!1 &1794629721
 GameObject:
   m_ObjectHideFlags: 0

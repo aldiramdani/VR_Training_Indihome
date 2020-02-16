@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DataBank;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -49,9 +50,15 @@ public class Profilling : MonoBehaviour
         Debug.Log(nama + nik + lok_kerja);
     }
 
+    public void deleteAll()
+    {
+        NilaiDB mNilaiDB = new NilaiDB();
+        mNilaiDB.deleteAllData();
+        mNilaiDB.close();
+    }
+
     public void setProfillingtoScene()
     {
-
         welcome_text.text = session_nik;
     }
 

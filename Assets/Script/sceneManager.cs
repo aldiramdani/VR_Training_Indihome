@@ -158,6 +158,12 @@ public class sceneManager : MonoBehaviour
         PlayerPrefs.SetInt("todo4", 0);
         PlayerPrefs.SetString("nilai", "0");
     }
+    
+    public void addDb()
+    {
+        DBTest dBTest = new DBTest();
+        dBTest.addtoDB();
+    }
 
     public void mulai()
     {

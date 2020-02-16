@@ -6,18 +6,14 @@ using DataBank;
 public class DBTest : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Text txt_debug;
+    public Text txt_nik,txt_nama,txt_nilai;
     void Start()
     {
-        NilaiDB mNilaiDB = new NilaiDB();
-
-        mNilaiDB.addData(new NilaiEntity("005", "Aldi Ganteng", "Bandung", "200"));
-
-        mNilaiDB.close();
+        
 
         NilaiDB mNilaiDB2 = new NilaiDB();
         System.Data.IDataReader reader = mNilaiDB2.getAllData();
-
+        
         int fieldCount = reader.FieldCount;
         List<NilaiEntity> myList = new List<NilaiEntity>();
         while (reader.Read())
@@ -34,10 +30,20 @@ public class DBTest : MonoBehaviour
 
         for (int i=0;i < myList.Count; i++)
         {
-            txt_debug.text = myList[i]._nik + myList[i]._nama + myList[i]._nilai;
+            txt_nik.text += myList[i]._nik + "\n";
+            txt_nama.text += myList[i]._nama + "\n";
+            txt_nilai.text += myList[i]._nilai + "\n";
         }
     }
-
+                                 
+    
+    public void addtoDB()
+    {
+        NilaiDB mNilaiDB = new NilaiDB();
+        mNilaiDB.addData(new NilaiEntity(Profilling.session_nik, PlayerPrefs.GetString("Nama" + Profilling.session_nik), 
+            PlayerPrefs.GetString("Lok Kerja" + Profilling.session_nik), PlayerPrefs.GetString("nilai")));
+        mNilaiDB.close();
+    }
     // Update is called once per frame
     void Update()
     {

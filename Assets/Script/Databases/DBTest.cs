@@ -12,7 +12,7 @@ public class DBTest : MonoBehaviour
         
 
         NilaiDB mNilaiDB2 = new NilaiDB();
-        System.Data.IDataReader reader = mNilaiDB2.getAllData();
+        System.Data.IDataReader reader = mNilaiDB2.getDataByString(Profilling.session_nik);
         
         int fieldCount = reader.FieldCount;
         List<NilaiEntity> myList = new List<NilaiEntity>();

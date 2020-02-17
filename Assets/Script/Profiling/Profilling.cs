@@ -21,7 +21,7 @@ public class Profilling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(session_nik);
+        
     }
 
     public void getProfilling()
@@ -30,23 +30,30 @@ public class Profilling : MonoBehaviour
         nik = inputNik.text;
         lok_kerja = drpTempatKerja.itemText.text;
         session_nik = nik;
-        if (nik == PlayerPrefs.GetString("Nik User"+nik))
+        if(nama == "" || nik=="" || lok_kerja == "")
         {
-            SSTools.ShowMessage("Nik Sudah Terdaftar", SSTools.Position.bottom, SSTools.Time.threeSecond);
-            sc.changeScene("FirstScene");
-            session_nik = PlayerPrefs.GetString("Nik User" + nik);
-            setProfillingtoScene();
+            SSTools.ShowMessage("Harap Form di isi!!", SSTools.Position.bottom, SSTools.Time.threeSecond);
         }
         else
         {
-            PlayerPrefs.SetString("Nik User"+nik, nik);
-            PlayerPrefs.SetString("Nama" + nik, nama);
-            PlayerPrefs.SetString("Lok Kerja" + nik, lok_kerja);
-            SSTools.ShowMessage("Nik Baru Sudah Ditambahkan", SSTools.Position.bottom, SSTools.Time.threeSecond);
-            session_nik = nik;
-            sc.changeScene("FirstScene");
-            setProfillingtoScene();
+            if (nik == PlayerPrefs.GetString("Nik User" + nik))
+            {
+
+                sc.changeScene("FirstScene");
+                session_nik = PlayerPrefs.GetString("Nik User" + nik);
+                setProfillingtoScene();
+            }
+            else
+            {
+                PlayerPrefs.SetString("Nik User" + nik, nik);
+                PlayerPrefs.SetString("Nama" + nik, nama);
+                PlayerPrefs.SetString("Lok Kerja" + nik, lok_kerja);
+                session_nik = nik;
+                sc.changeScene("FirstScene");
+                setProfillingtoScene();
+            }
         }
+       
         Debug.Log(nama + nik + lok_kerja);
     }
 
@@ -59,7 +66,7 @@ public class Profilling : MonoBehaviour
 
     public void setProfillingtoScene()
     {
-        welcome_text.text = session_nik;
+        welcome_text.text = "Selamat Datang : "+session_nik;
     }
 
  

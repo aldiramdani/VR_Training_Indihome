@@ -8,24 +8,21 @@ using System.Linq;
 using System;
 public class sceneManager : MonoBehaviour
 {
-    Scene m_sceneName;
-    string currentScene;
-    double pnDouble;
-    public Text test_txt,debug_txt;
-    public Button btn_startSpeak;
-    public string hasilSpeech;
+    Scene m_sceneName; //Variable Scene
+    string currentScene; //Variable dapetin nama scene ubah jd string
+    double pnDouble; //convert nilai ke double
+    public Text test_txt,debug_txt; //tampilan text debug dan test
+    public string hasilSpeech; //variable tampung hasil speech dari lib
     static string testNama;
-    static Boolean isStart;
-    static List<Words> word = new List<Words>();
+    static List<Words> word = new List<Words>(); //variable list nampung word.txt
     public GameObject imgCheckmark0,imgCheckmark1, imgCheckmark2, imgCheckmark3, 
         imgCheckmark4, imgCheckmark5, imgCheckmark6, imgCheckmark7, imgCheckmark8, 
-        imgCheckmark9;
+        imgCheckmark9; //image check list
     public GameObject fCanvas;
+    public static string session_mode;
     // Start is called before the first frame update
     void Start()
     {
-        testNama = PlayerPrefs.GetString("Nama" + Profilling.session_nik);
-        isStart = false;
         hasilSpeech = " ";
         m_sceneName = SceneManager.GetActiveScene();
         currentScene = m_sceneName.name;
@@ -46,13 +43,8 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //string dbg_text = PlayerPrefs.GetString("Nama"+session_nik);
-        Debug.Log(testNama);
         test_txt.text ="";            
-        foreach (var x in word)
-        {
-            test_txt.text += x.kataKunci;
-        }
+        test_txt.text = session_mode;
         testSpeak();
         debug_txt.text = hasilSpeech;
     }
@@ -64,13 +56,7 @@ public class sceneManager : MonoBehaviour
     }
 
     void testSpeak(){
-        /*            if (Input.GetButtonDown("B"))
-            {*/
 
-        //SpeakNow.reset();
-        // }
-        //hasilSpeech = SpeakNow.speechResult().ToLower().Replace("no match", " ");
-        //if (isStart) { 
             if (currentScene != "FirstScene" || currentScene != "BantuanScene"){
                 if(Input.GetButton("A")){
                     SpeakNow.startSpeech(LanguageUtil.INDONESIAN);
@@ -80,7 +66,6 @@ public class sceneManager : MonoBehaviour
                     sceneControl(hasilSpeech);
                 }
             }
-       // }
         hasilSpeech += SpeakNow.speechResult().ToLower().Replace("no match", " ");
     }
 
@@ -100,8 +85,6 @@ public class sceneManager : MonoBehaviour
                 }
             }
         }
-//        hasilSpeech = "";
-//       SpeakNow.reset();
     }
 
     private void speechManager(int pos){
@@ -165,11 +148,10 @@ public class sceneManager : MonoBehaviour
         dBTest.addtoDB();
     }
 
-    public void mulai()
+    public void setMode(string mode_name)
     {
-        isStart = true;
+        session_mode = mode_name;
     }
-
     public void unLoadWord()
     {
         word.Clear();

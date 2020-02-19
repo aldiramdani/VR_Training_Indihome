@@ -7,6 +7,7 @@ public class DBTest : MonoBehaviour
 {
     // Start is called before the first frame update
     public Text txt_nik,txt_nama,txt_nilai;
+    Profilling pf = new Profilling();
     void Start()
     {
         
@@ -43,6 +44,7 @@ public class DBTest : MonoBehaviour
         mNilaiDB.addData(new NilaiEntity(Profilling.session_nik, PlayerPrefs.GetString("Nama" + Profilling.session_nik), 
             PlayerPrefs.GetString("Lok Kerja" + Profilling.session_nik), PlayerPrefs.GetString("nilai")));
         mNilaiDB.close();
+        pf.addToSheet();
     }
     // Update is called once per frame
     void Update()

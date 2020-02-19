@@ -15,6 +15,7 @@ public class sceneManager : MonoBehaviour
     public string hasilSpeech; //variable tampung hasil speech dari lib
     static string testNama;
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
+    static List<String> suggestWord = new List<String>();
     public GameObject imgCheckmark0,imgCheckmark1, imgCheckmark2, imgCheckmark3, 
         imgCheckmark4, imgCheckmark5, imgCheckmark6, imgCheckmark7, imgCheckmark8, 
         imgCheckmark9; //image check list
@@ -56,7 +57,6 @@ public class sceneManager : MonoBehaviour
     }
 
     void testSpeak(){
-
             if (currentScene != "FirstScene" || currentScene != "BantuanScene"){
                 if(Input.GetButton("A")){
                     SpeakNow.startSpeech(LanguageUtil.INDONESIAN);
@@ -83,9 +83,23 @@ public class sceneManager : MonoBehaviour
                         fCanvas.SetActive(true); 
                     }
                 }
+            }else if (!s_Result.Contains(word[i].kataKunci) && session_mode =="evaluasi"){
+                fCanvas.SetActive(true);
             }
         }
     }
+
+/*    public void changeMode(string s_result)
+    {
+        if(session_mode == "belajar")
+        {
+
+            
+        }else if(session_mode == "evaluasi")
+        {
+
+        }
+    }*/
 
     private void speechManager(int pos){
         SceneManager.LoadScene(word[pos].skenarioTujuan);
@@ -93,9 +107,10 @@ public class sceneManager : MonoBehaviour
         string stoDo = word[pos].toDo;
         double nDouble = word[pos].nilai;
         for (int i=0;i<30;i++){
+            word.Find(x => x.kataKunci.Contains(sTujuan));
             word.Remove(new Words{skenarioTujuan = sTujuan});
         }
-        pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));
+        pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));  
         double nilai = nDouble + pnDouble;
         PlayerPrefs.SetInt(stoDo,1);
         PlayerPrefs.SetString("nilai", nilai.ToString());

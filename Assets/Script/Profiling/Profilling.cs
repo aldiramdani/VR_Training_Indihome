@@ -89,7 +89,7 @@ public class Profilling : MonoBehaviour
 
     public void setProfillingtoScene()
     {
-        welcome_text.text = "Selamat Datang : " + PlayerPrefs.GetString("Lok Kerja" + session_nik);
+        welcome_text.text = "Selamat Datang : " + session_nik;
     }
  
     public void addToSheet()

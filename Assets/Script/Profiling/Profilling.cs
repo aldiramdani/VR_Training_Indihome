@@ -16,24 +16,26 @@ public class Profilling : MonoBehaviour
     sceneControler sc = new sceneControler();
     public static string session_nik;
 
-    private UserInfo userInfo = new UserInfo
-    {
-        nik = session_nik,
-        nama = PlayerPrefs.GetString("Nama" + session_nik),
-        lokasi_kerja = PlayerPrefs.GetString("Lok Kerja" + session_nik),
-        nilai = PlayerPrefs.GetString("nilai"),
-        mode = sceneManager.session_mode
-    };
+
 
     public struct UserInfo {
         public string nik;
         public string nama;
-        public string lokasi_kerja;
+        public string lokasi;
         public string nilai;
         public string mode;
     }
 
-   
+    private UserInfo userInfo = new UserInfo
+    {
+        nik = session_nik,
+        nama = PlayerPrefs.GetString("Nama" + session_nik),
+        lokasi = PlayerPrefs.GetString("Lok Kerja" + session_nik),
+        nilai = PlayerPrefs.GetString("nilai"),
+        mode = sceneManager.session_mode
+    };
+
+
     void Start()
     {
         setProfillingtoScene();
@@ -109,7 +111,7 @@ public class Profilling : MonoBehaviour
         string[] fieldNames = new string[5];
         fieldNames[0] = "nik";
         fieldNames[1] = "nama";
-        fieldNames[2] = "lokasi kerja";
+        fieldNames[2] = "lokasi";
         fieldNames[3] = "nilai";
         fieldNames[4] = "mode";
  

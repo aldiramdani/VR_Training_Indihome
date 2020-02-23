@@ -584,6 +584,63 @@ RectTransform:
   m_AnchoredPosition: {x: -23.4, y: -274.4}
   m_SizeDelta: {x: 146.7, y: 146.7}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &786229821
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1022902508820650, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_Name
+      value: DriveConnection
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832275356553110, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cee21f0e68bcb2c4598a8ea73c378a10, type: 3}
 --- !u!1 &877539329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1173,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1747526205}
-        m_MethodName: deleteAll
+        m_MethodName: RetrieveAuthBelajar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1747526205}
+        m_MethodName: cobacoba
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2182,10 +2250,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   welcome_text: {fileID: 0}
+  debug_text: {fileID: 1267341713}
   btn_mulai: {fileID: 0}
   inputNama: {fileID: 2121578735}
   inputNik: {fileID: 1317585960}
   drpTempatKerja: {fileID: 1135252723}
+  a_belajar: 
 --- !u!4 &1747526206
 Transform:
   m_ObjectHideFlags: 0
@@ -2287,7 +2357,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test_txt: {fileID: 0}
   debug_txt: {fileID: 0}
-  btn_startSpeak: {fileID: 0}
   hasilSpeech: 
   imgCheckmark0: {fileID: 0}
   imgCheckmark1: {fileID: 0}

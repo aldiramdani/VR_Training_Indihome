@@ -83,8 +83,7 @@ public class sceneManager : MonoBehaviour
                         fCanvas.SetActive(true); 
                     }
                 }
-            }
-            if (!s_Result.Contains(word[i].kataKunci) && session_mode =="evaluasi"){
+            }else if (!s_Result.Contains(word[i].kataKunci) && session_mode =="evaluasi"){
                 fCanvas.SetActive(true); 
             }
         }

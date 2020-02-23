@@ -54,7 +54,7 @@ namespace GoogleSheetsForUnity
         }
 
         private static ConnectionData _connectionData;
-        private static string _currentStatus = "";
+        public static string _currentStatus = "";
 
         public static bool debugMode = true;
 

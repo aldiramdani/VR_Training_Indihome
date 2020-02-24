@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 public class Profilling : MonoBehaviour
 {
     //hapus variable ga kepake
@@ -11,16 +12,16 @@ public class Profilling : MonoBehaviour
     public Text welcome_text;
     public Text debug_text;
     public Button btn_mulai;
-    public InputField inputNama, inputNik;
+    public InputField inputNama, inputNik,inputAuthBelajar,inputAuthEvaluasi;
     public Dropdown drpTempatKerja;
     string nama, nik, lok_kerja;
     string _table_name = "Data Pengguna VR Training";
     sceneControler sc = new sceneControler();
     public static string session_nik;
-    public string a_belajar = "123";
-    private string a_evaluasi;
-    private string status_auth;
-    UserInfo[] userInfos;
+    private string authBelajar;
+    private string authEvaluasi;
+
+    [System.Serializable]
     public struct UserInfo {
         public string nik;
         public string nama;
@@ -37,20 +38,34 @@ public class Profilling : MonoBehaviour
         nama = PlayerPrefs.GetString("Nama" + session_nik),
         lokasi = PlayerPrefs.GetString("Lok Kerja" + session_nik),
         nilai = PlayerPrefs.GetString("nilai"),
-        mode = sceneManager.session_mode
+        mode = sceneManager.session_mode,
+        auth_belajar = "XX",
+        auth_evaluasi = "XX"
     };
 
+    private void OnEnable()
+    {
+        // Suscribe for catching cloud responses.
+        Drive.responseCallback += HandleDriveResponse;
+    }
+
+    private void OnDisable()
+    {
+        // Remove listeners.
+        Drive.responseCallback -= HandleDriveResponse;
+    }
 
     void Start()
     {
+        RetrieveAuth();
         setProfillingtoScene();
     }
 
     // Update is called once per frame
     void Update()
     {
-        status_auth = Drive._currentStatus;
-        Debug.Log("Debug Status" + status_auth);
+        
+        Debug.Log("Debug Status" + authBelajar +" " + authEvaluasi);
     }
 
     public void getProfilling()
@@ -61,7 +76,7 @@ public class Profilling : MonoBehaviour
         session_nik = nik;
         if(nama == "" || nik=="" || lok_kerja == "")
         {
-            //SSTools.ShowMessage("Harap Form di isi!!", SSTools.Position.bottom, SSTools.Time.threeSecond);
+            SSTools.ShowMessage("Harap Form di isi!!", SSTools.Position.bottom, SSTools.Time.threeSecond);
         }
         else
         {
@@ -84,6 +99,34 @@ public class Profilling : MonoBehaviour
         }
        
         Debug.Log(nama + nik + lok_kerja);
+    }
+
+    public void Authtentifikasi(string jenis_auth)
+    {
+        string _inputAuthBelajar = inputAuthBelajar.text;
+        string _inputAuthEvaluasi = inputAuthEvaluasi.text;
+
+        if(jenis_auth == "belajar")
+        {
+            if (_inputAuthBelajar == authBelajar)
+            {
+                SSTools.ShowMessage("Auth Belajar Sama !!", SSTools.Position.bottom, SSTools.Time.threeSecond);
+            }
+            else
+            {
+                SSTools.ShowMessage("Auth Salah Harap Tanyakan Kode Autentifikasi !!", SSTools.Position.bottom, SSTools.Time.threeSecond);
+            }
+        }else if(jenis_auth == "evaluasi")
+        {
+            if (_inputAuthEvaluasi == authEvaluasi)
+            {
+                SSTools.ShowMessage("Auth Evaluasi Sama !!", SSTools.Position.bottom, SSTools.Time.threeSecond);
+            }
+            else
+            {
+                SSTools.ShowMessage("Auth Salah Harap Tanyakan Kode Autentifikasi !!", SSTools.Position.bottom, SSTools.Time.threeSecond);
+            }
+        }
     }
 
     public void deleteAll()
@@ -127,25 +170,15 @@ public class Profilling : MonoBehaviour
         Drive.CreateTable(fieldNames, _table_name, true);
     }
 
-    public  void RetrieveAuthBelajar()
+    public void RetrieveAuth()
     {
-        Debug.Log("<color=yellow>Retrieving player of name Cari from the Cloud.</color>");
-        //Ubah inputan nya
-        // Get any objects from table 'PlayerInfo' with value '333' in the field called 'name'.
-        Drive.GetObjectsByField(_table_name, "auth_belajar", inputNama.text, true);
+        Debug.Log("<color=yellow>Retrieving player of name Mithrandir from the Cloud.</color>");
 
-        if (status_auth == "Object not found.")
-        {
-            SSTools.ShowMessage("cuk", SSTools.Position.bottom, SSTools.Time.threeSecond);
-        }
+        // Get any objects from table 'PlayerInfo' with value 'Mithrandir' in the field called 'name'.
+        Drive.GetObjectsByField(_table_name, "nama", "admin", true);
     }
-/*    public void cobacoba()
-    {
-        if (Drive._currentStatus == "Object not found.")
-        {
-            SSTools.ShowMessage("cuk", SSTools.Position.bottom, SSTools.Time.threeSecond);
-        }
-    }*/
+
+
     private void GetAllPlayers()
     {
         Debug.Log("<color=yellow>Retrieving all players from the Cloud.</color>");
@@ -160,17 +193,6 @@ public class Profilling : MonoBehaviour
 
         // Get all objects from table 'PlayerInfo'.
         Drive.GetAllTables(true);
-    }
-    private void OnEnable()
-    {
-        // Suscribe for catching cloud responses.
-        Drive.responseCallback += HandleDriveResponse;
-    }
-
-    private void OnDisable()
-    {
-        // Remove listeners.
-        Drive.responseCallback -= HandleDriveResponse;
     }
 
     public void HandleDriveResponse(Drive.DataContainer dataContainer)
@@ -187,16 +209,15 @@ public class Profilling : MonoBehaviour
             if (string.Compare(dataContainer.objType, _table_name) == 0)
             {
                 // Parse from json to the desired object type.
-                UserInfo[] userInfos = JsonHelper.ArrayFromJson<UserInfo>(rawJSon);
+                UserInfo[] users = JsonHelper.ArrayFromJson<UserInfo>(rawJSon);
 
-                for (int i = 0; i < userInfos.Length; i++)
+                for (int i = 0; i < users.Length; i++)
                 {
-                    
-                    userInfo = userInfos[i];
-                    a_belajar = userInfo.auth_belajar;
+                    userInfo = users[i];
+                    authBelajar = userInfo.auth_belajar;
+                    authEvaluasi = userInfo.auth_evaluasi;
                     Debug.Log("<color=yellow>Object retrieved from the cloud and parsed: \n</color>" +
-                        "Nik: " + userInfo.nik + "\n" + a_belajar +
-                        "nama: " + userInfo.nama + "\n");
+                        "Name: " + userInfo.nama );
                 }
             }
         }
@@ -211,17 +232,14 @@ public class Profilling : MonoBehaviour
             if (string.Compare(dataContainer.objType, _table_name) == 0)
             {
                 // Parse from json to the desired object type.
-                userInfos = JsonHelper.ArrayFromJson<UserInfo>(rawJSon);
+                UserInfo[] players = JsonHelper.ArrayFromJson<UserInfo>(rawJSon);
 
-                string logMsg = "<color=yellow>" + userInfos.Length.ToString() + " objects retrieved from the cloud and parsed:</color>";
-                for (int i = 0; i < userInfos.Length; i++)
+                for (int i = 0; i < players.Length; i++)
                 {
-                    logMsg += "\n" +
-                        "<color=blue>Name: " + userInfos[i].nik + "</color>\n" +
-                        "nama: " + userInfos[i].nama + "\n" +
-                        "auth belajar: " + userInfos[i].auth_belajar + "\n";
+                    userInfo = players[i];
+                    Debug.Log("<color=yellow>Object retrieved from the cloud and parsed: \n</color>" +
+                        "Name: " + userInfo.nama );
                 }
-                Debug.Log(logMsg);
             }
         }
 
@@ -245,5 +263,8 @@ public class Profilling : MonoBehaviour
             Debug.Log(logMsg);
         }
     }
+    
+    //untuk auth kelas belajar/evaluasi
 
 }
+

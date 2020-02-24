@@ -8,23 +8,22 @@ using System.Linq;
 using System;
 public class sceneManager : MonoBehaviour
 {
-    Scene m_sceneName;
-    string currentScene;
-    double pnDouble;
-    public Text test_txt,debug_txt;
-    public Button btn_startSpeak;
-    public string hasilSpeech;
-    static Boolean isStart;
-    static List<Words> word = new List<Words>();
+    Scene m_sceneName; //Variable Scene
+    string currentScene; //Variable dapetin nama scene ubah jd string
+    double pnDouble; //convert nilai ke double
+    public Text test_txt,debug_txt; //tampilan text debug dan test
+    public string hasilSpeech; //variable tampung hasil speech dari lib
+    static string testNama;
+    static List<Words> word = new List<Words>(); //variable list nampung word.txt
+    static List<String> suggestWord = new List<String>();
     public GameObject imgCheckmark0,imgCheckmark1, imgCheckmark2, imgCheckmark3, 
         imgCheckmark4, imgCheckmark5, imgCheckmark6, imgCheckmark7, imgCheckmark8, 
-        imgCheckmark9;
+        imgCheckmark9; //image check list
     public GameObject fCanvas;
+    public static string session_mode;
     // Start is called before the first frame update
     void Start()
-
     {
-        isStart = false;
         hasilSpeech = " ";
         m_sceneName = SceneManager.GetActiveScene();
         currentScene = m_sceneName.name;
@@ -45,12 +44,8 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         test_txt.text ="";            
-        foreach (var x in word)
-        {
-            test_txt.text += x.kataKunci;
-        }
+        test_txt.text = session_mode;
         testSpeak();
         debug_txt.text = hasilSpeech;
     }
@@ -62,13 +57,6 @@ public class sceneManager : MonoBehaviour
     }
 
     void testSpeak(){
-        /*            if (Input.GetButtonDown("B"))
-            {*/
-
-        //SpeakNow.reset();
-        // }
-        //hasilSpeech = SpeakNow.speechResult().ToLower().Replace("no match", " ");
-        //if (isStart) { 
             if (currentScene != "FirstScene" || currentScene != "BantuanScene"){
                 if(Input.GetButton("A")){
                     SpeakNow.startSpeech(LanguageUtil.INDONESIAN);
@@ -78,7 +66,6 @@ public class sceneManager : MonoBehaviour
                     sceneControl(hasilSpeech);
                 }
             }
-       // }
         hasilSpeech += SpeakNow.speechResult().ToLower().Replace("no match", " ");
     }
 
@@ -96,11 +83,23 @@ public class sceneManager : MonoBehaviour
                         fCanvas.SetActive(true); 
                     }
                 }
+            }else if (!s_Result.Contains(word[i].kataKunci) && session_mode =="evaluasi"){
+                fCanvas.SetActive(true); 
             }
         }
-//        hasilSpeech = "";
-//       SpeakNow.reset();
     }
+
+/*    public void changeMode(string s_result)
+    {
+        if(session_mode == "belajar")
+        {
+
+            
+        }else if(session_mode == "evaluasi")
+        {
+
+        }
+    }*/
 
     private void speechManager(int pos){
         SceneManager.LoadScene(word[pos].skenarioTujuan);
@@ -108,9 +107,10 @@ public class sceneManager : MonoBehaviour
         string stoDo = word[pos].toDo;
         double nDouble = word[pos].nilai;
         for (int i=0;i<30;i++){
+            word.Find(x => x.kataKunci.Contains(sTujuan));
             word.Remove(new Words{skenarioTujuan = sTujuan});
         }
-        pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));
+        pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));  
         double nilai = nDouble + pnDouble;
         PlayerPrefs.SetInt(stoDo,1);
         PlayerPrefs.SetString("nilai", nilai.ToString());
@@ -156,12 +156,17 @@ public class sceneManager : MonoBehaviour
         PlayerPrefs.SetInt("todo4", 0);
         PlayerPrefs.SetString("nilai", "0");
     }
-
-    public void mulai()
+    
+    public void addDb()
     {
-        isStart = true;
+        DBTest dBTest = new DBTest();
+        dBTest.addtoDB();
     }
 
+    public void setMode(string mode_name)
+    {
+        session_mode = mode_name;
+    }
     public void unLoadWord()
     {
         word.Clear();

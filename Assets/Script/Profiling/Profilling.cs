@@ -83,7 +83,7 @@ public class Profilling : MonoBehaviour
             if (nik == PlayerPrefs.GetString("Nik User" + nik))
             {
 
-                sc.changeScene("FirstScene");
+                sc.changeScene("AuthScene");
                 session_nik = PlayerPrefs.GetString("Nik User" + nik);
                 setProfillingtoScene();
             }
@@ -93,7 +93,7 @@ public class Profilling : MonoBehaviour
                 PlayerPrefs.SetString("Nama" + nik, nama);
                 PlayerPrefs.SetString("Lok Kerja" + nik, lok_kerja);
                 session_nik = nik;
-                sc.changeScene("FirstScene");
+                sc.changeScene("AuthScene");
                 setProfillingtoScene();
             }
         }
@@ -110,7 +110,8 @@ public class Profilling : MonoBehaviour
         {
             if (_inputAuthBelajar == authBelajar)
             {
-                SSTools.ShowMessage("Auth Belajar Sama !!", SSTools.Position.bottom, SSTools.Time.threeSecond);
+                sceneManager.session_mode = "belajar";
+                sc.changeScene("HomeScene");
             }
             else
             {
@@ -120,7 +121,8 @@ public class Profilling : MonoBehaviour
         {
             if (_inputAuthEvaluasi == authEvaluasi)
             {
-                SSTools.ShowMessage("Auth Evaluasi Sama !!", SSTools.Position.bottom, SSTools.Time.threeSecond);
+                sceneManager.session_mode = "evaluasi";
+                sc.changeScene("HomeScene");
             }
             else
             {

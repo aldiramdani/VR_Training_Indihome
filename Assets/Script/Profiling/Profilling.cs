@@ -21,16 +21,7 @@ public class Profilling : MonoBehaviour
     private string authBelajar;
     private string authEvaluasi;
 
-    [System.Serializable]
-    public struct UserInfo {
-        public string nik;
-        public string nama;
-        public string lokasi;
-        public string nilai;
-        public string mode;
-        public string auth_belajar;
-        public string auth_evaluasi;
-    }
+ 
 
     private UserInfo userInfo = new UserInfo
     {
@@ -42,6 +33,18 @@ public class Profilling : MonoBehaviour
         auth_belajar = "XX",
         auth_evaluasi = "XX"
     };
+
+    [System.Serializable]
+    public struct UserInfo
+    {
+        public string nik;
+        public string nama;
+        public string lokasi;
+        public string nilai;
+        public string mode;
+        public string auth_belajar;
+        public string auth_evaluasi;
+    }
 
     private void OnEnable()
     {
@@ -57,7 +60,10 @@ public class Profilling : MonoBehaviour
 
     void Start()
     {
-        RetrieveAuth();
+        if(sc.sceneName() == "AuthScene")
+        {
+            RetrieveAuth();
+        }
         setProfillingtoScene();
     }
 
@@ -66,6 +72,7 @@ public class Profilling : MonoBehaviour
     {
         
         Debug.Log("Debug Status" + authBelajar +" " + authEvaluasi);
+        Debug.Log("Debug Status" + session_nik);
     }
 
     public void getProfilling()
@@ -86,6 +93,7 @@ public class Profilling : MonoBehaviour
                 sc.changeScene("AuthScene");
                 session_nik = PlayerPrefs.GetString("Nik User" + nik);
                 setProfillingtoScene();
+               
             }
             else
             {
@@ -111,7 +119,8 @@ public class Profilling : MonoBehaviour
             if (_inputAuthBelajar == authBelajar)
             {
                 sceneManager.session_mode = "belajar";
-                sc.changeScene("HomeScene");
+                sc.changeScene("FirstScene");
+                setProfillingtoScene();
             }
             else
             {
@@ -122,7 +131,8 @@ public class Profilling : MonoBehaviour
             if (_inputAuthEvaluasi == authEvaluasi)
             {
                 sceneManager.session_mode = "evaluasi";
-                sc.changeScene("HomeScene");
+                sc.changeScene("FirstScene");
+                setProfillingtoScene();
             }
             else
             {
@@ -246,24 +256,7 @@ public class Profilling : MonoBehaviour
         }
 
         // First check the type of answer.
-        if (dataContainer.QueryType == Drive.QueryType.getAllTables)
-        {
-            string rawJSon = dataContainer.payload;
-
-            // The response for this query is a json list of objects that hold tow fields:
-            // * objType: the table name (we use for identifying the type).
-            // * payload: the contents of the table in json format.
-            Drive.DataContainer[] tables = JsonHelper.ArrayFromJson<Drive.DataContainer>(rawJSon);
-
-            // Once we get the list of tables, we could use the objTypes to know the type and convert json to specific objects.
-            // On this example, we will just dump all content to the console, sorted by table name.
-            string logMsg = "<color=yellow>All data tables retrieved from the cloud.\n</color>";
-            for (int i = 0; i < tables.Length; i++)
-            {
-                logMsg += "\n<color=blue>Table Name: " + tables[i].objType + "</color>\n" + tables[i].payload + "\n";
-            }
-            Debug.Log(logMsg);
-        }
+        
     }
     
     //untuk auth kelas belajar/evaluasi

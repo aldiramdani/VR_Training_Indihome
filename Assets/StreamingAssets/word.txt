@@ -1,4 +1,4 @@
-﻿-- format
+﻿﻿-- format
 -- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo]
 
 -- simple text --
@@ -25,5 +25,3 @@ error|0|null|10|TestScene3|todo2
 meminta|1|nomor|10|TestScene4|todo3
 memberitahu|1|nomor|10|TestScene4|todo3
 nomor|1|nomor|10|TestScene4|todo3
-
-

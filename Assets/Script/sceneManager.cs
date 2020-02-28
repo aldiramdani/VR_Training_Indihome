@@ -44,8 +44,11 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        test_txt.text ="";            
-        test_txt.text = session_mode;
+        test_txt.text = "";
+        foreach (var x in word)
+        {
+            test_txt.text += x.kataKunci;
+        }
         testSpeak();
         debug_txt.text = hasilSpeech;
     }
@@ -72,8 +75,8 @@ public class sceneManager : MonoBehaviour
     public void sceneControl(string s_Result){
         getScore();
         for(int i = 0;i < word.Count;i++){
-            if(s_Result.Contains(word[i].kataKunci)){
-                if(word[i].isWajib != "1"){
+            if (s_Result.Contains(word[i].kataKunci.ToString())){
+                if (word[i].isWajib != "1"){
                         speechManager(i);
                 }
                 else if(word[i].isWajib =="1"){
@@ -83,7 +86,7 @@ public class sceneManager : MonoBehaviour
                         fCanvas.SetActive(true); 
                     }
                 }
-            }else if (!s_Result.Contains(word[i].kataKunci) && session_mode =="evaluasi"){
+            }else if (!s_Result.Contains(word[i].kataKunci.ToString()) && session_mode =="evaluasi"){
                 fCanvas.SetActive(true); 
             }
         }

@@ -22,4 +22,11 @@ public class sceneControler : MonoBehaviour
         currentSceneName = m_sceneName.name;
         SceneManager.LoadScene("TestScene"); //Ganti Nanti
     }
+
+    public string sceneName()
+    {
+        m_sceneName = SceneManager.GetActiveScene();
+        currentSceneName = m_sceneName.name;
+        return currentSceneName;
+    }
 }

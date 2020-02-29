@@ -11,27 +11,26 @@ public class sceneManager : MonoBehaviour
     Scene m_sceneName; //Variable Scene
     string currentScene; //Variable dapetin nama scene ubah jd string
     double pnDouble; //convert nilai ke double
-    public Text test_txt,debug_txt; //tampilan text debug dan test
+    public Text test_txt,debug_txt,txt_KataSaran; //tampilan text debug dan test
     public string hasilSpeech; //variable tampung hasil speech dari lib
-    static string testNama;
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
-    static List<String> suggestWord = new List<String>();
     public GameObject imgCheckmark0,imgCheckmark1, imgCheckmark2, imgCheckmark3, 
         imgCheckmark4, imgCheckmark5, imgCheckmark6, imgCheckmark7, imgCheckmark8, 
         imgCheckmark9; //image check list
-    public GameObject fCanvas;
+    public GameObject fCanvas,nextSceneCanvas;
     public static string session_mode;
+    public static string nextScene;
     // Start is called before the first frame update
     void Start()
     {
         hasilSpeech = " ";
+        nextScene = "";
         m_sceneName = SceneManager.GetActiveScene();
         currentScene = m_sceneName.name;
         if (currentScene == "TestScene")
         {
             PlayerPrefs.SetString("nilai", "0");
             resetScore();
-
         }
         if (currentScene == "HomeScene")
         {
@@ -92,23 +91,14 @@ public class sceneManager : MonoBehaviour
         }
     }
 
-/*    public void changeMode(string s_result)
-    {
-        if(session_mode == "belajar")
-        {
-
-            
-        }else if(session_mode == "evaluasi")
-        {
-
-        }
-    }*/
 
     private void speechManager(int pos){
-        SceneManager.LoadScene(word[pos].skenarioTujuan);
+        //SceneManager.LoadScene(word[pos].skenarioTujuan);
+        dialogBoxMode(word[pos].kataSaran);
         string sTujuan = word[pos].skenarioTujuan;
         string stoDo = word[pos].toDo;
         double nDouble = word[pos].nilai;
+        nextScene = word[pos].skenarioTujuan;
         for (int i=0;i<30;i++){
             word.Find(x => x.kataKunci.Contains(sTujuan));
             word.Remove(new Words{skenarioTujuan = sTujuan});
@@ -122,6 +112,16 @@ public class sceneManager : MonoBehaviour
         SpeakNow.reset();
     }
 
+    void dialogBoxMode(string kataKunci)
+    {
+        txt_KataSaran.text = kataKunci;
+        nextSceneCanvas.SetActive(true);
+    }
+
+    public void f_nextScene()
+    {
+        SceneManager.LoadScene(nextScene);
+    }
     public void loadKeyWord(string nameFile){
         try{
             string path= "jar:file://" + Application.dataPath + "!/assets/"+nameFile;
@@ -142,7 +142,8 @@ public class sceneManager : MonoBehaviour
                     kataWajib = parts[2],
                     nilai = double.Parse(parts[3]),
                     skenarioTujuan = parts[4],
-                    toDo = parts[5]
+                    toDo = parts[5],
+                    kataSaran = parts[6]
                 });
             }
         }catch(Exception ex)
@@ -164,11 +165,6 @@ public class sceneManager : MonoBehaviour
     {
         DBTest dBTest = new DBTest();
         dBTest.addtoDB();
-    }
-
-    public void setMode(string mode_name)
-    {
-        session_mode = mode_name;
     }
     public void unLoadWord()
     {

@@ -53,7 +53,7 @@ namespace GoogleSheetsForUnity
             public QueryType QueryType { get { return (QueryType)Enum.Parse(typeof(QueryType), query); } }
         }
 
-        private static ConnectionData _connectionData;
+        public static ConnectionData _connectionData;
         private static string _currentStatus = "";
 
         public static bool debugMode = true;

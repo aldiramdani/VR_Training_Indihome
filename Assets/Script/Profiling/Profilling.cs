@@ -75,6 +75,11 @@ public class Profilling : MonoBehaviour
         Debug.Log("Debug Status" + session_nik);
     }
 
+    private void OnDestroy()
+    {
+        Drive._connectionData = null;
+    }
+
     public void getProfilling()
     {
         nama = inputNama.text;
@@ -191,7 +196,7 @@ public class Profilling : MonoBehaviour
     }
 
 
-    private void GetAllPlayers()
+/*    private void GetAllPlayers()
     {
         Debug.Log("<color=yellow>Retrieving all players from the Cloud.</color>");
 
@@ -205,7 +210,7 @@ public class Profilling : MonoBehaviour
 
         // Get all objects from table 'PlayerInfo'.
         Drive.GetAllTables(true);
-    }
+    }*/
 
     public void HandleDriveResponse(Drive.DataContainer dataContainer)
     {
@@ -235,7 +240,7 @@ public class Profilling : MonoBehaviour
         }
 
         // First check the type of answer.
-        if (dataContainer.QueryType == Drive.QueryType.getTable)
+    /*    if (dataContainer.QueryType == Drive.QueryType.getTable)
         {
             string rawJSon = dataContainer.payload;
             Debug.Log(rawJSon);
@@ -253,7 +258,7 @@ public class Profilling : MonoBehaviour
                         "Name: " + userInfo.nama );
                 }
             }
-        }
+        }*/
 
         // First check the type of answer.
         

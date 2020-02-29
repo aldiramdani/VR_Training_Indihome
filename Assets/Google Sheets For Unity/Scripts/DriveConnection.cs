@@ -9,11 +9,6 @@ namespace GoogleSheetsForUnity
     {
         public ConnectionData connectionData;
 
-        private void OnDestroy()
-        {
-            connectionData = null;
-        }
-
         public void ExecuteRequest(UnityWebRequest www, Dictionary<string, string> postData)
         {
             StartCoroutine(CoExecuteRequest(www, postData));

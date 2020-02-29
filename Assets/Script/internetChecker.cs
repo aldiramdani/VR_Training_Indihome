@@ -44,7 +44,7 @@ public class internetChecker : MonoBehaviour
             SSTools.ShowMessage("Tidak Ada Koneksi Internet!",SSTools.Position.bottom,SSTools.Time.threeSecond);
         }else{
             //Koding Pindah Scene
-            sm.changeScene("TestScene4");
+            sm.changeScene("HomeScene");
         }
     }
 

@@ -12,6 +12,7 @@ public class Words : IEquatable<Words>
     public double nilai{get;set;}
     public string skenarioTujuan{get;set;}
     public string toDo{get;set;}
+    public string kataSaran {get;set;}
 
     public bool Equals(Words other){
         if(other == null) return false;

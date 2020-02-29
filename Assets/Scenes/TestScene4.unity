@@ -1639,7 +1639,6 @@ GameObject:
   - component: {fileID: 384689598}
   - component: {fileID: 384689599}
   - component: {fileID: 384689600}
-  - component: {fileID: 384689601}
   - component: {fileID: 384689602}
   m_Layer: 0
   m_Name: script_obj
@@ -1676,6 +1675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test_txt: {fileID: 816632726}
   debug_txt: {fileID: 0}
+  txt_KataSaran: {fileID: 0}
   hasilSpeech: 
   imgCheckmark0: {fileID: 1037865218}
   imgCheckmark1: {fileID: 456061480}
@@ -1687,7 +1687,8 @@ MonoBehaviour:
   imgCheckmark7: {fileID: 0}
   imgCheckmark8: {fileID: 0}
   imgCheckmark9: {fileID: 0}
-  fCanvas: {fileID: 447916751}
+  fCanvas: {fileID: 0}
+  nextSceneCanvas: {fileID: 0}
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1713,26 +1714,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtScore: {fileID: 6225253}
---- !u!114 &384689601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384689596}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5f008b250bd1fd4a92d555d491807ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  welcome_text: {fileID: 0}
-  debug_text: {fileID: 0}
-  btn_mulai: {fileID: 0}
-  inputNama: {fileID: 0}
-  inputNik: {fileID: 0}
-  inputAuthBelajar: {fileID: 0}
-  inputAuthEvaluasi: {fileID: 0}
-  drpTempatKerja: {fileID: 0}
 --- !u!114 &384689602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3593,7 +3574,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.0703125, y: 0.5}
+  savedTextUV0: {x: 0.0703125, y: 0}
   savedFill: 0
 --- !u!114 &1024334660
 MonoBehaviour:
@@ -3937,7 +3918,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.06640625, y: 0.64453125}
+  savedTextUV0: {x: 0.203125, y: 0.0078125}
   savedFill: 0
 --- !u!114 &1226635365
 MonoBehaviour:
@@ -4110,7 +4091,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.2109375, y: 0.62890625}
+  savedTextUV0: {x: 0.2265625, y: 0.1171875}
   savedFill: 0
 --- !u!114 &1372567633
 MonoBehaviour:
@@ -4209,7 +4190,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.25390625, y: 0.6875}
+  savedTextUV0: {x: 0.0546875, y: 0.3828125}
   savedFill: 0
 --- !u!114 &1390112425
 MonoBehaviour:
@@ -5368,7 +5349,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.14453125, y: 0.81640625}
+  savedTextUV0: {x: 0.40625, y: 0.05078125}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

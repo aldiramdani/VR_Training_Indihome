@@ -20,7 +20,7 @@ public class sceneControler : MonoBehaviour
     public void statChangeScene(){
         m_sceneName = SceneManager.GetActiveScene();
         currentSceneName = m_sceneName.name;
-        SceneManager.LoadScene("TestScene"); //Ganti Nanti
+        SceneManager.LoadScene(currentSceneName); //Ganti Nanti
     }
 
     public string sceneName()

@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 208314589}
   - component: {fileID: 208314588}
   m_Layer: 5
-  m_Name: b_menu_btn (2)
+  m_Name: btn_restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,10 +1004,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e11e34b08fe5f4c9ccdcb6156d9823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imgCricle: {fileID: 0}
+  imgCricle: {fileID: 1265276625}
   gvrClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 384689599}
+        m_MethodName: statChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   totalTime: 2
@@ -1954,7 +1965,7 @@ MonoBehaviour:
   test_txt: {fileID: 816632726}
   debug_txt: {fileID: 0}
   txt_KataSaran: {fileID: 581723432}
-  hasilSpeech: 
+  txt_status: {fileID: 1738070053}
   imgCheckmark0: {fileID: 1718257192}
   imgCheckmark1: {fileID: 348325226}
   imgCheckmark2: {fileID: 1602064997}
@@ -1965,8 +1976,9 @@ MonoBehaviour:
   imgCheckmark7: {fileID: 0}
   imgCheckmark8: {fileID: 0}
   imgCheckmark9: {fileID: 0}
-  fCanvas: {fileID: 0}
+  fCanvas: {fileID: 532812796}
   nextSceneCanvas: {fileID: 1629688989}
+  btn_restart_transition: {fileID: 208314586}
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2052,7 +2064,7 @@ GameObject:
   - component: {fileID: 511044297}
   - component: {fileID: 511044296}
   m_Layer: 5
-  m_Name: b_menu_btn (1)
+  m_Name: btn_menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2089,10 +2101,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e11e34b08fe5f4c9ccdcb6156d9823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imgCricle: {fileID: 0}
+  imgCricle: {fileID: 1265276625}
   gvrClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 384689598}
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: HomeScene
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   totalTime: 2
@@ -3258,7 +3281,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.015625, y: 0}
+  savedTextUV0: {x: 0.6171875, y: 0.0625}
   savedFill: 0
 --- !u!114 &818688238
 MonoBehaviour:
@@ -4600,7 +4623,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.02734375, y: 0.22265625}
+  savedTextUV0: {x: 0.01953125, y: 0.16796875}
   savedFill: 0
 --- !u!114 &1292022682
 MonoBehaviour:
@@ -4813,7 +4836,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.12890625, y: 0.16796875}
+  savedTextUV0: {x: 0.015625, y: 0}
   savedFill: 0
 --- !u!114 &1334815323
 MonoBehaviour:
@@ -4969,7 +4992,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.17578125, y: 0.19140625}
+  savedTextUV0: {x: 0.37890625, y: 0}
   savedFill: 0
 --- !u!114 &1391498724
 MonoBehaviour:
@@ -5581,8 +5604,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -111.79025, y: 98.86}
-  m_SizeDelta: {x: -275.9, y: -68.42499}
+  m_AnchoredPosition: {x: -111.79025, y: 20.531}
+  m_SizeDelta: {x: -275.9, y: -3.3627}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629688991
 MonoBehaviour:
@@ -5599,7 +5622,7 @@ MonoBehaviour:
   DoNotTesselate: 0
   savedPos: {x: -111.79004, y: 112.26, z: 74.00003}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 424.1, y: 357.575}
+  savedRectSize: {x: 424.1, y: 422.6373}
   savedColor: {r: 1, g: 1, b: 1, a: 0.7254902}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
@@ -5769,7 +5792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.9499, y: 46}
+  m_AnchoredPosition: {x: -6.9499, y: 73}
   m_SizeDelta: {x: 410.2, y: 227.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1738070052
@@ -5789,7 +5812,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 410.2, y: 227.5}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.38671875, y: 0.19140625}
+  savedTextUV0: {x: 0.21484375, y: 0.2734375}
   savedFill: 0
 --- !u!114 &1738070053
 MonoBehaviour:
@@ -5824,7 +5847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Saran Kalimat yang diucapkan
+  m_Text: 
 --- !u!222 &1738070054
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6270,7 +6293,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.14453125, y: 0.28515625}
+  savedTextUV0: {x: 0.5, y: 0.29296875}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

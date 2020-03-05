@@ -683,7 +683,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TestScene
+          m_StringArgument: TestScene1
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2005486750}
@@ -1630,7 +1630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 30.800625}
+  m_AnchoredPosition: {x: 0, y: 30.80035}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1402133326
@@ -1765,7 +1765,7 @@ MonoBehaviour:
   DoNotTesselate: 0
   savedPos: {x: 339.75003, y: -14.048333, z: -0.0000021739056}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 20, y: 228.36082}
+  savedRectSize: {x: 20, y: 228.3599}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
@@ -1970,8 +1970,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1414075825}
   m_HandleRect: {fileID: 1414075823}
   m_Direction: 2
-  m_Value: -0.000020807447
-  m_Size: 0.8973334
+  m_Value: -0.000011889971
+  m_Size: 0.8973294
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2436,7 +2436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test_txt: {fileID: 0}
   debug_txt: {fileID: 0}
-  hasilSpeech: 
+  txt_KataSaran: {fileID: 0}
+  txt_status: {fileID: 0}
   imgCheckmark0: {fileID: 0}
   imgCheckmark1: {fileID: 0}
   imgCheckmark2: {fileID: 0}
@@ -2448,6 +2449,9 @@ MonoBehaviour:
   imgCheckmark8: {fileID: 0}
   imgCheckmark9: {fileID: 0}
   fCanvas: {fileID: 0}
+  nextSceneCanvas: {fileID: 0}
+  btn_restart_transition: {fileID: 0}
+  benar_salah: 
 --- !u!114 &2005486751
 MonoBehaviour:
   m_ObjectHideFlags: 0

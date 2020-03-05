@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f04c21fb45517a4491e832aacc90e6e, type: 3}
   m_Name: ConnectionData
   m_EditorClassIdentifier: 
-  webServiceUrl: https://script.google.com/macros/s/AKfycbxNCjBXtPrFvP9d2qkCmizNMSS_dDDncn7kXBT5bA/exec
+  webServiceUrl: https://script.google.com/macros/s/AKfycbzv5VVeU8MApdFX6wlD4jgdfaDnzghoH7dp77fnTA/exec
   spreadsheetId: 18kies_9gOsZkF84KOQEUUQtakbwzb4CvkZbTNqKWXuE
   servicePassword: passcode
   timeOutLimit: 15

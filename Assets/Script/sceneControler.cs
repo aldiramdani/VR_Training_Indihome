@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System.Text.RegularExpressions;
 public class sceneControler : MonoBehaviour
 {
     string currentSceneName;
@@ -11,6 +11,17 @@ public class sceneControler : MonoBehaviour
     
     private void Start() {
         
+    }
+
+    public string newSceneName(string oldSceneName)
+    {
+        Regex re = new Regex(@"([a-zA-Z]+)(\d+)");
+        Match result = re.Match(oldSceneName);
+        string alphaPart = result.Groups[1].Value;
+        int numberPart = int.Parse(result.Groups[2].Value);
+        int nn_numberPart = numberPart + 1;
+        string newNamaScene = alphaPart + nn_numberPart;
+        return newNamaScene;
     }
 
     public void changeScene(string namaScene){

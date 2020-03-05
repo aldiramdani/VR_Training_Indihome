@@ -11,13 +11,13 @@ public class sceneManager : MonoBehaviour
     Scene m_sceneName; //Variable Scene
     string currentScene; //Variable dapetin nama scene ubah jd string
     double pnDouble; //convert nilai ke double
-    public Text test_txt,debug_txt,txt_KataSaran,txt_status; //tampilan text debug dan test
-    string hasilSpeech; //variable tampung hasil speech dari lib
+    public Text test_txt,debug_txt,txt_KataSaran,txt_status,txt_status_fail,txt_KataSaran_fail; //tampilan text debug dan test
+    public static string hasilSpeech; //variable tampung hasil speech dari lib
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
     public GameObject imgCheckmark0,imgCheckmark1, imgCheckmark2, imgCheckmark3, 
         imgCheckmark4, imgCheckmark5, imgCheckmark6, imgCheckmark7, imgCheckmark8, 
         imgCheckmark9; //image check list
-    public GameObject fCanvas,nextSceneCanvas,btn_restart_transition, nextSceneFailCanvas;
+    public GameObject fCanvas,nextSceneCanvas,btn_restart_transition, nextSceneFailCanvas, btn_restart_transition_fail;
     public static string session_mode;
     public static string nextScene, nm_scene_sebelumnya;
     public string benar_salah;
@@ -25,7 +25,7 @@ public class sceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hasilSpeech = " ";
+        hasilSpeech = "";
         nextScene = "";
         benar_salah = "";
         m_sceneName = SceneManager.GetActiveScene();
@@ -76,6 +76,7 @@ public class sceneManager : MonoBehaviour
             else if (Input.GetButtonDown("B"))
             {
                 sceneControl(hasilSpeech);
+                hasilSpeech = "";
             }
         }
         hasilSpeech += SpeakNow.speechResult().ToLower().Replace("no match", " ");
@@ -98,14 +99,13 @@ public class sceneManager : MonoBehaviour
                         fCanvas.SetActive(true); 
                     }             
                 }
-            }   
+            }
             benar_salah = "salah";
-            if(benar_salah == "salah")
+            if (benar_salah == "salah" && !s_Result.Contains(word[i].kataKunci.ToString()) && s_Result!="")
             {
                 //fCanvas.SetActive(true);
                 hasilSpeech = "";
-                nextScene = sc.newSceneName(nm_scene_sebelumnya);
-                nextSceneFailCanvas.SetActive(true);
+                failDialogBoxMode();
             }
         }
     }
@@ -131,6 +131,20 @@ public class sceneManager : MonoBehaviour
         sTujuan="";
     }
 
+    public string failKata(string namaScene)
+    {
+        string kataFail="Kosong Keneh Cuy";
+        foreach(Words x in word)
+        {
+            if (x.skenarioTujuan.Contains(namaScene))
+            {
+                kataFail = x.kataSaran;
+                return x.kataSaran;
+            }
+        }
+        return kataFail;
+    }
+
     void dialogBoxMode(string kataKunci)
     {
         txt_KataSaran.text = kataKunci;
@@ -140,6 +154,21 @@ public class sceneManager : MonoBehaviour
            nextSceneCanvas.SetActive(true);
         }
         nextSceneCanvas.SetActive(true);
+    }
+
+    void failDialogBoxMode()
+    {
+        txt_status_fail.text = "Kamu Gagal !, Sebaik nya kamu mengucapkan";
+        txt_status_fail.color = Color.red;
+        txt_KataSaran_fail.text = failKata(sc.newSceneName(nm_scene_sebelumnya));
+        hasilSpeech = "";
+        nextScene = sc.newSceneName(nm_scene_sebelumnya);
+        if (session_mode == "evaluasi")
+        {
+            btn_restart_transition_fail.SetActive(false);
+            nextSceneCanvas.SetActive(true);
+        }
+        nextSceneFailCanvas.SetActive(true);
     }
 
     public void f_nextScene()
@@ -287,4 +316,8 @@ public class sceneManager : MonoBehaviour
         }
     }
 
+    public List<Words> GetWords()
+    {
+        return word;
+    }
 }

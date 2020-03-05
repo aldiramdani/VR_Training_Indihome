@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
+using System.Linq;
 public class sceneControler : MonoBehaviour
 {
     string currentSceneName;
     Scene m_sceneName;
+
     // Start is called before the first frame update
-    
     private void Start() {
         
     }
@@ -29,9 +30,7 @@ public class sceneControler : MonoBehaviour
     }
 
     public void statChangeScene(){
-        m_sceneName = SceneManager.GetActiveScene();
-        currentSceneName = m_sceneName.name;
-        SceneManager.LoadScene(currentSceneName); //Ganti Nanti
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Ganti Nanti
     }
 
     public string sceneName()

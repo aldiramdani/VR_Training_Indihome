@@ -5,7 +5,7 @@ using UnityEngine.Video;
 public class dialogManager : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
-    public GameObject transistionDialog;
+    public GameObject transistionDialog,fail_transtitionDialog;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class dialogManager : MonoBehaviour
     void Update()
     {
         Debug.Log("Self" + transistionDialog.activeSelf);
-        if (transistionDialog.activeSelf)
+        if (transistionDialog.activeSelf || fail_transtitionDialog.activeSelf)
         {
             videoPlayer.Stop();
         }

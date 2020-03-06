@@ -8,9 +8,10 @@ using System.Linq;
 using System;
 public class sceneManager : MonoBehaviour
 {
+    
     Scene m_sceneName; //Variable Scene
     string currentScene; //Variable dapetin nama scene ubah jd string
-    double pnDouble; //convert nilai ke double
+    double pnDouble, nDouble; //convert nilai ke double
     public Text test_txt,debug_txt,txt_KataSaran,txt_status,txt_status_fail,txt_KataSaran_fail; //tampilan text debug dan test
     public static string hasilSpeech; //variable tampung hasil speech dari lib
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
@@ -20,7 +21,7 @@ public class sceneManager : MonoBehaviour
     public GameObject fCanvas,nextSceneCanvas,btn_restart_transition, nextSceneFailCanvas, btn_restart_transition_fail;
     public static string session_mode;
     public static string nextScene, nm_scene_sebelumnya;
-    public string benar_salah;
+    public string benar_salah, stoDo;
     sceneControler sc = new sceneControler();
     // Start is called before the first frame update
     void Start()
@@ -57,11 +58,6 @@ public class sceneManager : MonoBehaviour
             nextSceneFailCanvas.SetActive(false);
         }
         debug_txt.text = hasilSpeech;
-        test_txt.text = PlayerPrefs.GetInt("todo1").ToString() +
-        PlayerPrefs.GetInt("todo2").ToString() +
-        PlayerPrefs.GetInt("todo3").ToString() +
-        PlayerPrefs.GetInt("todo4").ToString() +
-        PlayerPrefs.GetInt("nilai").ToString();
     }
 
     public void changeScene(string namaScene){
@@ -85,6 +81,7 @@ public class sceneManager : MonoBehaviour
     public void sceneControl(string s_Result){
         getScore();
         for (int i = 0;i < word.Count;i++){
+            //cek script di c#
             if (s_Result.Contains(word[i].kataKunci.ToString())){
                 benar_salah = "benar";
                 txt_status.text = "Kamu Berhasil !, Sebaik nya kamu mengucapkan";
@@ -114,22 +111,24 @@ public class sceneManager : MonoBehaviour
     private void speechManager(int pos){
         //SceneManager.LoadScene(word[pos].skenarioTujuan);
         dialogBoxMode(word[pos].kataSaran);
-        string sTujuan = word[pos].skenarioTujuan;
-        string stoDo = word[pos].toDo;
-        double nDouble = word[pos].nilai;
-        nextScene = word[pos].skenarioTujuan;
-        for (int i=0;i<30;i++){
-            word.Find(x => x.kataKunci.Contains(sTujuan));
-            word.Remove(new Words{skenarioTujuan = sTujuan});
-        }
-        pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));  
+        stoDo = word[pos].toDo;
+        nDouble = word[pos].nilai;
+        /*pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));  
+        double nilai = nDouble + pnDouble;
+        PlayerPrefs.SetInt(stoDo,1);
+        PlayerPrefs.SetString("nilai", nilai.ToString());*/
+        SpeakNow.reset();
+        hasilSpeech = "";
+    }
+
+    public void inserToTodo()
+    {
+        pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));
         double nilai = nDouble + pnDouble;
         PlayerPrefs.SetInt(stoDo,1);
         PlayerPrefs.SetString("nilai", nilai.ToString());
-        SpeakNow.reset();
-        hasilSpeech = "";
-        sTujuan="";
     }
+
 
     public string failKata(string namaScene)
     {
@@ -143,6 +142,15 @@ public class sceneManager : MonoBehaviour
             }
         }
         return kataFail;
+    }
+
+    public void failDelete()
+    {
+        for (int i = 0; i < 30; i++)
+        {
+            word.Find(x => x.skenarioTujuan.Contains(nextScene));
+            word.Remove(new Words { skenarioTujuan = nextScene });
+        }
     }
 
     void dialogBoxMode(string kataKunci)
@@ -166,15 +174,19 @@ public class sceneManager : MonoBehaviour
         if (session_mode == "evaluasi")
         {
             btn_restart_transition_fail.SetActive(false);
-            nextSceneCanvas.SetActive(true);
+            nextSceneFailCanvas.SetActive(true);
         }
         nextSceneFailCanvas.SetActive(true);
     }
 
+
     public void f_nextScene()
     {
+        failDelete();
         SceneManager.LoadScene(nextScene);
     }
+
+
     public void loadKeyWord(string nameFile){
         try{
             string path= "jar:file://" + Application.dataPath + "!/assets/"+nameFile;

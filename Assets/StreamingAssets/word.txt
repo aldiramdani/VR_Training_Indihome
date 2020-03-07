@@ -2,25 +2,26 @@
 -- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
 
 -- simple text --
-andri|1|assalamualaikum|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-andri|1|pagi|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-andri|1|siang|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-andri|1|sore|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-sebaiknya|1|assalamualaikum|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-sebaiknya|1|pagi|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-sebaiknya|1|siang|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-sebaiknya|1|sore|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-enaknya|1|assalamualaikum|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-enaknya|1|pagi|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-enaknya|1|siang|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-enaknya|1|sore|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-memanggil|1|assalamualaikum|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-memanggil|1|pagi|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-memanggil|1|siang|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-memanggil|1|sore|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "
-keluhan|0|null|10|TestScene3|todo2|aw
-gangguan|0|null|10|TestScene3|todo2|aw
-error|0|null|10|TestScene3|todo2|aw
-meminta|1|nomor|10|TestScene4|todo3|aw
-memberitahu|1|nomor|10|TestScene4|todo3|aw
-nomor|1|nomor|10|TestScene4|todo3|aw
+andri|1|assalamualaikum|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+andri|1|pagi|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+andri|1|siang|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+andri|1|sore|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+sebaiknya|1|assalamualaikum|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+sebaiknya|1|pagi|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+sebaiknya|1|siang|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+sebaiknya|1|sore|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+enaknya|1|assalamualaikum|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+enaknya|1|pagi|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+enaknya|1|siang|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+enaknya|1|sore|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+memanggil|1|assalamualaikum|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+memanggil|1|pagi|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+memanggil|1|siang|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+memanggil|1|sore|10|TestScene2|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|null
+keluhan|0|null|10|TestScene3|todo2|aw|TestScene2
+gangguan|0|null|10|TestScene3|todo2|aw|TestScene2
+error|0|null|10|TestScene3|todo2|aw|TestScene2
+meminta|0|null|10|TestScene4|todo3|aw|TestScene2
+halo|0|null|10|TestScene4|todo3|aw|TestScene2
+memberitahu|0|null|10|TestScene4|todo3|aw|null
+nomor|1|minta|10|TestScene4|todo3|aw|null

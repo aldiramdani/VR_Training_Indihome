@@ -14,6 +14,8 @@ public class Words : IEquatable<Words>
     public string toDo{get;set;}
     public string kataSaran {get;set;}
 
+    public string sceneSebelumnya { get; set; }
+
     public bool Equals(Words other){
         if(other == null) return false;
         return(this.skenarioTujuan.Equals(other.skenarioTujuan));

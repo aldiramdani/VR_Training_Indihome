@@ -15,6 +15,7 @@ public class sceneManager : MonoBehaviour
     public Text test_txt,debug_txt,txt_KataSaran,txt_status,txt_status_fail,txt_KataSaran_fail; //tampilan text debug dan test
     public static string hasilSpeech; //variable tampung hasil speech dari lib
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
+    List<Words> nWord = new List<Words>();
     public GameObject imgCheckmark0,imgCheckmark1, imgCheckmark2, imgCheckmark3, 
         imgCheckmark4, imgCheckmark5, imgCheckmark6, imgCheckmark7, imgCheckmark8, 
         imgCheckmark9; //image check list
@@ -44,20 +45,51 @@ public class sceneManager : MonoBehaviour
         {
             unLoadWord();
         }
+        loadNWord();
         toDoController();
-
-
+/*        foreach (Words x in word)
+        {
+            test_txt.text += x.kataKunci + " " + x.skenarioTujuan + "\n ";
+        }*/
     }
 
     // Update is called once per frame
     void Update()
     {
         testSpeak();
+        hideSeekCanvas();
+        debug_txt.text = nextScene;
+    }
+
+    void hideSeekCanvas()
+    {
         if (nextSceneCanvas.activeSelf)
         {
             nextSceneFailCanvas.SetActive(false);
         }
-        debug_txt.text = hasilSpeech;
+    }
+
+    void loadNWord()
+    {
+        for(int i=0;i < word.Count; i++)
+        {
+            if (word[i].skenarioTujuan.Contains(sc.newSceneName(nm_scene_sebelumnya)) || word[i].sceneSebelumnya.Contains(nm_scene_sebelumnya))
+            {
+                nWord.Add(word[i]);
+            }
+        }
+        /*foreach (Words x in word)
+        {
+            if (x.skenarioTujuan.Contains(sc.newSceneName(nm_scene_sebelumnya)) || x.sceneSebelumnya.Contains(nm_scene_sebelumnya))
+            {
+                nWord.Add(x);
+            }
+        }*/
+        /*for(int i = 0; i < word.Count; i++)
+        {
+            nWord.Add(word.Find(x => x.skenarioTujuan.Contains(sc.newSceneName(nm_scene_sebelumnya)) || x.sceneSebelumnya == nm_scene_sebelumnya));
+            //&& x.sceneSebelumnya.Contains(nm_scene_sebelumnya)
+        }*/
     }
 
     public void changeScene(string namaScene){
@@ -80,25 +112,28 @@ public class sceneManager : MonoBehaviour
 
     public void sceneControl(string s_Result){
         getScore();
-        for (int i = 0;i < word.Count;i++){
+        for (int i = 0;i < nWord.Count;i++){
             //cek script di c#
-            if (s_Result.Contains(word[i].kataKunci.ToString())){
+            if (s_Result.Contains(nWord[i].kataKunci.ToString())){
                 benar_salah = "benar";
                 txt_status.text = "Kamu Berhasil !, Sebaik nya kamu mengucapkan";
                 txt_status.color = Color.green;
-                if (word[i].isWajib != "1"){
+                if (nWord[i].isWajib != "1"){
+                        nextScene = nWord[i].skenarioTujuan;
                         speechManager(i);
                 }
-                else if(word[i].isWajib =="1"){
-                    if(s_Result.Contains(word[i].kataWajib)){
+                else if(nWord[i].isWajib =="1"){
+                    if(s_Result.Contains(nWord[i].kataWajib)){
+                        nextScene = nWord[i].skenarioTujuan;
                         speechManager(i);
-                    }else{
-                        fCanvas.SetActive(true); 
+                    }
+                    else{
+                        nextSceneFailCanvas.SetActive(true); 
                     }             
                 }
             }
             benar_salah = "salah";
-            if (benar_salah == "salah" && !s_Result.Contains(word[i].kataKunci.ToString()) && s_Result!="")
+            if (benar_salah == "salah" && !s_Result.Contains(nWord[i].kataKunci.ToString()) && s_Result!="")
             {
                 //fCanvas.SetActive(true);
                 hasilSpeech = "";
@@ -110,13 +145,10 @@ public class sceneManager : MonoBehaviour
 
     private void speechManager(int pos){
         //SceneManager.LoadScene(word[pos].skenarioTujuan);
-        dialogBoxMode(word[pos].kataSaran);
-        stoDo = word[pos].toDo;
-        nDouble = word[pos].nilai;
-        /*pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));  
-        double nilai = nDouble + pnDouble;
-        PlayerPrefs.SetInt(stoDo,1);
-        PlayerPrefs.SetString("nilai", nilai.ToString());*/
+        dialogBoxMode(nWord[pos].kataSaran);
+        stoDo = nWord[pos].toDo;
+        nDouble = nWord[pos].nilai;
+        nextScene = nWord[pos].skenarioTujuan;
         SpeakNow.reset();
         hasilSpeech = "";
     }
@@ -146,10 +178,10 @@ public class sceneManager : MonoBehaviour
 
     public void failDelete()
     {
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < nWord.Count; i++)
         {
-            word.Find(x => x.skenarioTujuan.Contains(nextScene));
-            word.Remove(new Words { skenarioTujuan = nextScene });
+            nWord.Find(x => x.skenarioTujuan.Contains(nextScene));
+            nWord.Remove(new Words { skenarioTujuan = nextScene });
         }
     }
 
@@ -170,7 +202,7 @@ public class sceneManager : MonoBehaviour
         txt_status_fail.color = Color.red;
         txt_KataSaran_fail.text = failKata(sc.newSceneName(nm_scene_sebelumnya));
         hasilSpeech = "";
-        nextScene = sc.newSceneName(nm_scene_sebelumnya);
+        //nextScene = sc.newSceneName(nm_scene_sebelumnya);
         if (session_mode == "evaluasi")
         {
             btn_restart_transition_fail.SetActive(false);
@@ -208,7 +240,8 @@ public class sceneManager : MonoBehaviour
                     nilai = double.Parse(parts[3]),
                     skenarioTujuan = parts[4],
                     toDo = parts[5],
-                    kataSaran = parts[6]
+                    kataSaran = parts[6],
+                    sceneSebelumnya = parts[7]
                 });
             }
         }catch(Exception ex)
@@ -234,6 +267,7 @@ public class sceneManager : MonoBehaviour
     public void unLoadWord()
     {
         word.Clear();
+        nWord.Clear();
     }
     public void getScore()
     {
@@ -326,10 +360,5 @@ public class sceneManager : MonoBehaviour
         {
             imgCheckmark9.SetActive(true);
         }
-    }
-
-    public List<Words> GetWords()
-    {
-        return word;
     }
 }

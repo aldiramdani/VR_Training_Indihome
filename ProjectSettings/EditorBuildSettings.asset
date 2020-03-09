@@ -6,27 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/DataProfilingScene.unity
+    guid: aa5a652c562643945a8c64452504b3a0
+  - enabled: 1
+    path: Assets/Scenes/AuthScene.unity
+    guid: 88c3a8e0761981d48bc774216e24a071
+  - enabled: 1
     path: Assets/Scenes/FirstScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/HomeScene.unity
     guid: 460a2b06202b8ed42b89cc1b0feb3505
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 5637e4b9300de6e41a98ea880d5967cf
-  - enabled: 1
     path: Assets/Scenes/BantuanScene.unity
     guid: 47441634fd793474d9a93f959b92d932
   - enabled: 1
-    path: Assets/Scenes/SceneTunggu.unity
-    guid: 8ccd67698d2ef904ea749e34d01cbbed
+    path: Assets/Scenes/Awal/Awal1.unity
+    guid: 9b801af7de48b5a49a2b6ed9b312c6e6
   - enabled: 1
-    path: Assets/Scenes/TestScene2.unity
-    guid: 870071cdb34b43b45ba8f0948920d6e1
+    path: Assets/Scenes/Awal/Awal2.unity
+    guid: 4d4e2d12a3a4e0048a675aa5e91af42f
   - enabled: 1
-    path: Assets/Scenes/TestScene3.unity
-    guid: bb71173ff80c79041bb7526a3ac278c7
+    path: Assets/Scenes/Awal/Awal3.unity
+    guid: 780f37af7cff63f49b241355e04e4f14
   - enabled: 1
-    path: Assets/Scenes/TestScene4.unity
-    guid: da3d6d8d83002da42ba148b0a485dfc0
+    path: Assets/Scenes/Awal/Awal4.unity
+    guid: fbef55dfec18f7f4b96fc8bdd58e60d4
+  - enabled: 1
+    path: Assets/Scenes/Awal/AwalTunggu.unity
+    guid: 712a7855458a8ba4392c82af3ac4aff1
+  - enabled: 1
+    path: Assets/Scenes/Scene Frame/Frame_Scene_Tunggu.unity
+    guid: b1dc69534fd5c6c48b741c91eda40508
   m_configObjects: {}

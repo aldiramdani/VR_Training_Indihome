@@ -4,14 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
 using System.Linq;
+using UnityEngine.Video;
 public class sceneControler : MonoBehaviour
 {
     string currentSceneName;
     Scene m_sceneName;
-
     // Start is called before the first frame update
     private void Start() {
         
+    }
+    void Update()
+    {
+       
     }
 
     public string newSceneName(string oldSceneName)

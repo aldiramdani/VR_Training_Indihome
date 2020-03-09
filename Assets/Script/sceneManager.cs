@@ -32,11 +32,11 @@ public class sceneManager : MonoBehaviour
         benar_salah = "";
         m_sceneName = SceneManager.GetActiveScene();
         currentScene = m_sceneName.name;
-        if (!currentScene.Contains("SceneTunggu"))
+        if (!currentScene.Contains("Tunggu"))
         {
             nm_scene_sebelumnya = currentScene;
         }
-        if (currentScene == "TestScene1")
+        if (currentScene == "Awal1")
         {
             PlayerPrefs.SetString("nilai", "0");
             resetScore();
@@ -47,10 +47,6 @@ public class sceneManager : MonoBehaviour
         }
         loadNWord();
         toDoController();
-/*        foreach (Words x in word)
-        {
-            test_txt.text += x.kataKunci + " " + x.skenarioTujuan + "\n ";
-        }*/
     }
 
     // Update is called once per frame
@@ -58,6 +54,13 @@ public class sceneManager : MonoBehaviour
     {
         testSpeak();
         hideSeekCanvas();
+      /*  if (currentScene.Contains("Tunggu"))
+        {
+            foreach(Words x in nWord)
+            {
+                test_txt.text = x.kataKunci + " \n";
+            }
+        }*/
         debug_txt.text = nextScene;
     }
 
@@ -78,18 +81,6 @@ public class sceneManager : MonoBehaviour
                 nWord.Add(word[i]);
             }
         }
-        /*foreach (Words x in word)
-        {
-            if (x.skenarioTujuan.Contains(sc.newSceneName(nm_scene_sebelumnya)) || x.sceneSebelumnya.Contains(nm_scene_sebelumnya))
-            {
-                nWord.Add(x);
-            }
-        }*/
-        /*for(int i = 0; i < word.Count; i++)
-        {
-            nWord.Add(word.Find(x => x.skenarioTujuan.Contains(sc.newSceneName(nm_scene_sebelumnya)) || x.sceneSebelumnya == nm_scene_sebelumnya));
-            //&& x.sceneSebelumnya.Contains(nm_scene_sebelumnya)
-        }*/
     }
 
     public void changeScene(string namaScene){
@@ -97,7 +88,7 @@ public class sceneManager : MonoBehaviour
     }
 
     void testSpeak(){
-        if (currentScene != "FirstScene" || currentScene != "BantuanScene"){
+        if (currentScene.Contains("Tunggu")){
             if(Input.GetButton("A")){
                 SpeakNow.startSpeech(LanguageUtil.INDONESIAN);
             }
@@ -128,6 +119,7 @@ public class sceneManager : MonoBehaviour
                         speechManager(i);
                     }
                     else{
+                        txt_status.text = "Kamu Salah Mengucapkan Kata!, Sebaik nya kamu mengucapkan";
                         nextSceneFailCanvas.SetActive(true); 
                     }             
                 }
@@ -198,11 +190,11 @@ public class sceneManager : MonoBehaviour
 
     void failDialogBoxMode()
     {
-        txt_status_fail.text = "Kamu Gagal !, Sebaik nya kamu mengucapkan";
+        txt_status_fail.text = "Kamu Salah Mengucapkan Kata!, Sebaik nya kamu mengucapkan";
         txt_status_fail.color = Color.red;
         txt_KataSaran_fail.text = failKata(sc.newSceneName(nm_scene_sebelumnya));
         hasilSpeech = "";
-        //nextScene = sc.newSceneName(nm_scene_sebelumnya);
+        nextScene = sc.newSceneName(nm_scene_sebelumnya);
         if (session_mode == "evaluasi")
         {
             btn_restart_transition_fail.SetActive(false);
@@ -256,7 +248,6 @@ public class sceneManager : MonoBehaviour
         PlayerPrefs.SetInt("todo2", 0);
         PlayerPrefs.SetInt("todo3", 0);
         PlayerPrefs.SetInt("todo4", 0);
-        PlayerPrefs.SetString("nilai", "0");
     }
     
     public void addDb()
@@ -361,4 +352,6 @@ public class sceneManager : MonoBehaviour
             imgCheckmark9.SetActive(true);
         }
     }
+
+    
 }

@@ -27,11 +27,24 @@ public class videoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (currentScene.Contains("Tunggu"))
+        {
+            if (Input.GetButton("A"))
+            {
+                Debug.Log("Dipencet Bor");
+                videoPlayer.Pause();
+            }else if (Input.GetButtonUp("A"))
+            {
+                Debug.Log("DiLepas Bor");
+                videoPlayer.Play();
+            }
+        }
         skenarioTunggu(currentScene);
         if(currentTime > time - 0.1)
         {
             gOCanvas.SetActive(true);
         }
+        
     }
 
 
@@ -52,14 +65,18 @@ public class videoManager : MonoBehaviour
     {
         currentTime = videoPlayer.time;
         double timeChange = time - 0.1;
-        if(currentTime+1 >= timeChange && sceneSekarang != "SceneTunggu" && sceneSekarang != "TestScene4")
+        if(currentTime+1 >= timeChange && !sceneSekarang.Contains("Tunggu") && sceneSekarang != "AwalAkhir")
         {
-            SceneManager.LoadScene("SceneTunggu");
+            if (sceneSekarang=="Awal1")
+            {
+                SceneManager.LoadScene("AwalTunggu");
+            }
+            else
+            {
+                SceneManager.LoadScene("Frame_Scene_Tunggu");
+            }
+            
         }
     }
 
-    private void VideoPlayer_prepareCompleted(VideoPlayer source)
-    {
-        Play();
-    }
 }

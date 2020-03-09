@@ -15,8 +15,8 @@ public class dialogManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Self" + transistionDialog.activeSelf);
-        if (transistionDialog.activeSelf || fail_transtitionDialog.activeSelf)
+        Debug.Log("Self" + transistionDialog.activeSelf + fail_transtitionDialog.activeSelf);
+        if (transistionDialog.activeSelf==true || fail_transtitionDialog.activeSelf==true)
         {
             videoPlayer.Stop();
         }

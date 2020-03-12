@@ -14,7 +14,7 @@ public class videoManager : MonoBehaviour
     public float timeShow;
     public double currentTime;
     int tutorialStatus;
-    public GameObject gOCanvas,cTutorial;
+    public GameObject gOCanvas,cTutorial, attacher;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +43,7 @@ public class videoManager : MonoBehaviour
         if(currentTime > time - 0.1)
         {
             gOCanvas.SetActive(true);
+            attacher.SetActive(false);
         }
         
     }
@@ -65,7 +66,7 @@ public class videoManager : MonoBehaviour
     {
         currentTime = videoPlayer.time;
         double timeChange = time - 0.1;
-        if(currentTime+1 >= timeChange && !sceneSekarang.Contains("Tunggu") && sceneSekarang != "AwalAkhir")
+        if(currentTime + 1 >= timeChange && !sceneSekarang.Contains("Tunggu") && sceneSekarang != "InternetMati2")
         {
             if (sceneSekarang=="Awal1")
             {

@@ -20,7 +20,7 @@ namespace GoogleVR.VideoDemo {
   public class VideoControlsManager : MonoBehaviour {
     private GameObject pauseSprite;
     private GameObject playSprite;
-
+        public GameObject donePanel,canvas;
     private Slider videoScrubber;
     private Slider volumeSlider;
     private GameObject volumeWidget;
@@ -29,6 +29,7 @@ namespace GoogleVR.VideoDemo {
     private Vector3 basePosition;
     private Text videoPosition;
     private Text videoDuration;
+        sceneControler sc = new sceneControler();
 
     public GvrVideoPlayerTexture Player
     {
@@ -108,10 +109,14 @@ namespace GoogleVR.VideoDemo {
         bufferedBackground.transform.localScale = new Vector3(sx, 1, 1);
         bufferedBackground.transform.localPosition =
             new Vector3(basePosition.x - (basePosition.x * sx), 0, 0);
-
-        videoPosition.text = FormatTime(Player.CurrentPosition);
+                //FormatTime(Player.CurrentPosition)
+        videoPosition.text = Player.CurrentPosition.ToString() + " " + Player.VideoDuration.ToString();
         videoDuration.text = FormatTime(Player.VideoDuration);
-
+        if (Player.CurrentPosition-1 > Player.VideoDuration)
+        {
+            sceneManager sm = new sceneManager();
+            sm.changeScene(sc.newSceneName(sceneManager.nm_scene_sebelumnya));
+        }
         if (volumeSlider != null) {
           volumeSlider.minValue = 0;
           volumeSlider.maxValue = Player.MaxVolume;
@@ -120,8 +125,19 @@ namespace GoogleVR.VideoDemo {
       } else {
         videoScrubber.value = 0;
       }
+      
     }
 
+    public void test()
+        {
+            double timechange = Player.VideoDuration - 1;
+            double currentTime = Player.CurrentPosition;
+            if (Player.CurrentPosition >= Player.VideoDuration)
+            {
+                sceneManager sm = new sceneManager();
+                sm.changeScene("HomeScene");
+            }
+        }
     public void OnVolumeUp() {
       if (Player.CurrentVolume < Player.MaxVolume) {
         Player.CurrentVolume += 1;

@@ -10,13 +10,6 @@ public class sceneControler : MonoBehaviour
     string currentSceneName;
     Scene m_sceneName;
     // Start is called before the first frame update
-    private void Start() {
-        
-    }
-    void Update()
-    {
-       
-    }
 
     public string newSceneName(string oldSceneName)
     {

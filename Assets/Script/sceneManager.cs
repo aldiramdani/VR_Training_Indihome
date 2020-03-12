@@ -12,7 +12,7 @@ public class sceneManager : MonoBehaviour
     Scene m_sceneName; //Variable Scene
     string currentScene; //Variable dapetin nama scene ubah jd string
     double pnDouble, nDouble; //convert nilai ke double
-    public Text test_txt,debug_txt,txt_KataSaran,txt_status,txt_status_fail,txt_KataSaran_fail; //tampilan text debug dan test
+    public Text test_txt, test_txt2,debug_txt, txt_KataSaran,txt_status,txt_status_fail,txt_KataSaran_fail; //tampilan text debug dan test
     public static string hasilSpeech; //variable tampung hasil speech dari lib
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
     List<Words> nWord = new List<Words>();
@@ -54,14 +54,8 @@ public class sceneManager : MonoBehaviour
     {
         testSpeak();
         hideSeekCanvas();
-      /*  if (currentScene.Contains("Tunggu"))
-        {
-            foreach(Words x in nWord)
-            {
-                test_txt.text = x.kataKunci + " \n";
-            }
-        }*/
-        debug_txt.text = nextScene;
+        debug_txt.text = nextScene + " " + hasilSpeech; 
+
     }
 
     void hideSeekCanvas()
@@ -103,35 +97,83 @@ public class sceneManager : MonoBehaviour
 
     public void sceneControl(string s_Result){
         getScore();
-        for (int i = 0;i < nWord.Count;i++){
+        var i = 0;
+        foreach(Words x in nWord)
+        {
+            if (s_Result.Contains(x.kataKunci.ToString()))
+            {
+                
+                benar_salah = "benar";
+                txt_status.text = "Kamu Berhasil !, Sebaik nya kamu mengucapkan";
+                txt_status.color = Color.green;
+                if(x.isWajib != "1")
+                {
+                    benar_salah = "benar";
+                    nextScene = x.skenarioTujuan;
+                    speechManager(i);
+                    break;
+                }
+                else if(x.isWajib == "1")
+                {
+                    if (s_Result.Contains(x.kataWajib))
+                    {
+                        benar_salah = "benar";
+                        nextScene = nWord[i].skenarioTujuan;
+                        speechManager(i);
+                        break;
+                    }
+                    else if (!s_Result.Contains(x.kataWajib))
+                    {
+                        nextSceneFailCanvas.SetActive(true);
+                        break;
+
+                    }
+
+                }
+            }
+            else if (benar_salah == "salah" && !s_Result.Contains(x.kataKunci.ToString()) && s_Result != "")
+            {
+                s_Result = "";
+                //fCanvas.SetActive(true);
+                hasilSpeech = "";
+                failDialogBoxMode();
+            }
+            i++;
+        }
+/*        for (int i = 0;i < nWord.Count;i++){
             //cek script di c#
             if (s_Result.Contains(nWord[i].kataKunci.ToString())){
                 benar_salah = "benar";
                 txt_status.text = "Kamu Berhasil !, Sebaik nya kamu mengucapkan";
                 txt_status.color = Color.green;
                 if (nWord[i].isWajib != "1"){
-                        nextScene = nWord[i].skenarioTujuan;
+                    benar_salah = "benar";
+                    nextScene = nWord[i].skenarioTujuan;
                         speechManager(i);
                 }
                 else if(nWord[i].isWajib =="1"){
                     if(s_Result.Contains(nWord[i].kataWajib)){
+                        benar_salah = "benar";
                         nextScene = nWord[i].skenarioTujuan;
                         speechManager(i);
                     }
-                    else{
-                        txt_status.text = "Kamu Salah Mengucapkan Kata!, Sebaik nya kamu mengucapkan";
-                        nextSceneFailCanvas.SetActive(true); 
+                    else if(!s_Result.Contains(nWord[i].kataWajib))
+                    {
+                        *//*txt_status.text = "Kamu Salah Mengucapkan Kata!, Sebaik nya kamu mengucapkan";
+                        txt_status_fail.color = Color.red;*//*
+                        benar_salah = "salah";
+                        nextSceneFailCanvas.SetActive(true);
                     }             
                 }
             }
-            benar_salah = "salah";
+            
             if (benar_salah == "salah" && !s_Result.Contains(nWord[i].kataKunci.ToString()) && s_Result!="")
             {
                 //fCanvas.SetActive(true);
                 hasilSpeech = "";
                 failDialogBoxMode();
             }
-        }
+        }*/
     }
 
 
@@ -157,7 +199,7 @@ public class sceneManager : MonoBehaviour
     public string failKata(string namaScene)
     {
         string kataFail="Kosong Keneh Cuy";
-        foreach(Words x in word)
+        foreach(Words x in nWord)
         {
             if (x.skenarioTujuan.Contains(namaScene))
             {
@@ -194,7 +236,8 @@ public class sceneManager : MonoBehaviour
         txt_status_fail.color = Color.red;
         txt_KataSaran_fail.text = failKata(sc.newSceneName(nm_scene_sebelumnya));
         hasilSpeech = "";
-        nextScene = sc.newSceneName(nm_scene_sebelumnya);
+        SpeakNow.reset();
+        nextScene = "Sakumaha Aing Anying";
         if (session_mode == "evaluasi")
         {
             btn_restart_transition_fail.SetActive(false);

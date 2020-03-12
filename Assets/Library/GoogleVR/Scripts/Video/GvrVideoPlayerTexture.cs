@@ -943,7 +943,7 @@ public class GvrVideoPlayerTexture : MonoBehaviour {
 
   private static long GetDuration(IntPtr videoPlayerPtr) {
     Debug.Log(NOT_IMPLEMENTED_MSG);
-    return -1;
+    return 1;
   }
 
   private static long GetBufferedPosition(IntPtr videoPlayerPtr) {
@@ -953,7 +953,7 @@ public class GvrVideoPlayerTexture : MonoBehaviour {
 
   private static long GetCurrentPosition(IntPtr videoPlayerPtr) {
     Debug.Log(NOT_IMPLEMENTED_MSG);
-    return -1;
+    return 1;
   }
 
   private static void SetCurrentPosition(IntPtr videoPlayerPtr, long pos) {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckListController : MonoBehaviour
 {
-    public GameObject AwalContent, InternetMatiContent;
+    public GameObject AwalContent, InternetMatiContent,FCRContent,AkhirContent;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +33,22 @@ public class CheckListController : MonoBehaviour
         else
         {
             InternetMatiContent.SetActive(false);
+        }
+        if (sceneManager.nm_scene_sebelumnya.Contains("FCR"))
+        {
+            FCRContent.SetActive(true);
+        }
+        else
+        {
+            FCRContent.SetActive(false);
+        }
+        if (sceneManager.nm_scene_sebelumnya.Contains("Akhir"))
+        {
+            AkhirContent.SetActive(true);
+        }
+        else
+        {
+            AkhirContent.SetActive(false);
         }
     }
 }

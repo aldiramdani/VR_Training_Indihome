@@ -2594,13 +2594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_txt: {fileID: 816632726}
-  test_txt2: {fileID: 0}
   debug_txt: {fileID: 0}
-  txt_KataSaran: {fileID: 0}
   txt_status: {fileID: 0}
   txt_status_fail: {fileID: 0}
-  txt_KataSaran_fail: {fileID: 0}
   imgCheckmark0: {fileID: 155087658}
   imgCheckmark1: {fileID: 1723117445}
   imgCheckmark2: {fileID: 1856104118}
@@ -2611,11 +2607,9 @@ MonoBehaviour:
   imgCheckmark7: {fileID: 0}
   imgCheckmark8: {fileID: 0}
   imgCheckmark9: {fileID: 0}
-  fCanvas: {fileID: 0}
   nextSceneCanvas: {fileID: 0}
-  btn_restart_transition: {fileID: 0}
   nextSceneFailCanvas: {fileID: 0}
-  btn_restart_transition_fail: {fileID: 0}
+  fCanvas: {fileID: 0}
   benar_salah: 
   stoDo: 
 --- !u!114 &384689599
@@ -4337,7 +4331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &734223963
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5525,7 +5519,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.5, y: 0.14453125}
+  savedTextUV0: {x: 0.6484375, y: 0.359375}
   savedFill: 0
 --- !u!114 &1038247852
 MonoBehaviour:
@@ -5560,7 +5554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: List To Do
+  m_Text: 
 --- !u!222 &1038247853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6327,7 +6321,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 211.5, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.63671875, y: 0.2734375}
+  savedTextUV0: {x: 0.3515625, y: 0.36328125}
   savedFill: 0
 --- !u!114 &1445201125
 MonoBehaviour:
@@ -6800,7 +6794,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: HomeScene
+          m_StringArgument: FCR1
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 384689598}
@@ -6814,7 +6808,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 384689598}
         m_MethodName: resetScore
         m_Mode: 1
         m_Arguments:
@@ -6823,6 +6817,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 384689598}
+        m_MethodName: loadKeyWord
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: fcr.txt
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -8100,7 +8105,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.55078125, y: 0.38671875}
+  savedTextUV0: {x: 0.3828125, y: 0.4296875}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:
@@ -8594,7 +8599,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.7421875, y: 0.265625}
+  savedTextUV0: {x: 0.66015625, y: 0}
   savedFill: 0
 --- !u!114 &1912266468
 MonoBehaviour:
@@ -9497,11 +9502,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e11e34b08fe5f4c9ccdcb6156d9823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imgCricle: {fileID: 0}
+  imgCricle: {fileID: 1265276625}
   gvrClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 384689599}
         m_MethodName: changeScene
         m_Mode: 5
         m_Arguments:
@@ -9509,10 +9514,21 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: HomeScene
+          m_StringArgument: PerangkatG1
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 384689598}
+        m_MethodName: resetScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 384689598}
         m_MethodName: unLoadWord
         m_Mode: 1
         m_Arguments:
@@ -9523,15 +9539,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: resetScore
-        m_Mode: 1
+      - m_Target: {fileID: 384689598}
+        m_MethodName: loadKeyWord
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: perangkatg.txt
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,

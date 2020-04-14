@@ -1,0 +1,13 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+terima|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+fungsi|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+nyala|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+info|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+sudah|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+cepat|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+normal|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+ada orang di rumah|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+rumah|0|null|10|PerangkatG2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll

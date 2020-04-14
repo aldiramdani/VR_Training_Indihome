@@ -1,0 +1,24 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+indihome|0|null|10|Akhir2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+indi|0|null|10|Akhir2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+indie|0|null|10|Akhir2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+home|0|null|10|Akhir2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+center|0|null|10|Akhir2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+feed back|0|null|10|Akhir3|todo2|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+feedback|0|null|10|Akhir3|todo2|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+umpan|0|null|10|Akhir3|todo2|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+back|0|null|10|Akhir3|todo2|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll	
+masukan|0|null|10|Akhir3|todo2|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+evaluasi|0|null|10|Akhir3|todo2|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+terima|0|null|10|Akhir4|todo3|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+pelanggan|0|null|10|Akhir4|todo3|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+terima|0|null|10|Akhir5|todo4|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+andri|0|null|10|Akhir5|todo4|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+endang|0|null|10|Akhir5|todo4|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+assalamualaikum|0|null|10|Akhir5|todo4|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+selamat|0|null|10|Akhir5|todo4|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+melayani|0|null|10|Akhir5|todo4|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+

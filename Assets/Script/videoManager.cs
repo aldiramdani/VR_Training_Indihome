@@ -66,7 +66,7 @@ public class videoManager : MonoBehaviour
     {
         currentTime = videoPlayer.time;
         double timeChange = time - 0.1;
-        if(currentTime + 1 >= timeChange && !sceneSekarang.Contains("Tunggu") && sceneSekarang != "InternetMati2")
+        if(currentTime + 1 >= timeChange && !sceneSekarang.Contains("Tunggu") && sceneSekarang != "InternetMati2" && sceneSekarang != "Akhir6")
         {
             if (sceneSekarang=="Awal1")
             {

@@ -2176,8 +2176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_txt: {fileID: 816632726}
-  test_txt2: {fileID: 1024765394}
   debug_txt: {fileID: 456595484}
   txt_status: {fileID: 1738070053}
   txt_status_fail: {fileID: 0}
@@ -2196,6 +2194,8 @@ MonoBehaviour:
   fCanvas: {fileID: 532812796}
   benar_salah: 
   stoDo: 
+  skipNextScene: 
+  isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5239,7 +5239,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044553444}
   m_LocalRotation: {x: -0.0000000108386695, y: -0.117587686, z: 2.105422e-10, w: 0.9930625}
-  m_LocalPosition: {x: 0, y: 0, z: -64.99826}
+  m_LocalPosition: {x: 0, y: 0, z: -64.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1900360381}
@@ -5247,7 +5247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -13.5060005, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 234.00607, y: -143}
+  m_AnchoredPosition: {x: 236.7, y: -143}
   m_SizeDelta: {x: 115.7, y: 134}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1044553446
@@ -5274,7 +5274,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Akhir5
+          m_StringArgument: Akhir6
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -5341,7 +5341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 234.0001, y: -143, z: -65.000015}
+  savedPos: {x: 236.70004, y: -143, z: -64.40003}
   savedUp: {x: -3.1247394e-10, y: 1, z: -0.000000008625659}
   savedRectSize: {x: 115.7, y: 134}
   savedColor: {r: 1, g: 1, b: 1, a: 1}

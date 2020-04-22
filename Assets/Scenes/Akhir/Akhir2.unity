@@ -1003,7 +1003,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1484375, y: 0.12890625}
+  savedTextUV0: {x: 0.140625, y: 0.265625}
   savedFill: 0
 --- !u!114 &155610031
 MonoBehaviour:
@@ -1565,7 +1565,6 @@ GameObject:
   - component: {fileID: 384689599}
   - component: {fileID: 384689601}
   - component: {fileID: 384689602}
-  - component: {fileID: 384689603}
   m_Layer: 0
   m_Name: script_obj
   m_TagString: Untagged
@@ -1599,8 +1598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_txt: {fileID: 816632726}
-  test_txt2: {fileID: 1360966139}
   debug_txt: {fileID: 1874400015}
   txt_status: {fileID: 1696159140}
   txt_status_fail: {fileID: 146185967}
@@ -1619,6 +1616,8 @@ MonoBehaviour:
   fCanvas: {fileID: 1788215125}
   benar_salah: 
   stoDo: 
+  skipNextScene: 
+  isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1657,19 +1656,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkListObj: {fileID: 695138226}
---- !u!114 &384689603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384689596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe9387ccea31f1409369e47fd06ecce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  namaTxt: 
 --- !u!1 &387041640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,7 +1805,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1953125, y: 0.19921875}
+  savedTextUV0: {x: 0.21484375, y: 0.33984375}
   savedFill: 0
 --- !u!114 &398323933
 MonoBehaviour:
@@ -6139,7 +6125,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.09765625, y: 0.34375}
+  savedTextUV0: {x: 0.4140625, y: 0.2578125}
   savedFill: 0
 --- !u!114 &1710445624
 MonoBehaviour:
@@ -6708,7 +6694,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.3125, y: 0.21484375}
+  savedTextUV0: {x: 0.55859375, y: 0}
   savedFill: 0
 --- !u!114 &1735325636
 MonoBehaviour:
@@ -7426,7 +7412,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.41796875, y: 0.203125}
+  savedTextUV0: {x: 0.70703125, y: 0}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

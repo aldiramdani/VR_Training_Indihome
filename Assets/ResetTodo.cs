@@ -12,6 +12,9 @@ public class ResetTodo : MonoBehaviour
         PlayerPrefs.SetInt("todo2", 0);
         PlayerPrefs.SetInt("todo3", 0);
         PlayerPrefs.SetInt("todo4", 0);
+        PlayerPrefs.SetInt("todo5", 0);
+        PlayerPrefs.SetInt("todo6", 0);
+        PlayerPrefs.SetInt("todo7", 0);
         sm.loadKeyWord(namaTxt);
         sm.resetScore();
     }

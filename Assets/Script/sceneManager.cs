@@ -22,7 +22,8 @@ public class sceneManager : MonoBehaviour
     public GameObject fCanvas;
     public static string session_mode;
     public static string nextScene, nm_scene_sebelumnya;
-    public string benar_salah, stoDo;
+    public string benar_salah, stoDo,skipNextScene;
+    public bool isSkipOk;
     sceneControler sc = new sceneControler();
     // Start is called before the first frame update
     void Start()
@@ -212,7 +213,15 @@ public class sceneManager : MonoBehaviour
         txt_status_fail.color = Color.red;
         hasilSpeech = ""; 
         SpeakNow.reset();
-        nextScene = sc.newSceneName(nm_scene_sebelumnya);
+        if (isSkipOk)
+        {
+            nextScene = skipNextScene;
+        }
+        else
+        {
+            nextScene = sc.newSceneName(nm_scene_sebelumnya);
+        }
+
         nextSceneFailCanvas.SetActive(true);
         StartCoroutine(HideObject(nextScene));
     }
@@ -262,6 +271,8 @@ public class sceneManager : MonoBehaviour
         PlayerPrefs.SetInt("todo2", 0);
         PlayerPrefs.SetInt("todo3", 0);
         PlayerPrefs.SetInt("todo4", 0);
+        PlayerPrefs.SetInt("todo5", 0);
+        PlayerPrefs.SetInt("todo6", 0);
     }
     
     public void addDb()
@@ -280,6 +291,8 @@ public class sceneManager : MonoBehaviour
         PlayerPrefs.GetInt("todo2");
         PlayerPrefs.GetInt("todo3");
         PlayerPrefs.GetInt("todo4");
+        PlayerPrefs.GetInt("todo5");
+        PlayerPrefs.GetInt("todo6");
         PlayerPrefs.GetInt("nilai");
     }
 

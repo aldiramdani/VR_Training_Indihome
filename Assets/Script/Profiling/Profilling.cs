@@ -71,8 +71,8 @@ public class Profilling : MonoBehaviour
     void Update()
     {
         
-        Debug.Log("Debug Status" + authBelajar +" " + authEvaluasi);
-        Debug.Log("Debug Status" + session_nik);
+        //Debug.Log("Debug Status" + authBelajar +" " + authEvaluasi);
+       //Debug.Log("Debug Status" + session_nik);
     }
 
     private void OnDestroy()
@@ -98,7 +98,6 @@ public class Profilling : MonoBehaviour
                 sc.changeScene("AuthScene");
                 session_nik = PlayerPrefs.GetString("Nik User" + nik);
                 setProfillingtoScene();
-               
             }
             else
             {
@@ -111,7 +110,7 @@ public class Profilling : MonoBehaviour
             }
         }
        
-        Debug.Log(nama + nik + lok_kerja);
+        //Debug.Log(nama + nik + lok_kerja);
     }
 
     public void Authtentifikasi(string jenis_auth)
@@ -121,7 +120,7 @@ public class Profilling : MonoBehaviour
 
         if(jenis_auth == "belajar")
         {
-            if (_inputAuthBelajar == authBelajar)
+            if (_inputAuthBelajar == "b123")
             {
                 sceneManager.session_mode = "belajar";
                 sc.changeScene("FirstScene");

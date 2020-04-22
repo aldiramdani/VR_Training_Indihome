@@ -1003,7 +1003,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.34765625, y: 0.0703125}
+  savedTextUV0: {x: 0.28125, y: 0}
   savedFill: 0
 --- !u!114 &155610031
 MonoBehaviour:
@@ -1038,7 +1038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1.Informasikan Hasil Cek Sistem
+  m_Text: 1.Meminta Izin Memandu Kostumer
 --- !u!222 &155610032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1565,6 +1565,7 @@ GameObject:
   - component: {fileID: 384689599}
   - component: {fileID: 384689601}
   - component: {fileID: 384689602}
+  - component: {fileID: 384689600}
   m_Layer: 0
   m_Name: script_obj
   m_TagString: Untagged
@@ -1616,7 +1617,7 @@ MonoBehaviour:
   fCanvas: {fileID: 1788215125}
   benar_salah: 
   stoDo: 
-  skipNextScene: Akhir1
+  skipNextScene: Jaringan1
   isSkipOk: 1
 --- !u!114 &384689599
 MonoBehaviour:
@@ -1630,6 +1631,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af7a1ccaf469284d91cfd1dcf7c8712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &384689600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384689596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c4c97b40a01c54b9c93b5cc5fa7639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneTujuanSkip: Jaringan1
 --- !u!114 &384689601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1805,7 +1819,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.03125, y: 0.35546875}
+  savedTextUV0: {x: 0.140625, y: 0.2734375}
   savedFill: 0
 --- !u!114 &398323933
 MonoBehaviour:
@@ -1840,7 +1854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2.Menawarkan Bantuan Ulang '
+  m_Text: 3.Meminta Kostumer Cek ONT
 --- !u!222 &398323934
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2170,7 +2184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &647524838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4085,7 +4099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: -92}
+  m_AnchoredPosition: {x: -16, y: -69}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1117600190
@@ -5125,7 +5139,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461879724}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9bc470314492bd74e83f9473b1c2fe09, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -6125,7 +6139,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.08203125, y: 0.38671875}
+  savedTextUV0: {x: 0.05859375, y: 0.41796875}
   savedFill: 0
 --- !u!114 &1710445624
 MonoBehaviour:
@@ -6694,7 +6708,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.3203125, y: 0.21875}
+  savedTextUV0: {x: 0.34375, y: 0.19921875}
   savedFill: 0
 --- !u!114 &1735325636
 MonoBehaviour:
@@ -6729,7 +6743,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2.Konfirmasi pakah sudah jelas
+  m_Text: 2.Memandu Kostumer
 --- !u!222 &1735325637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7412,7 +7426,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.421875, y: 0.17578125}
+  savedTextUV0: {x: 0.30078125, y: 0.2734375}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

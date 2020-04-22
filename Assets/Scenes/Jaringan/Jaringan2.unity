@@ -1616,6 +1616,8 @@ MonoBehaviour:
   fCanvas: {fileID: 1788215125}
   benar_salah: 
   stoDo: 
+  skipNextScene: Akhir1
+  isSkipOk: 1
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6692,7 +6694,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.26171875, y: 0.1875}
+  savedTextUV0: {x: 0.3203125, y: 0.21875}
   savedFill: 0
 --- !u!114 &1735325636
 MonoBehaviour:
@@ -7410,7 +7412,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.21875, y: 0.3515625}
+  savedTextUV0: {x: 0.421875, y: 0.17578125}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

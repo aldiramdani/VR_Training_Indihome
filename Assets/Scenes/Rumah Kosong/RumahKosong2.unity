@@ -1616,6 +1616,8 @@ MonoBehaviour:
   fCanvas: {fileID: 1788215125}
   benar_salah: 
   stoDo: 
+  skipNextScene: Akhir1
+  isSkipOk: 1
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0

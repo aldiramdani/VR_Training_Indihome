@@ -1003,7 +1003,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.34765625, y: 0.0703125}
+  savedTextUV0: {x: 0.33984375, y: 0.0703125}
   savedFill: 0
 --- !u!114 &155610031
 MonoBehaviour:
@@ -1565,7 +1565,7 @@ GameObject:
   - component: {fileID: 384689599}
   - component: {fileID: 384689601}
   - component: {fileID: 384689602}
-  - component: {fileID: 384689603}
+  - component: {fileID: 384689600}
   m_Layer: 0
   m_Name: script_obj
   m_TagString: Untagged
@@ -1617,6 +1617,8 @@ MonoBehaviour:
   fCanvas: {fileID: 1788215125}
   benar_salah: 
   stoDo: 
+  skipNextScene: 
+  isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1629,6 +1631,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af7a1ccaf469284d91cfd1dcf7c8712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &384689600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384689596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe9387ccea31f1409369e47fd06ecce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaTxt: jaringan.txt
 --- !u!114 &384689601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,19 +1670,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkListObj: {fileID: 695138226}
---- !u!114 &384689603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384689596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe9387ccea31f1409369e47fd06ecce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  namaTxt: jaringan.txt
 --- !u!1 &387041640
 GameObject:
   m_ObjectHideFlags: 0
@@ -6706,7 +6708,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.26171875, y: 0.1875}
+  savedTextUV0: {x: 0.3046875, y: 0.421875}
   savedFill: 0
 --- !u!114 &1735325636
 MonoBehaviour:
@@ -7424,7 +7426,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.21875, y: 0.3515625}
+  savedTextUV0: {x: 0.23046875, y: 0.28125}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

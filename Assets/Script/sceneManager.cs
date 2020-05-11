@@ -20,14 +20,16 @@ public class sceneManager : MonoBehaviour
         imgCheckmark9; //image check list
     [SerializeField] public GameObject nextSceneCanvas, nextSceneFailCanvas;
     public GameObject fCanvas;
-    public static string session_mode;
+    public static string session_nik, session_mode;
     public static string nextScene, nm_scene_sebelumnya;
     public string benar_salah, stoDo,skipNextScene;
     public bool isSkipOk;
     sceneControler sc = new sceneControler();
+
     // Start is called before the first frame update
     void Start()
     {
+        session_nik = Profilling.session_nik;
         hasilSpeech = "";
         nextScene = "";
         benar_salah = "salah";
@@ -40,6 +42,7 @@ public class sceneManager : MonoBehaviour
         if (currentScene == "Awal1")
         {
             PlayerPrefs.SetString("nilai", "0");
+            //PlayerPrefs.SetString("NamaFileRecord", "");
             resetScore();
         }else if(currentScene == "Akhir1" || currentScene =="Jaringan1")
         {
@@ -56,11 +59,11 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentScene.Contains("Tunggu"))
-        {
+        //if (currentScene.Contains("Tunggu"))
+        //{
             testSpeak();
             debug_txt.text = currentScene;
-        }
+        //}
         
     }
 
@@ -209,7 +212,7 @@ public class sceneManager : MonoBehaviour
 
    public void failDialogBoxMode()
     {
-        txt_status_fail.text = "Kamu Salah Mengucapkan Kata!, Sebaik nya kamu mengucapkan";
+        txt_status_fail.text = "Kamu Salah Mengucapkan Kata!";
         txt_status_fail.color = Color.red;
         hasilSpeech = ""; 
         SpeakNow.reset();
@@ -379,5 +382,11 @@ public class sceneManager : MonoBehaviour
         {
             imgCheckmark9.SetActive(true);
         }
+    }
+
+    public void stopRecording()
+    {
+        VoiceRecordUpload vru = new VoiceRecordUpload();
+        vru.stopRecording();
     }
 }

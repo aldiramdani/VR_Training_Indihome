@@ -175,7 +175,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.31640625, y: 0.34375}
+  savedTextUV0: {x: 0.21484375, y: 0.12890625}
   savedFill: 0
 --- !u!114 &19527264
 MonoBehaviour:
@@ -1854,14 +1854,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 3
-  test_txt: {fileID: 816632726}
-  test_txt2: {fileID: 0}
   debug_txt: {fileID: 0}
-  txt_KataSaran: {fileID: 581723432}
   txt_status: {fileID: 1738070053}
   txt_status_fail: {fileID: 0}
-  txt_KataSaran_fail: {fileID: 0}
   imgCheckmark0: {fileID: 132161502}
   imgCheckmark1: {fileID: 1388900326}
   imgCheckmark2: {fileID: 825537255}
@@ -1875,11 +1870,10 @@ MonoBehaviour:
   nextSceneCanvas: {fileID: 1629688989}
   nextSceneFailCanvas: {fileID: 0}
   fCanvas: {fileID: 532812796}
-  btn_restart_transition: {fileID: 208314586}
-  btn_restart_transition_fail: {fileID: 0}
-  todoObj: {fileID: 0}
   benar_salah: 
   stoDo: 
+  skipNextScene: 
+  isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2317,7 +2311,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.5, y: 0.24609375}
+  savedTextUV0: {x: 0.359375, y: 0.359375}
   savedFill: 0
 --- !u!114 &493004790
 MonoBehaviour:
@@ -6607,7 +6601,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1503083771}
   - component: {fileID: 1503083770}
-  - component: {fileID: 1503083769}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6615,14 +6608,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1503083769
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503083768}
-  m_Enabled: 1
 --- !u!20 &1503083770
 Camera:
   m_ObjectHideFlags: 0
@@ -7976,7 +7961,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.05859375, y: 0}
+  savedTextUV0: {x: 0.5078125, y: 0.43359375}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

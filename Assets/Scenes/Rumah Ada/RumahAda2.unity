@@ -1616,6 +1616,8 @@ MonoBehaviour:
   fCanvas: {fileID: 1788215125}
   benar_salah: 
   stoDo: 
+  skipNextScene: 
+  isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5206,7 +5208,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1503083771}
   - component: {fileID: 1503083770}
-  - component: {fileID: 1503083769}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5214,14 +5215,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1503083769
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503083768}
-  m_Enabled: 1
 --- !u!20 &1503083770
 Camera:
   m_ObjectHideFlags: 0

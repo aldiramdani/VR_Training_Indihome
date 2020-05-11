@@ -305,6 +305,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1493097159}
+        m_MethodName: setNamaFile
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1493097159}
+        m_MethodName: startRecording
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   totalTime: 2
@@ -1094,14 +1116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 3
-  test_txt: {fileID: 816632726}
-  test_txt2: {fileID: 0}
   debug_txt: {fileID: 0}
-  txt_KataSaran: {fileID: 1631420932}
   txt_status: {fileID: 1410791432}
   txt_status_fail: {fileID: 0}
-  txt_KataSaran_fail: {fileID: 0}
   imgCheckmark0: {fileID: 1934797986}
   imgCheckmark1: {fileID: 2051880764}
   imgCheckmark2: {fileID: 1389174952}
@@ -1115,11 +1132,10 @@ MonoBehaviour:
   nextSceneCanvas: {fileID: 519688716}
   nextSceneFailCanvas: {fileID: 521678919}
   fCanvas: {fileID: 521678919}
-  btn_restart_transition: {fileID: 626445236}
-  btn_restart_transition_fail: {fileID: 0}
-  todoObj: {fileID: 0}
   benar_salah: 
   stoDo: 
+  skipNextScene: 
+  isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,7 +2551,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 396.3, y: 155.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.10546875, y: 0.08203125}
+  savedTextUV0: {x: 0, y: 0.1640625}
   savedFill: 0
 --- !u!114 &927143281
 MonoBehaviour:
@@ -3601,8 +3617,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1359252989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4033,8 +4047,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1423348880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4439,8 +4451,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1461879728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4555,6 +4565,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469788823}
   m_CullTransparentMesh: 0
+--- !u!1 &1493097155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493097158}
+  - component: {fileID: 1493097157}
+  - component: {fileID: 1493097156}
+  - component: {fileID: 1493097159}
+  m_Layer: 0
+  m_Name: RecordOBJ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1493097156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493097155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6300ac30920e2a44a2d7c18fce39e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!81 &1493097157
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493097155}
+  m_Enabled: 1
+--- !u!4 &1493097158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493097155}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 844.25555, y: 672.62463, z: -104.5635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1493097159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493097155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98ffc76cb08c7f4bb3e8067f0180739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1503083768
 GameObject:
   m_ObjectHideFlags: 0
@@ -4565,7 +4640,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1503083771}
   - component: {fileID: 1503083770}
-  - component: {fileID: 1503083769}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4573,14 +4647,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1503083769
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503083768}
-  m_Enabled: 1
 --- !u!20 &1503083770
 Camera:
   m_ObjectHideFlags: 0
@@ -5625,7 +5691,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.05859375, y: 0}
+  savedTextUV0: {x: 0.2734375, y: 0.1640625}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

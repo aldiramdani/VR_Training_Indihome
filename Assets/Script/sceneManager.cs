@@ -59,11 +59,11 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (currentScene.Contains("Tunggu"))
-        //{
+        if(currentScene.Contains("Tunggu"))
+        {
             testSpeak();
             debug_txt.text = currentScene;
-        //}
+        }
         
     }
 

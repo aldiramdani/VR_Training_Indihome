@@ -6,14 +6,14 @@ using DataBank;
 public class DBTest : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Text txt_nik,txt_nama,txt_nilai;
+    public Text txt_nik,txt_nama,txt_nilai,txt_tanggal,txt_lokasi;
     Profilling pf = new Profilling();
     void Start()
     {
         
 
         NilaiDB mNilaiDB2 = new NilaiDB();
-        System.Data.IDataReader reader = mNilaiDB2.getDataByString(Profilling.session_nik);
+        System.Data.IDataReader reader = mNilaiDB2.getAllData();
         
         int fieldCount = reader.FieldCount;
         List<NilaiEntity> myList = new List<NilaiEntity>();
@@ -33,7 +33,9 @@ public class DBTest : MonoBehaviour
         {
             txt_nik.text += myList[i]._nik + "\n";
             txt_nama.text += myList[i]._nama + "\n";
-            txt_nilai.text += myList[i]._nilai + "\n";
+            txt_nilai.text += myList[i]._nilai + "\n" ;
+            txt_tanggal.text += myList[i]._dateCreated + "\n";
+            txt_lokasi.text += myList[i]._lok_kerja + "\n";
         }
     }
                                  

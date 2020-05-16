@@ -1,0 +1,27 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+perubahan|0|null|10|TagihanTidak2|todo1|Kami|nulll
+upgrade|0|null|10|TagihanTidak2|todo1|Kami|nulll
+ganti|0|null|10|TagihanTidak2|todo1|Kami|nulll
+add|0|null|10|TagihanTidak2|todo1|Kami|nulll
+on|0|null|10|TagihanTidak2|todo1|Kami|nulll
+investigasi|0|null|10|TagihanTidak2|todo1|Kami|nulll
+periksa|0|null|10|TagihanTidak2|todo1|Kami|nulll
+pemeriksaan|0|null|10|TagihanTidak2|todo1|Kami|nulll
+memeriksa|0|null|10|TagihanTidak2|todo1|Kami|nulll
+lihat|0|null|10|TagihanTidak2|todo1|Kami|nulll
+cek|0|null|10|TagihanTidak2|todo1|Kami|nulll
+check|0|null|10|TagihanTidak2|todo1|Kami|nulll
+info|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
+kabari|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
+kabar|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
+telepon|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
+menelepon|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
+tahu|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
+jam|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
+bantu|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
+
+
+

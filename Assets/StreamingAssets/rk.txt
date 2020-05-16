@@ -2,11 +2,11 @@
 -- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
 
 -- simple text --
-memandu|0|null|10|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
-andu|0|null|10|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
-jelas|0|null|10|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
-restart|0|null|10|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
-hidup|0|null|10|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
-mati|0|null|10|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
-mengerti|0|null|10|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
-bantu|0|null|10|Akhir1|todo2|kembali.|RumahKosong2
+memandu|0|null|30|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+andu|0|null|30|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+jelas|0|null|30|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+restart|0|null|30|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+hidup|0|null|30|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+mati|0|null|30|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+mengerti|0|null|30|RumahKosong2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|nulll
+bantu|0|null|30|Akhir1|todo2|kembali.|RumahKosong2

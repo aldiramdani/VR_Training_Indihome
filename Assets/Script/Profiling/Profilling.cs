@@ -12,7 +12,7 @@ public class Profilling : MonoBehaviour
     public Text welcome_text;
     public Text debug_text;
     public Button btn_mulai;
-    public InputField inputNama, inputNik,inputAuthBelajar,inputAuthEvaluasi;
+    public InputField inputNama, inputNik,inputAuthBelajar;
     public Dropdown drpTempatKerja;
     string nama, nik, lok_kerja;
     string _table_name = "Data Pengguna VR Training";
@@ -116,25 +116,12 @@ public class Profilling : MonoBehaviour
     public void Authtentifikasi(string jenis_auth)
     {
         string _inputAuthBelajar = inputAuthBelajar.text;
-        string _inputAuthEvaluasi = inputAuthEvaluasi.text;
 
         if(jenis_auth == "belajar")
         {
             if (_inputAuthBelajar == "b123")
             {
                 sceneManager.session_mode = "belajar";
-                sc.changeScene("FirstScene");
-                setProfillingtoScene();
-            }
-            else
-            {
-                SSTools.ShowMessage("Auth Salah Harap Tanyakan Kode Autentifikasi !!", SSTools.Position.bottom, SSTools.Time.threeSecond);
-            }
-        }else if(jenis_auth == "evaluasi")
-        {
-            if (_inputAuthEvaluasi == authEvaluasi)
-            {
-                sceneManager.session_mode = "evaluasi";
                 sc.changeScene("FirstScene");
                 setProfillingtoScene();
             }

@@ -1077,6 +1077,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 384689598}
+        m_MethodName: loadKeyWord
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: tagihan.txt
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   totalTime: 2
@@ -1662,7 +1673,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.41015625, y: 0.140625}
+  savedTextUV0: {x: 0, y: 0.0078125}
   savedFill: 0
 --- !u!114 &243668194
 MonoBehaviour:
@@ -2124,7 +2135,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 405.7, y: 94.325}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.2734375, y: 0.33984375}
+  savedTextUV0: {x: 0.1171875, y: 0.0546875}
   savedFill: 0
 --- !u!114 &358204952
 MonoBehaviour:
@@ -2304,8 +2315,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &360429106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3989,7 +3998,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 464.85, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.66796875, y: 0.04296875}
+  savedTextUV0: {x: 0.1328125, y: 0.28515625}
   savedFill: 0
 --- !u!114 &727159237
 MonoBehaviour:
@@ -4244,7 +4253,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.265625}
+  savedTextUV0: {x: 0.359375, y: 0.0703125}
   savedFill: 0
 --- !u!114 &778561164
 MonoBehaviour:
@@ -5587,7 +5596,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1796875, y: 0.2578125}
+  savedTextUV0: {x: 0.34375, y: 0.3828125}
   savedFill: 0
 --- !u!114 &1208222637
 MonoBehaviour:
@@ -6005,7 +6014,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 191.3, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.5, y: 0.2109375}
+  savedTextUV0: {x: 0.546875, y: 0.08203125}
   savedFill: 0
 --- !u!114 &1400651231
 MonoBehaviour:
@@ -6104,7 +6113,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 30.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.75, y: 0.0703125}
+  savedTextUV0: {x: 0.546875, y: 0.21875}
   savedFill: 0
 --- !u!114 &1438285800
 MonoBehaviour:
@@ -6330,8 +6339,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 713406223}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!1 &1476932069
 GameObject:
   m_ObjectHideFlags: 0
@@ -6870,7 +6877,7 @@ MonoBehaviour:
   savedUp: {x: 0.92496735, y: -0.004096984, z: -0.38002446}
   savedRectSize: {x: 464.85, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.66796875, y: 0.04296875}
+  savedTextUV0: {x: 0.1328125, y: 0.28515625}
   savedFill: 0
 --- !u!114 &1757298813
 MonoBehaviour:
@@ -7288,7 +7295,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.41015625, y: 0.140625}
+  savedTextUV0: {x: 0, y: 0.0078125}
   savedFill: 0
 --- !u!114 &1855278508
 MonoBehaviour:
@@ -7481,7 +7488,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.06640625, y: 0.4140625}
+  savedTextUV0: {x: 0.71875, y: 0.140625}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:
@@ -8067,8 +8074,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1972216940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8225,7 +8230,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.41015625, y: 0.140625}
+  savedTextUV0: {x: 0, y: 0.0078125}
   savedFill: 0
 --- !u!114 &1985091863
 MonoBehaviour:

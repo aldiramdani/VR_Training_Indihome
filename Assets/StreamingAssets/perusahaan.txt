@@ -1,0 +1,11 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+surat|0|null|5|Perusahaan2|todo1|Kami|null
+kuasa|0|null|5|Perusahaan2|todo1|Kami|null
+pernyataan|0|null|5|Perusahaan2|todo1|Kami|null
+keterangan|0|null|5|Perusahaan2|todo1|Kami|null
+kops|0|null|5|Perusahaan2|todo1|Kami|null
+npwp|0|null|5|Perusahaan2|todo1|Kami|null
+ktp|0|null|5|Perusahaan2|todo1|Kami|null

@@ -1,0 +1,12 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+surat|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
+kuasa|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
+pernyataan|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
+keterangan|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
+penanggung|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
+jawab|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
+tanggung|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
+bantu|0|null|5|Akhir1|todo2|Kami|Mengontrak2

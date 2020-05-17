@@ -1,0 +1,19 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+paket|0|null|10|Pasang2|todo1|Kami|nulll
+program|0|null|10|Pasang2|todo1|Kami|nulll
+harga|0|null|10|Pasang2|todo1|Kami|nulll
+biaya|0|null|10|Pasang2|todo1|Kami|nulll
+cost|0|null|10|Pasang2|todo1|Kami|nulll
+benefit|0|null|10|Pasang2|todo1|Kami|nulll
+manfaat|0|null|10|Pasang2|todo1|Kami|nulll
+perseorangan|0|null|10|Pasang3|todo2|Kami|nulll
+seorang|0|null|10|Pasang3|todo2|Kami|nulll
+pribadi|0|null|10|Pasang3|todo2|Kami|nulll
+sendiri|0|null|10|Pasang3|todo2|Kami|nulll
+rumah|0|null|10|Pasang3|todo2|Kami|nulll
+perusahaan|0|null|10|Pasang3|todo2|Kami|nulll
+company|0|null|10|Pasang3|todo2|Kami|nulll
+kantor|0|null|10|Pasang3|todo2|Kami|nulll

@@ -1,0 +1,10 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+sendiri|0|null|5|AlamatTidakSesuai3|todo2|Kami|AlamatTidakSesuai1
+pribadi|0|null|5|AlamatTidakSesuai3|todo2|Kami|AlamatTidakSesuai1
+kontrak|0|null|5|AlamatTidakSesuai3|todo2|Kami|AlamatTidakSesuai1
+ngontrak|0|null|5|AlamatTidakSesuai3|todo2|Kami|AlamatTidakSesuai1
+orang|0|null|5|AlamatTidakSesuai3|todo2|Kami|AlamatTidakSesuai1
+beda|0|null|5|AlamatTidakSesuai3|todo2|Kami|AlamatTidakSesuai1

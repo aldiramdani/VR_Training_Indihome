@@ -1,0 +1,8 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+alamat|0|null|10|TidakSesuai3|todo2|Kami|TidakSesuai2
+sesuai|0|null|10|TidakSesuai3|todo2|Kami|TidakSesuai2
+sama|0|null|10|TidakSesuai3|todo2|Kami|TidakSesuai2
+cocok|0|null|10|TidakSesuai3|todo2|Kami|TidakSesuai2

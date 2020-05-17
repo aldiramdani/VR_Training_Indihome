@@ -1563,8 +1563,8 @@ GameObject:
   - component: {fileID: 384689597}
   - component: {fileID: 384689598}
   - component: {fileID: 384689599}
-  - component: {fileID: 384689601}
   - component: {fileID: 384689602}
+  - component: {fileID: 384689600}
   m_Layer: 0
   m_Name: script_obj
   m_TagString: Untagged
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af7a1ccaf469284d91cfd1dcf7c8712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &384689601
+--- !u!114 &384689600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1639,10 +1639,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 384689596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8aed669f58ea864eb70cf69795d5b14, type: 3}
+  m_Script: {fileID: 11500000, guid: ebe9387ccea31f1409369e47fd06ecce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtScore: {fileID: 1043648059}
+  namaTxt: tagihan.txt
 --- !u!114 &384689602
 MonoBehaviour:
   m_ObjectHideFlags: 0

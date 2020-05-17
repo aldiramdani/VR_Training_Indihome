@@ -1,0 +1,47 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+formulir|0|null|60|Mutasi2|todo1|Kami|nulll
+kontrak|0|null|60|Mutasi2|todo1|Kami|nulll
+surat|0|null|60|Mutasi2|todo1|Kami|nulll
+pernyataan|0|null|60|Mutasi2|todo1|Kami|nulll
+materai|0|null|60|Mutasi2|todo1|Kami|nulll
+ktp|0|null|60|Mutasi2|todo1|Kami|nulll
+dua|0|null|60|Mutasi2|todo1|Kami|nulll
+pihak|0|null|60|Mutasi2|todo1|Kami|nulll
+ajb|0|null|60|Mutasi2|todo1|Kami|nulll
+perusahaan|0|null|60|Mutasi2|todo1|Kami|nulll
+kops|0|null|60|Mutasi2|todo1|Kami|nulll
+ijin|0|null|60|Mutasi2|todo1|Kami|nulll
+siup|0|null|60|Mutasi2|todo1|Kami|nulll
+npwn|0|null|60|Mutasi2|todo1|Kami|nulll
+ktp|0|null|60|Mutasi2|todo1|Kami|nulll
+bantu|0|null|10|Akhir1|Mutasi2|Kami|Cabutan2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

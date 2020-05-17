@@ -1,0 +1,33 @@
+﻿﻿-- format
+-- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
+
+-- simple text --
+sebelum|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+setelah|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+ppn|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+materai|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+denda|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+plasa|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+sopp|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+alfa|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+indo|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+atm|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+debet|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+bank|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+kartu|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+kredit|0|null|5|InformasiTagihan2|todo1|Kami|nulll
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

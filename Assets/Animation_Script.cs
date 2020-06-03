@@ -15,7 +15,8 @@ public class Animation_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("1"))
+        //Input.GetButton("A")
+        if (Input.GetKeyDown("space"))
         {
             anim.Play("newTabletAnimation");
            

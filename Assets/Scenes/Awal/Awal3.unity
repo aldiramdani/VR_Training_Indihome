@@ -3882,8 +3882,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1048622305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4421,7 +4419,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1796875, y: 0.2578125}
+  savedTextUV0: {x: 0, y: 0.26953125}
   savedFill: 0
 --- !u!114 &1320948222
 MonoBehaviour:
@@ -4456,7 +4454,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2.Menanyakan Nama dan Keluhan
+  m_Text: "Melayani Customer\r"
 --- !u!222 &1320948223
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4598,7 +4596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.000001, y: 11}
+  m_AnchoredPosition: {x: -11.000001, y: 48}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351080014
@@ -4995,8 +4993,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1461879728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5980,7 +5976,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.06640625, y: 0.4140625}
+  savedTextUV0: {x: 0, y: 0.40234375}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:
@@ -6561,8 +6557,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &2110164390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6680,7 +6674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2119953030
 RectTransform:
   m_ObjectHideFlags: 0

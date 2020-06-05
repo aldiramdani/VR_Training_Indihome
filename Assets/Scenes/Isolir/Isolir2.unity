@@ -1003,7 +1003,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.34765625, y: 0.0703125}
+  savedTextUV0: {x: 0.1796875, y: 0.265625}
   savedFill: 0
 --- !u!114 &155610031
 MonoBehaviour:
@@ -1805,7 +1805,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.03125, y: 0.35546875}
+  savedTextUV0: {x: 0.25, y: 0.32421875}
   savedFill: 0
 --- !u!114 &398323933
 MonoBehaviour:
@@ -2229,7 +2229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &695138227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4938,8 +4938,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1432586825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5181,8 +5179,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 1161493355}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1461879728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5526,8 +5522,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1603108047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6527,8 +6521,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1732709760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6685,7 +6677,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.3203125, y: 0.21875}
+  savedTextUV0: {x: 0.43359375, y: 0.32421875}
   savedFill: 0
 --- !u!114 &1735325636
 MonoBehaviour:
@@ -7403,7 +7395,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.421875, y: 0.17578125}
+  savedTextUV0: {x: 0.20703125, y: 0.05859375}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

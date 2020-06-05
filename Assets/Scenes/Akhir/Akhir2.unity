@@ -966,7 +966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &155610029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1484375, y: 0.12890625}
+  savedTextUV0: {x: 0.1015625, y: 0.21484375}
   savedFill: 0
 --- !u!114 &155610031
 MonoBehaviour:
@@ -1512,7 +1512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &291673615
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1805,7 +1805,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1953125, y: 0.19921875}
+  savedTextUV0: {x: 0.24609375, y: 0.203125}
   savedFill: 0
 --- !u!114 &398323933
 MonoBehaviour:
@@ -2170,7 +2170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &647524838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4066,7 +4066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1117600189
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4938,8 +4938,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1432586825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5076,7 +5074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.000001, y: -35}
+  m_AnchoredPosition: {x: -11.000001, y: 15}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444246390
@@ -5181,8 +5179,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 1161493355}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1461879728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5526,8 +5522,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1603108047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6116,7 +6110,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.328125, y: 0.14453125}
+  savedTextUV0: {x: 0.38671875, y: 0.12890625}
   savedFill: 0
 --- !u!114 &1710445624
 MonoBehaviour:
@@ -6527,8 +6521,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1732709760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6685,7 +6677,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.25390625, y: 0.26953125}
+  savedTextUV0: {x: 0.4375, y: 0.14453125}
   savedFill: 0
 --- !u!114 &1735325636
 MonoBehaviour:
@@ -6720,7 +6712,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2.Minta Kostumer Mengisi Feedback '
+  m_Text: "Feed back pelanggan\r\n"
 --- !u!222 &1735325637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7403,7 +7395,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.28515625, y: 0.33984375}
+  savedTextUV0: {x: 0.05859375, y: 0}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

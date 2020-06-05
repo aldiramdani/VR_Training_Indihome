@@ -2,31 +2,25 @@
 -- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
 
 -- simple text --
-andri|1|assalamualaikum|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-andri|1|pagi|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-andri|1|siang|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-andri|1|sore|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-nomor|1|assalamualaikum|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-nomor|1|pagi|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-nomor|1|siang|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-nomor|1|sore|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-sebaiknya|1|assalamualaikum|0|Awal3|todo1|"Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …perkenalkan nama saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Untuk memudahkan komunikasi sebaiknya/enaknya saya memanggil Bpk/Ibu/Sdr … "|Awal1
-sebaiknya|1|pagi|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan. |Awal1
-sebaiknya|1|siang|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan. |Awal1
-sebaiknya|1|sore|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan. |Awal1
-enaknya|1|assalamualaikum|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan. |Awal1
-enaknya|1|pagi|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan. |Awal1
-enaknya|1|siang|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan. |Awal1
-enaknya|1|sore|0|Awal3|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan. |Awal1
-dilayani|1|assalamualaikum|5|Awal2|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-dilayani|1|pagi|5|Awal2|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-dilayani|1|siang|5|Awal2|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-dilayani|1|sore|5|Awal2|todo1|Assalamualaikum/Selamat pagi Bpk/Ibu/ Sdr …dengan saya Andri yang akan membantu melayani Bpk/Ibu/Sdr.Antrian di display sudah menunjukan antrian nomor 1. Untuk memudahkan komunikasi Bpk/Ibu/Sdr  sebaiknya/enaknya/mau dilayani disini atau di meja yang sudah disediakan.|Awal1
-nomor|1|keluhan|5|Awal4|todo2|"Silakan duduk Bpk/Ibu/Sdr….Boleh saya tahu keluhannya apa?	 dan nomor Indihome Bpk/Ibu/Sdr adalah …..... "|Awal3
-nomor|1|gangguan|5|Awal4|todo2|"Silakan duduk Bpk/Ibu/Sdr….Boleh saya tahu keluhannya apa? dan nomor Indihome Bpk/Ibu/Sdr adalah …..... "|Awal3
-nomor|1|keluhan|5|Awal4|todo2|"Silakan duduk Bpk/Ibu/Sdr….Boleh saya tahu keluhannya apa?	 dan nomor Indihome Bpk/Ibu/Sdr adalah …..... "|Awal2
-nomor|1|gangguan|5|Awal4|todo2|"Silakan duduk Bpk/Ibu/Sdr….Boleh saya tahu keluhannya apa? dan nomor Indihome Bpk/Ibu/Sdr adalah …..... "|Awal2
-nomor|1|keluhan|5|Awal3|todo2|"Silakan duduk Bpk/Ibu/Sdr….Boleh saya tahu keluhannya apa?	 dan nomor Indihome Bpk/Ibu/Sdr adalah …..... "|Awal2
-nomor|1|gangguan|5|Awal4|todo2|"Silakan duduk Bpk/Ibu/Sdr….Boleh saya tahu keluhannya apa? dan nomor Indihome Bpk/Ibu/Sdr adalah …..... "|Awal2
-nomor|1|keluhan|5|Awal4|todo2|"Silakan duduk Bpk/Ibu/Sdr….Boleh saya tahu keluhannya apa?	 dan nomor Indihome Bpk/Ibu/Sdr adalah …..... "|Awal2
-nomor|1|gangguan|5|Awal4|todo2|"Silakan duduk Bpk/Ibu/Sdr….Boleh saya tahu keluhannya apa? dan nomor Indihome Bpk/Ibu/Sdr adalah …..... "|Awal2
+baik|1|assalamualaikum|5|Awal2|todo1|test|Awal1
+baik|1|pagi|5|Awal2|todo1|Test|Awal1
+baik|1|siang|5|Awal2|todo1|Test|Awal1
+baik|1|sore|5|Awal2|todo1|Test|Awal1
+mau|1|assalamualaikum|5|Awal2|todo1|test|Awal1
+mau|1|pagi|5|Awal2|todo1|Test|Awal1
+mau|1|siang|5|Awal2|todo1|Test|Awal1
+mau|1|sore|5|Awal2|todo1|Test|Awal1
+andri|1|assalamualaikum|0|Awal3|todo1|test|Awal1
+andri|1|pagi|0|Awal3|todo1|Test|Awal1
+andri|1|siang|0|Awal3|todo1|Test|Awal1
+andri|1|sore|0|Awal3|todo1|Test|Awal1
+nomor|1|assalamualaikum|0|Awal3|todo1|test|Awal1
+nomor|1|pagi|0|Awal3|todo1|Test|Awal1
+nomor|1|siang|0|Awal3|todo1|Test|Awal1
+nomor|1|sore|0|Awal3|todo1|Test|Awal1
+antrian|1|assalamualaikum|0|Awal3|todo1|test|Awal1
+antrian|1|pagi|0|Awal3|todo1|Test|Awal1
+antrian|1|siang|0|Awal3|todo1|Test|Awal1
+antrian|1|sore|0|Awal3|todo1|Test|Awal1
+nomor|1|keluhan|5|Awal4|todo2|Test|Awal3
+nomor|1|gangguan|5|Awal4|todo2|Test|Awal3

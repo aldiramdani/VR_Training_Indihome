@@ -975,7 +975,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155610028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.000030517578}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 695138227}
@@ -983,7 +983,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.999023, y: 71.600006}
+  m_AnchoredPosition: {x: 19, y: 71.600006}
   m_SizeDelta: {x: 263.8, y: 114.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &155610030
@@ -999,11 +999,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 218.56006, y: -17.399994, z: -40.00001}
+  savedPos: {x: 211.56006, y: -17.399994, z: -40.000015}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.2734375, y: 0}
+  savedTextUV0: {x: 0.23828125, y: 0.0078125}
   savedFill: 0
 --- !u!114 &155610031
 MonoBehaviour:
@@ -1038,7 +1038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1.Beritahukan Info hasil Cek
+  m_Text: "Prosedur tidak sesuai KTP\r\n"
 --- !u!222 &155610032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2095,7 +2095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -118, y: 110}
+  m_AnchoredPosition: {x: -118, y: 121}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558881293
@@ -7395,7 +7395,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.34765625, y: 0.05859375}
+  savedTextUV0: {x: 0.1875, y: 0.18359375}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

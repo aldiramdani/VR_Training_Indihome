@@ -33,9 +33,252 @@ EditorBuildSettings:
     path: Assets/Scenes/Awal/Awal4.unity
     guid: fbef55dfec18f7f4b96fc8bdd58e60d4
   - enabled: 1
+    path: Assets/Scenes/Akhir/Akhir1.unity
+    guid: 9d01f9aadc7ecc14ca96dac56f9bb6b5
+  - enabled: 1
+    path: Assets/Scenes/Akhir/Akhir2.unity
+    guid: 8ea9c4bafe10fb04d8264b66d02bd8ed
+  - enabled: 1
+    path: Assets/Scenes/Akhir/Akhir3.unity
+    guid: 972644ec4991a2d468dc63a9f99a25d9
+  - enabled: 1
+    path: Assets/Scenes/Akhir/Akhir3_1.unity
+    guid: 4ee9262fd51765942a5ce21f57ff2f5f
+  - enabled: 1
+    path: Assets/Scenes/Akhir/Akhir4.unity
+    guid: 215e75dcdae90e644ae414c8be361973
+  - enabled: 1
+    path: Assets/Scenes/Akhir/Akhir5.unity
+    guid: 81bc424fd3340bb4a84a21a12d24136f
+  - enabled: 1
+    path: Assets/Scenes/Akhir/Akhir6.unity
+    guid: debbcee6a90cdf448baf4e5db4d3206d
+  - enabled: 1
+    path: Assets/Scenes/FCR/FCR1.unity
+    guid: 3050b3dbcc0fcbb4e973374f8ba6f8df
+  - enabled: 1
+    path: Assets/Scenes/FCR/FCR2.unity
+    guid: b92219f83f0720a4399441242e00dac7
+  - enabled: 1
+    path: Assets/Scenes/FCR/FCR3.unity
+    guid: abeeab1560dd46a4dba4ce0ed5631d50
+  - enabled: 1
     path: Assets/Scenes/Awal/AwalTunggu.unity
     guid: 712a7855458a8ba4392c82af3ac4aff1
   - enabled: 1
+    path: Assets/Scenes/FUP/Fup1.unity
+    guid: 22fab4d490c625042a0318676bb82035
+  - enabled: 1
+    path: Assets/Scenes/FUP/Fup2.unity
+    guid: abc561a42f06c8c41bea656eb12b75d9
+  - enabled: 1
+    path: Assets/Scenes/FUP/Fup3.unity
+    guid: 76dbb83b55973e3408913a281e0c2e5d
+  - enabled: 1
+    path: Assets/Scenes/FUP/Fup4.unity
+    guid: 6d9d205610c86cd45ab11dbeed62e6b3
+  - enabled: 1
+    path: Assets/Scenes/FUP/Fup5.unity
+    guid: 77f288cc50c06a5489dd4ad10ef34c12
+  - enabled: 1
+    path: Assets/Scenes/FUP/Fup6.unity
+    guid: 0b6d25b458b2cca45894c421ec9f36bd
+  - enabled: 1
+    path: Assets/Scenes/FUP/Fup7.unity
+    guid: a5b9439d7ed204c44a67f8859c0e0eb4
+  - enabled: 1
+    path: Assets/Scenes/Internet Mati/InternetMati1.unity
+    guid: 97ee5a34d55de2247b54aeeceefdeb25
+  - enabled: 1
+    path: Assets/Scenes/Internet Mati/InternetMati2.unity
+    guid: e6863e9334b3c61469e08cf503db8d95
+  - enabled: 1
+    path: Assets/Scenes/Internet Mati/InternetMati3.unity
+    guid: 2e54bd419e45aac44991714692b8297b
+  - enabled: 1
+    path: Assets/Scenes/Isolir/Isolir1.unity
+    guid: 57453789b0883d641a99b7a44131c799
+  - enabled: 1
+    path: Assets/Scenes/Isolir/Isolir2.unity
+    guid: 9399b1b522af9f04aa89d60d835868d7
+  - enabled: 1
+    path: Assets/Scenes/Isolir/Isolir3.unity
+    guid: 720a48d31157455459cc23635363acc9
+  - enabled: 1
+    path: Assets/Scenes/Isolir/Isolir4.unity
+    guid: 498e3b75007972644b40e51e9045b175
+  - enabled: 1
+    path: Assets/Scenes/Jaringan/Jaringan1.unity
+    guid: 74ae5ccefe4fccb40be7f84e4b2a7225
+  - enabled: 1
+    path: Assets/Scenes/Jaringan/Jaringan2.unity
+    guid: f1816dd9d582466428b48c6f83a16f20
+  - enabled: 1
+    path: Assets/Scenes/Jaringan/Jaringan3.unity
+    guid: 5869512f78c7441488199ff77bc417f7
+  - enabled: 1
+    path: Assets/Scenes/PerangkatGangguan/PerangkatG1.unity
+    guid: 4df576e14cd75fa46a892ce83d283217
+  - enabled: 1
+    path: Assets/Scenes/PerangkatGangguan/PerangkatG2.unity
+    guid: f4c87561b0c95c8488e9538aa6273ca8
+  - enabled: 1
+    path: Assets/Scenes/Rumah Ada/RumahAda1.unity
+    guid: f8bd2b5cdfe98624ab9fb1f395ee1d45
+  - enabled: 1
+    path: Assets/Scenes/Rumah Ada/RumahAda2.unity
+    guid: f4baa488463bef248a59e81d80e80e0b
+  - enabled: 1
+    path: Assets/Scenes/Rumah Ada/RumahAda3.unity
+    guid: 28172e1795f75864bbfd10f8cad124b8
+  - enabled: 1
+    path: Assets/Scenes/Rumah Ada/RumahAda4.unity
+    guid: ca06d4e94b4e02247b10248b234e7d52
+  - enabled: 1
+    path: Assets/Scenes/Rumah Ada/RumahAda5.unity
+    guid: a2b88fa280836954f8c76fde1dbcb5d2
+  - enabled: 1
+    path: Assets/Scenes/Rumah Kosong/RumahKosong1.unity
+    guid: 3c1bcf7357e357f48b730152ba030ada
+  - enabled: 1
+    path: Assets/Scenes/Rumah Kosong/RumahKosong2.unity
+    guid: f7f9e31121e2d494a9eb3b2df027a8d8
+  - enabled: 1
+    path: Assets/Scenes/Rumah Kosong/RumahKosong3.unity
+    guid: c1c0f8548485c5c479c6e2894a12f121
+  - enabled: 1
+    path: Assets/Scenes/Informasi/Informasi1.unity
+    guid: 972c8a32a30d8634d98ace5b79a1ee47
+  - enabled: 1
+    path: Assets/Scenes/Informasi Tagihan/InformasiTagihan1.unity
+    guid: 3c5cfe9a31dc4c0419c58752b2702d9b
+  - enabled: 1
+    path: Assets/Scenes/Informasi Tagihan/InformasiTagihan2.unity
+    guid: 21dc016848937154093ec2bb4bd1e9af
+  - enabled: 1
+    path: Assets/Scenes/Mutasi/Mutasi1.unity
+    guid: fa078d944714631419130aa0cc57e768
+  - enabled: 1
+    path: Assets/Scenes/Mutasi/Mutasi2.unity
+    guid: b53ab9003a6f5bf49b6f3d7517e6b584
+  - enabled: 1
+    path: Assets/Scenes/Mutasi/Mutasi3.unity
+    guid: 365fc445efcff934c873d5ecba15dc5f
+  - enabled: 1
+    path: Assets/Scenes/Cabutan/Cabutan1.unity
+    guid: 2d5d212903620d04dac153d8f63259d6
+  - enabled: 1
+    path: Assets/Scenes/Cabutan/Cabutan2.unity
+    guid: 05cc1da3bf49e434b8ff6b2d6ede41b0
+  - enabled: 1
+    path: Assets/Scenes/Cabutan/Cabutan3.unity
+    guid: 29ce0b454190fad42b12ad66bb4fc0a7
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Pasang1.unity
+    guid: 2cc7a2e8488323141887bd408068bc7b
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Pasang2.unity
+    guid: ab47fb0ba9dfdcf40b7f099b5e35b7bc
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Pasang3.unity
+    guid: 9fb2124055d71be46aca2db8725dd939
+  - enabled: 1
+    path: Assets/Scenes/Pasang/SesuaiKTP/SesuaiKtp1.unity
+    guid: cb41c10259c300b4fb79443512935005
+  - enabled: 1
+    path: Assets/Scenes/Pasang/SesuaiKTP/SesuaiKtp2.unity
+    guid: dccc48a921b4084488a1256962e5ac75
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Sendiri/Sendiri1.unity
+    guid: b3466c08c95c5754fb12cb1da60ca56c
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Sendiri/Sendiri2.unity
+    guid: 2ff57149c0a3e3f48b6412c8c424afd1
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Perusahaan/Perusahaan1.unity
+    guid: 292b8a76ad9f0b4419027de9baf05b3c
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Perusahaan/Perusahaan2.unity
+    guid: 6b45033570cab57468fdd0a0d14841d5
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Perusahaan/Perusahaan3.unity
+    guid: e8637e60710f27b4cb95067b8db5629a
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Perseorangan/Perseorangan1.unity
+    guid: ef9e610b98fa7054e80ccdffe9a46391
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Perseorangan/Perseorangan2.unity
+    guid: 1961c2d3e22bc3b44a3b3ec5fddc9348
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Mengontrak/Mengontrak1.unity
+    guid: e13a05fb17737c14ea54fd0868ea5d33
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Mengontrak/Mengontrak2.unity
+    guid: ff9873426e39a7a4f840d052a122453e
+  - enabled: 1
+    path: Assets/Scenes/Pasang/Mengontrak/Mengontrak3.unity
+    guid: 5c0b2658a14bfdb43ae552dcaa847d7d
+  - enabled: 1
+    path: Assets/Scenes/Pasang/AlamatTidakSesuai/AlamatTidakSesuai1.unity
+    guid: 22ba4a278178a6e4582a6bd2fc62f22f
+  - enabled: 1
+    path: Assets/Scenes/Pasang/AlamatTidakSesuai/AlamatTidakSesuai2.unity
+    guid: b3f91961633e0e54084b9638f2d22135
+  - enabled: 1
+    path: Assets/Scenes/Pasang/AlamatTidakSesuai/AlamatTidakSesuai3.unity
+    guid: e199f0f313a030147b85539c03364a2a
+  - enabled: 1
+    path: Assets/Scenes/Pasang/AlamatSesuai/AlamatSesuai1.unity
+    guid: ef734420744605b42aee30f62794d608
+  - enabled: 1
+    path: Assets/Scenes/Pasang/AlamatSesuai/AlamatSesuai2.unity
+    guid: 966318759b4a5f245adcaee41b459c46
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/Tagihan1.unity
+    guid: 8da442b02080f7940be30054b884f607
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/Tagihan2.unity
+    guid: 6f37f3a85d477ec438c11eb311329ccf
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/Tagihan3.unity
+    guid: 7d74c3939747d5e4eb1ddc174e8ce3d4
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/TagihanYa/TagihanYa1.unity
+    guid: 3ece9462600b6454cb01001a2ccc35b1
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/TagihanYa/TagihanYa2.unity
+    guid: 63adb44d17abc154eb4d519c7dbcccae
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/TagihanYa/TagihanYa3.unity
+    guid: b19cbbcfdec1b0848b6146b531a669a1
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/TagihanTidak/TagihanTidak1.unity
+    guid: 65a538bbaff449f46a95af7ddebd3e31
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/TagihanTidak/TagihanTidak2.unity
+    guid: 2dbe7fae0aff2604aadf1e4948977218
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/TagihanTidak/TagihanTidak3.unity
+    guid: 9b45d8662ad9a5840965c14b9a47638e
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/TagihanTidak/TagihanTidak4.unity
+    guid: b84318577a42d8343b8979d37f558323
+  - enabled: 1
+    path: Assets/Scenes/Tagihan/TagihanTidak/TagihanTidak5.unity
+    guid: 0826a2d1f8adedf4a9f82dc9470de4fe
+  - enabled: 1
+    path: Assets/Scenes/Pasang/TidakSesuai/TidakSesuai1.unity
+    guid: 083130044a21cb641990bed3ea8f2f62
+  - enabled: 1
+    path: Assets/Scenes/Pasang/TidakSesuai/TidakSesuai2.unity
+    guid: 0019264c7af8bd6448df30a096229212
+  - enabled: 1
+    path: Assets/Scenes/Pasang/TidakSesuai/TidakSesuai3.unity
+    guid: c79e284aab30ff844aaee2b5a7c7cee6
+  - enabled: 1
     path: Assets/Scenes/Scene Frame/Frame_Scene_Tunggu.unity
+    guid: 5eaddff31b46dbb4d9ca7e9837c580af
+  - enabled: 0
+    path: Assets/Scenes/Scene Frame/Frame_Scene_Tunggu_Back_Up.unity
     guid: b1dc69534fd5c6c48b741c91eda40508
   m_configObjects: {}

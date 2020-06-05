@@ -1637,7 +1637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &600157631
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 396.3, y: 155.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.1640625}
+  savedTextUV0: {x: 0, y: 0.171875}
   savedFill: 0
 --- !u!114 &927143281
 MonoBehaviour:
@@ -4630,6 +4630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98ffc76cb08c7f4bb3e8067f0180739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statusText: {fileID: 0}
+  btn_Home: {fileID: 0}
 --- !u!1 &1503083768
 GameObject:
   m_ObjectHideFlags: 0
@@ -4796,7 +4798,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1.Menyambut Kostumer.
+  m_Text: Menyambut Kostumer
 --- !u!222 &1546527329
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5691,7 +5693,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.2734375, y: 0.1640625}
+  savedTextUV0: {x: 0.0390625, y: 0.41015625}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

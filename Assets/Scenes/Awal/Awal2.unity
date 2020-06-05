@@ -175,7 +175,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.21484375, y: 0.12890625}
+  savedTextUV0: {x: 0.34375, y: 0.27734375}
   savedFill: 0
 --- !u!114 &19527264
 MonoBehaviour:
@@ -2311,7 +2311,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.359375, y: 0.359375}
+  savedTextUV0: {x: 0.609375, y: 0.07421875}
   savedFill: 0
 --- !u!114 &493004790
 MonoBehaviour:
@@ -4751,7 +4751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &964958865
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5521,8 +5521,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1048622305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6503,6 +6501,7 @@ GameObject:
   - component: {fileID: 1461879725}
   - component: {fileID: 1461879727}
   - component: {fileID: 1461879728}
+  - component: {fileID: 1461879729}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -6574,8 +6573,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1461879728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6591,6 +6588,21 @@ MonoBehaviour:
   videoPlayer: {fileID: 1461879725}
   transistionDialog: {fileID: 1629688989}
   fail_transtitionDialog: {fileID: 0}
+--- !u!114 &1461879729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461879724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23be2f7f7e39040469e572d5c4fad8b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  currentTime: 0
+  nextScene: Awal3
 --- !u!1 &1503083768
 GameObject:
   m_ObjectHideFlags: 0
@@ -7961,7 +7973,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.5078125, y: 0.43359375}
+  savedTextUV0: {x: 0.0390625, y: 0.41015625}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:
@@ -8585,8 +8597,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &2110164390
 MonoBehaviour:
   m_ObjectHideFlags: 0

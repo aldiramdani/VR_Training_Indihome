@@ -966,7 +966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &155610029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.2734375, y: 0}
+  savedTextUV0: {x: 0.3359375, y: 0.01953125}
   savedFill: 0
 --- !u!114 &155610031
 MonoBehaviour:
@@ -1512,7 +1512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &291673615
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5055,7 +5055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1444246389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5074,7 +5074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.000001, y: -35}
+  m_AnchoredPosition: {x: -11.000001, y: 13}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444246390
@@ -6649,7 +6649,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735325633}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.000031471252}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1444246389}
@@ -6657,8 +6657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.999023, y: 57}
-  m_SizeDelta: {x: 263.8, y: 114.9}
+  m_AnchoredPosition: {x: 45.3, y: 57}
+  m_SizeDelta: {x: 280.4, y: 114.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735325635
 MonoBehaviour:
@@ -6673,11 +6673,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 218.56006, y: -17.399994, z: -40.00001}
+  savedPos: {x: 226.86008, y: -19, z: -40.00001}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 263.8, y: 114.9}
+  savedRectSize: {x: 280.4, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1171875, y: 0.33984375}
+  savedTextUV0: {x: 0.6796875, y: 0.1875}
   savedFill: 0
 --- !u!114 &1735325636
 MonoBehaviour:
@@ -6701,18 +6701,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 20
-    m_MaxSize: 22
+    m_MinSize: 2
+    m_MaxSize: 20
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2.Minta Kostumer Mengisi Feedback '
+  m_Text: "Konfirmasi ulang pelayanan\r\n"
 --- !u!222 &1735325637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7395,7 +7395,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.34765625, y: 0.05859375}
+  savedTextUV0: {x: 0.05859375, y: 0}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

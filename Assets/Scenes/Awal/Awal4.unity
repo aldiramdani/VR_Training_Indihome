@@ -1673,7 +1673,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0.4609375, y: 0}
   savedFill: 0
 --- !u!114 &243668194
 MonoBehaviour:
@@ -2135,7 +2135,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 405.7, y: 94.325}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.1171875, y: 0.0546875}
+  savedTextUV0: {x: 0.2109375, y: 0.3203125}
   savedFill: 0
 --- !u!114 &358204952
 MonoBehaviour:
@@ -4009,7 +4009,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 464.85, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1328125, y: 0.28515625}
+  savedTextUV0: {x: 0.45703125, y: 0.3828125}
   savedFill: 0
 --- !u!114 &727159237
 MonoBehaviour:
@@ -4264,7 +4264,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.359375, y: 0.0703125}
+  savedTextUV0: {x: 0.44921875, y: 0.2578125}
   savedFill: 0
 --- !u!114 &778561164
 MonoBehaviour:
@@ -5217,7 +5217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &988434550
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5607,7 +5607,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.34375, y: 0.3828125}
+  savedTextUV0: {x: 0.6015625, y: 0.07421875}
   savedFill: 0
 --- !u!114 &1208222637
 MonoBehaviour:
@@ -6025,7 +6025,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 191.3, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.546875, y: 0.08203125}
+  savedTextUV0: {x: 0.5, y: 0.21875}
   savedFill: 0
 --- !u!114 &1400651231
 MonoBehaviour:
@@ -6124,7 +6124,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 30.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.546875, y: 0.21875}
+  savedTextUV0: {x: 0.70703125, y: 0.140625}
   savedFill: 0
 --- !u!114 &1438285800
 MonoBehaviour:
@@ -6888,7 +6888,7 @@ MonoBehaviour:
   savedUp: {x: 0.92496735, y: -0.004096984, z: -0.38002446}
   savedRectSize: {x: 464.85, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1328125, y: 0.28515625}
+  savedTextUV0: {x: 0.45703125, y: 0.3828125}
   savedFill: 0
 --- !u!114 &1757298813
 MonoBehaviour:
@@ -7306,7 +7306,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0.4609375, y: 0}
   savedFill: 0
 --- !u!114 &1855278508
 MonoBehaviour:
@@ -7499,7 +7499,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.71875, y: 0.140625}
+  savedTextUV0: {x: 0, y: 0.40234375}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:
@@ -8241,7 +8241,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0.4609375, y: 0}
   savedFill: 0
 --- !u!114 &1985091863
 MonoBehaviour:

@@ -1980,9 +1980,19 @@ MonoBehaviour:
     m_Options:
     - m_Text: Regional
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: '1 '
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: 2
+      m_Image: {fileID: 0}
+    - m_Text: 3
+      m_Image: {fileID: 0}
+    - m_Text: 4
+      m_Image: {fileID: 0}
+    - m_Text: 5
+      m_Image: {fileID: 0}
+    - m_Text: 6
+      m_Image: {fileID: 0}
+    - m_Text: 7
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3216,6 +3226,7 @@ GameObject:
   - component: {fileID: 1699623479}
   - component: {fileID: 1699623478}
   - component: {fileID: 1699623477}
+  - component: {fileID: 1699623480}
   m_Layer: 5
   m_Name: Dropdown (2)
   m_TagString: Untagged
@@ -3295,10 +3306,6 @@ MonoBehaviour:
     m_Options:
     - m_Text: Plaza
       m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3342,6 +3349,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699623475}
   m_CullTransparentMesh: 0
+--- !u!114 &1699623480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699623475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6cbcedd6427c04d82d2fe676751fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 1699623477}
 --- !u!1 &1704786421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,7 +3660,6 @@ MonoBehaviour:
   inputNama: {fileID: 2121578735}
   inputNik: {fileID: 1317585960}
   inputAuthBelajar: {fileID: 0}
-  inputAuthEvaluasi: {fileID: 0}
   drpTempatKerja: {fileID: 1135252723}
 --- !u!4 &1747526206
 Transform:
@@ -3671,6 +3690,8 @@ MonoBehaviour:
   txt_nik: {fileID: 0}
   txt_nama: {fileID: 0}
   txt_nilai: {fileID: 0}
+  txt_tanggal: {fileID: 0}
+  txt_lokasi: {fileID: 0}
 --- !u!1 &1756862758
 GameObject:
   m_ObjectHideFlags: 0
@@ -3904,13 +3925,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_txt: {fileID: 0}
-  test_txt2: {fileID: 0}
   debug_txt: {fileID: 0}
-  txt_KataSaran: {fileID: 0}
   txt_status: {fileID: 0}
   txt_status_fail: {fileID: 0}
-  txt_KataSaran_fail: {fileID: 0}
   imgCheckmark0: {fileID: 0}
   imgCheckmark1: {fileID: 0}
   imgCheckmark2: {fileID: 0}
@@ -3921,13 +3938,13 @@ MonoBehaviour:
   imgCheckmark7: {fileID: 0}
   imgCheckmark8: {fileID: 0}
   imgCheckmark9: {fileID: 0}
-  fCanvas: {fileID: 0}
   nextSceneCanvas: {fileID: 0}
-  btn_restart_transition: {fileID: 0}
   nextSceneFailCanvas: {fileID: 0}
-  btn_restart_transition_fail: {fileID: 0}
+  fCanvas: {fileID: 0}
   benar_salah: 
   stoDo: 
+  skipNextScene: 
+  isSkipOk: 0
 --- !u!1 &1815190249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4626,9 +4643,129 @@ MonoBehaviour:
     m_Options:
     - m_Text: Witel
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: 'ACEH '
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: 'BABEL '
+      m_Image: {fileID: 0}
+    - m_Text: 'BENGKULU '
+      m_Image: {fileID: 0}
+    - m_Text: 'JAMBI '
+      m_Image: {fileID: 0}
+    - m_Text: 'JAMBI '
+      m_Image: {fileID: 0}
+    - m_Text: 'LAMPUNG '
+      m_Image: {fileID: 0}
+    - m_Text: MEDAN
+      m_Image: {fileID: 0}
+    - m_Text: 'RIDAR '
+      m_Image: {fileID: 0}
+    - m_Text: RIKEP
+      m_Image: {fileID: 0}
+    - m_Text: SUMATERA UTARA
+      m_Image: {fileID: 0}
+    - m_Text: SUMBAR
+      m_Image: {fileID: 0}
+    - m_Text: SUMSEL
+      m_Image: {fileID: 0}
+    - m_Text: SUMTIM
+      m_Image: {fileID: 0}
+    - m_Text: BEKASI
+      m_Image: {fileID: 0}
+    - m_Text: BOGOR
+      m_Image: {fileID: 0}
+    - m_Text: JAKBAR
+      m_Image: {fileID: 0}
+    - m_Text: JAKPUS
+      m_Image: {fileID: 0}
+    - m_Text: 'JAKSEL '
+      m_Image: {fileID: 0}
+    - m_Text: 'JAKTIM '
+      m_Image: {fileID: 0}
+    - m_Text: JAKUT
+      m_Image: {fileID: 0}
+    - m_Text: 'SERANG '
+      m_Image: {fileID: 0}
+    - m_Text: 'TANGERANG '
+      m_Image: {fileID: 0}
+    - m_Text: 'BANDUNG '
+      m_Image: {fileID: 0}
+    - m_Text: 'BANDUNG BARAT '
+      m_Image: {fileID: 0}
+    - m_Text: 'CIREBON '
+      m_Image: {fileID: 0}
+    - m_Text: 'KARAWANG '
+      m_Image: {fileID: 0}
+    - m_Text: 'SUKABUMI '
+      m_Image: {fileID: 0}
+    - m_Text: 'TASIKMALAYA '
+      m_Image: {fileID: 0}
+    - m_Text: 'KUDUS '
+      m_Image: {fileID: 0}
+    - m_Text: 'MAGELANG '
+      m_Image: {fileID: 0}
+    - m_Text: 'PEKALONGAN '
+      m_Image: {fileID: 0}
+    - m_Text: 'PURWOKERTO  '
+      m_Image: {fileID: 0}
+    - m_Text: 'SEMARANG '
+      m_Image: {fileID: 0}
+    - m_Text: 'SOLO '
+      m_Image: {fileID: 0}
+    - m_Text: 'YOGYAKARTA '
+      m_Image: {fileID: 0}
+    - m_Text: 'DENPASAR '
+      m_Image: {fileID: 0}
+    - m_Text: 'JEMBER '
+      m_Image: {fileID: 0}
+    - m_Text: 'KEDIRI '
+      m_Image: {fileID: 0}
+    - m_Text: 'MADIUN '
+      m_Image: {fileID: 0}
+    - m_Text: 'MADURA '
+      m_Image: {fileID: 0}
+    - m_Text: 'MALANG '
+      m_Image: {fileID: 0}
+    - m_Text: 'NTB '
+      m_Image: {fileID: 0}
+    - m_Text: 'NTT '
+      m_Image: {fileID: 0}
+    - m_Text: 'PASURUAN '
+      m_Image: {fileID: 0}
+    - m_Text: 'SIDOARJO '
+      m_Image: {fileID: 0}
+    - m_Text: 'SINGARAJA '
+      m_Image: {fileID: 0}
+    - m_Text: 'SURABAYA SELATAN '
+      m_Image: {fileID: 0}
+    - m_Text: 'SURABAYA UTARA '
+      m_Image: {fileID: 0}
+    - m_Text: 'BALIKPAPAN '
+      m_Image: {fileID: 0}
+    - m_Text: 'KALBAR '
+      m_Image: {fileID: 0}
+    - m_Text: 'KALSEL '
+      m_Image: {fileID: 0}
+    - m_Text: 'KALTARA '
+      m_Image: {fileID: 0}
+    - m_Text: 'SAMARINDA '
+      m_Image: {fileID: 0}
+    - m_Text: 'GORONTALO '
+      m_Image: {fileID: 0}
+    - m_Text: 'MAKASSAR '
+      m_Image: {fileID: 0}
+    - m_Text: 'MALUKU '
+      m_Image: {fileID: 0}
+    - m_Text: 'PAPUA '
+      m_Image: {fileID: 0}
+    - m_Text: 'PAPUA BARAT '
+      m_Image: {fileID: 0}
+    - m_Text: 'SULSELBAR '
+      m_Image: {fileID: 0}
+    - m_Text: 'SULTENG '
+      m_Image: {fileID: 0}
+    - m_Text: 'SULTRA '
+      m_Image: {fileID: 0}
+    - m_Text: 'SULUTMALUT '
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

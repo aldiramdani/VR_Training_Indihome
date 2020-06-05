@@ -1003,7 +1003,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.2734375, y: 0}
+  savedTextUV0: {x: 0, y: 0.2734375}
   savedFill: 0
 --- !u!114 &155610031
 MonoBehaviour:
@@ -1038,7 +1038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1.Beritahukan Info hasil Cek
+  m_Text: "Informasi Jenis Pelanggan\r\n"
 --- !u!222 &155610032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7395,7 +7395,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.34765625, y: 0.05859375}
+  savedTextUV0: {x: 0.05859375, y: 0}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

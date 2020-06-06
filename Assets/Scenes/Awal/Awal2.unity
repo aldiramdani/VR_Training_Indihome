@@ -6564,7 +6564,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461879724}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 808ae49ad22fab14480b834b5d205cb0, type: 3}
   m_Name: 
@@ -7973,7 +7973,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.0390625, y: 0.41015625}
+  savedTextUV0: {x: 0.05078125, y: 0}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

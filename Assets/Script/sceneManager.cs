@@ -212,7 +212,7 @@ public class sceneManager : MonoBehaviour
 
    public void failDialogBoxMode()
     {
-        txt_status_fail.text = "Kamu Salah Mengucapkan Kata!";
+        txt_status_fail.text = "Kamu Gagal!";
         txt_status_fail.color = Color.red;
         hasilSpeech = ""; 
         SpeakNow.reset();

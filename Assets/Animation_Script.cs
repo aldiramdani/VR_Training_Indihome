@@ -16,7 +16,7 @@ public class Animation_Script : MonoBehaviour
     void Update()
     {
         //Input.GetButton("A")
-        if (Input.GetKeyDown("space"))
+        if (Input.GetButton("A"))
         {
             anim.Play("newTabletAnimation");
            

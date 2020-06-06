@@ -2254,7 +2254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &788578907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4175,8 +4175,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1432586825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4417,8 +4415,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 1788215125}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1461879728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5167,8 +5163,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1732709760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6261,8 +6255,6 @@ MonoBehaviour:
   timeShow: 0
   currentTime: 0
   gOCanvas: {fileID: 0}
-  cTutorial: {fileID: 0}
-  attacher: {fileID: 0}
 --- !u!114 &1992354403
 MonoBehaviour:
   m_ObjectHideFlags: 0

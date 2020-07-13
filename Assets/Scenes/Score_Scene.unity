@@ -2931,7 +2931,6 @@ MonoBehaviour:
   inputNama: {fileID: 0}
   inputNik: {fileID: 0}
   inputAuthBelajar: {fileID: 0}
-  inputAuthEvaluasi: {fileID: 0}
   drpTempatKerja: {fileID: 0}
 --- !u!114 &1794629727
 MonoBehaviour:
@@ -2950,6 +2949,10 @@ MonoBehaviour:
   txt_nilai: {fileID: 209257436}
   txt_tanggal: {fileID: 1760357328}
   txt_lokasi: {fileID: 1402357256}
+  txt_mod1: {fileID: 269208011}
+  txt_mod2: {fileID: 1812958137}
+  txt_mod3: {fileID: 1058070044}
+  txt_mod4: {fileID: 1087223631}
 --- !u!1 &1812958134
 GameObject:
   m_ObjectHideFlags: 0
@@ -3390,5 +3393,4 @@ MonoBehaviour:
   inputNama: {fileID: 0}
   inputNik: {fileID: 0}
   inputAuthBelajar: {fileID: 0}
-  inputAuthEvaluasi: {fileID: 0}
   drpTempatKerja: {fileID: 0}

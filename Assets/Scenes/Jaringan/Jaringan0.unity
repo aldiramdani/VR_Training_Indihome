@@ -2196,6 +2196,7 @@ MonoBehaviour:
   benar_salah: 
   stoDo: 
   skipNextScene: 
+  current_mode: 
   isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:

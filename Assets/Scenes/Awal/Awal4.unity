@@ -1088,6 +1088,17 @@ MonoBehaviour:
           m_StringArgument: tagihan.txt
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 384689598}
+        m_MethodName: setModul
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   totalTime: 2
@@ -1673,7 +1684,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.10546875, y: 0.09375}
+  savedTextUV0: {x: 0, y: 0.0078125}
   savedFill: 0
 --- !u!114 &243668194
 MonoBehaviour:
@@ -2135,7 +2146,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 405.7, y: 94.325}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0, y: 0.34765625}
+  savedTextUV0: {x: 0.2109375, y: 0.13671875}
   savedFill: 0
 --- !u!114 &358204952
 MonoBehaviour:
@@ -2482,6 +2493,7 @@ MonoBehaviour:
   benar_salah: 
   stoDo: 
   skipNextScene: 
+  current_mode: 
   isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:
@@ -3038,6 +3050,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: informasi.txt
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 384689598}
+        m_MethodName: setModul
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -4009,7 +4032,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 464.85, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.015625, y: 0.05078125}
+  savedTextUV0: {x: 0.078125, y: 0.1015625}
   savedFill: 0
 --- !u!114 &727159237
 MonoBehaviour:
@@ -6025,7 +6048,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 191.3, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.7109375, y: 0}
+  savedTextUV0: {x: 0.265625, y: 0.22265625}
   savedFill: 0
 --- !u!114 &1400651231
 MonoBehaviour:
@@ -6124,7 +6147,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 30.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.05859375}
+  savedTextUV0: {x: 0, y: 0.33984375}
   savedFill: 0
 --- !u!114 &1438285800
 MonoBehaviour:
@@ -6888,7 +6911,7 @@ MonoBehaviour:
   savedUp: {x: 0.92496735, y: -0.004096984, z: -0.38002446}
   savedRectSize: {x: 464.85, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.015625, y: 0.05078125}
+  savedTextUV0: {x: 0.078125, y: 0.1015625}
   savedFill: 0
 --- !u!114 &1757298813
 MonoBehaviour:
@@ -7306,7 +7329,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.10546875, y: 0.09375}
+  savedTextUV0: {x: 0, y: 0.0078125}
   savedFill: 0
 --- !u!114 &1855278508
 MonoBehaviour:
@@ -7499,7 +7522,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.3828125, y: 0.4296875}
+  savedTextUV0: {x: 0.24609375, y: 0.42578125}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:
@@ -7795,6 +7818,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: fup.txt
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 384689598}
+        m_MethodName: setModul
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -8241,7 +8275,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.10546875, y: 0.09375}
+  savedTextUV0: {x: 0, y: 0.0078125}
   savedFill: 0
 --- !u!114 &1985091863
 MonoBehaviour:
@@ -8484,6 +8518,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: internetmati.txt
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 384689598}
+        m_MethodName: setModul
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,

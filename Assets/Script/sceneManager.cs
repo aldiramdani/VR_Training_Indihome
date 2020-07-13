@@ -51,6 +51,7 @@ public class sceneManager : MonoBehaviour
         if (currentScene == "HomeScene")
         {
             unLoadWord();
+            PlayerPrefs.SetString("c_modul", "null");
         }
         loadNWord();
         toDoController();
@@ -59,6 +60,7 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Debug Mode"+PlayerPrefs.GetString("c_modul"));
         if(currentScene.Contains("Tunggu"))
         {
             testSpeak();
@@ -119,7 +121,7 @@ public class sceneManager : MonoBehaviour
                 {
                     benar_salah = "benar";
                     nextScene = x.skenarioTujuan;
-                    speechManager(i);
+                    speechManager(i,s_Result);
                     break;
                 }
                 else if(x.isWajib == "1")
@@ -128,7 +130,7 @@ public class sceneManager : MonoBehaviour
                     {
                         benar_salah = "benar";
                         nextScene = nWord[i].skenarioTujuan;
-                        speechManager(i);
+                        speechManager(i,s_Result);
                         break;
                     }
                     else if (!s_Result.Contains(x.kataWajib))
@@ -151,11 +153,22 @@ public class sceneManager : MonoBehaviour
         }
     }
 
+    public void setModul(string c_modul)
+    {
+        PlayerPrefs.SetString("c_modul", c_modul);
+    }
 
-    private void speechManager(int pos){
+    private void speechManager(int pos,string word){
         //SceneManager.LoadScene(word[pos].skenarioTujuan);
+        if (word.Contains("tidak mungkin") || word.Contains("tidak boleh ") || word.Contains("tidak tahu"))
+        {
+            nDouble = 0;
+        }
+        else
+        {
+            nDouble = nWord[pos].nilai;
+        }
         stoDo = nWord[pos].toDo;
-        nDouble = nWord[pos].nilai;
         nextScene = nWord[pos].skenarioTujuan;
         dialogBoxMode(nWord[pos].kataSaran,nWord[pos].skenarioTujuan);
         SpeakNow.reset();

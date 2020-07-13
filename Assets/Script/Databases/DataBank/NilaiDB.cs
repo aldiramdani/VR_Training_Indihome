@@ -11,13 +11,14 @@ namespace DataBank
     {
         private const String Tag = "Debug: LocationDB:\t";
 
-        private const String TABLE_NAME = "Nilai_TBL";
+        private const String TABLE_NAME = "Nilai_TBL1";
         private const String KEY_NIK = "nik";
         private const String KEY_NAMA = "nama";
         private const String KEY_LOK_KERJA = "lok_kerja";
         private const String KEY_NILAI = "nilai";
+        private const String KEY_MODUL = "modul";
         private const String KEY_DATE = "date";
-        private String[] COLUMNS = new String[] {KEY_NIK, KEY_NAMA, KEY_LOK_KERJA, KEY_NILAI, KEY_DATE };
+        private String[] COLUMNS = new String[] {KEY_NIK, KEY_NAMA, KEY_LOK_KERJA, KEY_NILAI,KEY_MODUL ,KEY_DATE };
 
         public NilaiDB() : base()
         {
@@ -27,6 +28,7 @@ namespace DataBank
                 KEY_NAMA + " TEXT, " +
                 KEY_LOK_KERJA + " TEXT, " +
                 KEY_NILAI + " TEXT, " +
+                KEY_MODUL + " TEXT, " +
                 KEY_DATE + " DATETIME DEFAULT CURRENT_TIMESTAMP )";
             dbcmd.ExecuteNonQuery();
         }
@@ -40,13 +42,15 @@ namespace DataBank
                 + KEY_NIK + ", "
                 + KEY_NAMA + ", "
                 + KEY_LOK_KERJA + ", "
-                + KEY_NILAI + " ) "
+                + KEY_NILAI + ", "
+                + KEY_MODUL + " ) "
                 + "VALUES ( '"
                 
                 + nilaiEntity._nik + "', '"
                 + nilaiEntity._nama + "', '"
                 + nilaiEntity._lok_kerja + "', '"
-                + nilaiEntity._nilai + "' )";
+                + nilaiEntity._nilai + "', '"
+                + nilaiEntity._modul + "' )";
             dbcmd.ExecuteNonQuery();
         }
 

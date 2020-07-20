@@ -2826,7 +2826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1516138489
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3660,7 +3660,12 @@ MonoBehaviour:
   inputNama: {fileID: 2121578735}
   inputNik: {fileID: 1317585960}
   inputAuthBelajar: {fileID: 0}
-  drpTempatKerja: {fileID: 1135252723}
+  drpWitel: {fileID: 1962458117}
+  drpPlaza: {fileID: 1699623477}
+  drpRegion: {fileID: 1135252723}
+  s_Witel: 
+  s_Plaza: 
+  s_Region: 
 --- !u!4 &1747526206
 Transform:
   m_ObjectHideFlags: 0
@@ -3692,6 +3697,10 @@ MonoBehaviour:
   txt_nilai: {fileID: 0}
   txt_tanggal: {fileID: 0}
   txt_lokasi: {fileID: 0}
+  txt_mod1: {fileID: 0}
+  txt_mod2: {fileID: 0}
+  txt_mod3: {fileID: 0}
+  txt_mod4: {fileID: 0}
 --- !u!1 &1756862758
 GameObject:
   m_ObjectHideFlags: 0

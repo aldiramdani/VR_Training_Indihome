@@ -20,7 +20,7 @@ public class imageScript : MonoBehaviour
     }
     IEnumerator HideObject(string nextScene)
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(8);
         hideImages.enabled = false;
         SceneManager.LoadScene(nextScene);
     }

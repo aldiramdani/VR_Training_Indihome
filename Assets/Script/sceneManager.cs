@@ -42,7 +42,11 @@ public class sceneManager : MonoBehaviour
         if (currentScene == "Awal1")
         {
             PlayerPrefs.SetString("nilai", "0");
-            //PlayerPrefs.SetString("NamaFileRecord", "");
+            PlayerPrefs.SetString("c_modul", "");
+            PlayerPrefs.SetString("c_modul1", "");
+            PlayerPrefs.SetString("c_modul2", "");
+            PlayerPrefs.SetString("c_modul3", "");
+            PlayerPrefs.SetString("c_modul4", "");
             resetScore();
         }else if(currentScene == "Akhir1" || currentScene =="Jaringan1")
         {
@@ -51,7 +55,6 @@ public class sceneManager : MonoBehaviour
         if (currentScene == "HomeScene")
         {
             unLoadWord();
-            PlayerPrefs.SetString("c_modul", "null");
         }
         loadNWord();
         toDoController();
@@ -116,7 +119,6 @@ public class sceneManager : MonoBehaviour
                 
                 benar_salah = "benar";
                 txt_status.text = "Kamu Berhasil !";
-                txt_status.color = Color.green;
                 if(x.isWajib != "1")
                 {
                     benar_salah = "benar";
@@ -145,7 +147,6 @@ public class sceneManager : MonoBehaviour
             else if (benar_salah == "salah" && !s_Result.Contains(x.kataKunci.ToString()) && s_Result != "")
             {
                 s_Result = "";
-                //fCanvas.SetActive(true);
                 hasilSpeech = "";
                 failDialogBoxMode();
             }
@@ -153,14 +154,45 @@ public class sceneManager : MonoBehaviour
         }
     }
 
-    public void setModul(string c_modul)
+    public void testMethod(string test,string test2)
     {
-        PlayerPrefs.SetString("c_modul", c_modul);
+        
+    }
+
+    public void setModul(int modulNo)
+    {
+        PlayerPrefs.SetString("c_modul", modulNo.ToString());
+        switch (modulNo)
+        {
+            case 1:
+                PlayerPrefs.SetString("c_modul1", "V");
+                PlayerPrefs.SetString("c_modul2", "");
+                PlayerPrefs.SetString("c_modul3", "");
+                PlayerPrefs.SetString("c_modul4", "");
+                break;
+            case 2:
+                PlayerPrefs.SetString("c_modul1", "");
+                PlayerPrefs.SetString("c_modul2", "V");
+                PlayerPrefs.SetString("c_modul3", "");
+                PlayerPrefs.SetString("c_modul4", "");
+                break;
+            case 3:
+                PlayerPrefs.SetString("c_modul1", "");
+                PlayerPrefs.SetString("c_modul2", "");
+                PlayerPrefs.SetString("c_modul3", "V");
+                PlayerPrefs.SetString("c_modul4", "");
+                break;
+            case 4:
+                PlayerPrefs.SetString("c_modul1", "");
+                PlayerPrefs.SetString("c_modul2", "");
+                PlayerPrefs.SetString("c_modul3", "");
+                PlayerPrefs.SetString("c_modul4", "V");
+                break;
+        }
     }
 
     private void speechManager(int pos,string word){
-        //SceneManager.LoadScene(word[pos].skenarioTujuan);
-        if (word.Contains("tidak mungkin") || word.Contains("tidak boleh ") || word.Contains("tidak tahu"))
+        if (word.Contains("tidak mungkin") || word.Contains("tidak boleh") || word.Contains("tidak tahu"))
         {
             nDouble = 0;
         }

@@ -6,4 +6,5 @@ surat|0|null|10|Mengontrak2|todo1|Kami|null
 kuasa|0|null|10|Mengontrak2|todo1|Kami|null
 milik|0|null|10|Mengontrak2|todo1|Kami|null
 pemilik|0|null|10|Mengontrak2|todo1|Kami|null
-bantu|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+sampai|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+tanya|0|null|5|Akhir1|todo2|Kami|Mengontrak2

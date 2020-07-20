@@ -13,14 +13,14 @@ public class Profilling : MonoBehaviour
     public Text debug_text;
     public Button btn_mulai;
     public InputField inputNama, inputNik,inputAuthBelajar;
-    public Dropdown drpTempatKerja;
+    public Dropdown drpWitel,drpPlaza,drpRegion;
+
     string nama, nik, lok_kerja;
     string _table_name = "Data Pengguna VR Training";
     sceneControler sc = new sceneControler();
     public static string session_nik;
     private string authBelajar;
     private string authEvaluasi;
-
  
 
     private UserInfo userInfo = new UserInfo
@@ -29,9 +29,9 @@ public class Profilling : MonoBehaviour
         nama = PlayerPrefs.GetString("Nama" + session_nik),
         lokasi = PlayerPrefs.GetString("Lok Kerja" + session_nik),
         nilai = PlayerPrefs.GetString("nilai"),
-        mode = sceneManager.session_mode,
-        auth_belajar = "XX",
-        auth_evaluasi = "XX"
+        mode = PlayerPrefs.GetString("c_modul"),
+        auth_belajar = "-",
+        auth_evaluasi = "-"
     };
 
     [System.Serializable]
@@ -43,7 +43,7 @@ public class Profilling : MonoBehaviour
         public string nilai;
         public string mode;
         public string auth_belajar;
-        public string auth_evaluasi;
+        public string auth_evaluasi;                                                                                                
     }
 
     private void OnEnable()
@@ -70,9 +70,6 @@ public class Profilling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        //Debug.Log("Debug Status" + authBelajar +" " + authEvaluasi);
-       //Debug.Log("Debug Status" + session_nik);
     }
 
     private void OnDestroy()
@@ -84,7 +81,7 @@ public class Profilling : MonoBehaviour
     {
         nama = inputNama.text;
         nik = inputNik.text;
-        lok_kerja = drpTempatKerja.itemText.text;
+        lok_kerja = drpRegion.options[drpRegion.value].text + " " + drpWitel.options[drpWitel.value].text + " " + drpPlaza.options[drpPlaza.value].text;
         session_nik = nik;
         if(nama == "" || nik=="" || lok_kerja == "")
         {
@@ -119,7 +116,7 @@ public class Profilling : MonoBehaviour
 
         if(jenis_auth == "belajar")
         {
-            if (_inputAuthBelajar == "b123")
+            if (_inputAuthBelajar == authBelajar)
             {
                 sceneManager.session_mode = "belajar";
                 sc.changeScene("FirstScene");

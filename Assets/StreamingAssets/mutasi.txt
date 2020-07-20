@@ -17,8 +17,8 @@ ijin|0|null|60|Mutasi2|todo1|Kami|nulll
 siup|0|null|60|Mutasi2|todo1|Kami|nulll
 npwn|0|null|60|Mutasi2|todo1|Kami|nulll
 ktp|0|null|60|Mutasi2|todo1|Kami|nulll
-bantu|0|null|10|Akhir1|todo1|Kami|Mutasi2
-
+sampai|0|null|10|Akhir1|todo1|Kami|Mutasi2
+tanya|0|null|10|Akhir1|todo1|Kami|Mutasi2
 
 
 

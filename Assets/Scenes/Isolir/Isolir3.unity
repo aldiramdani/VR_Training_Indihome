@@ -1805,7 +1805,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 273.2, y: 84.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0.0078125, y: 0}
   savedFill: 0
 --- !u!114 &398323933
 MonoBehaviour:
@@ -7358,7 +7358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1874400013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7395,7 +7395,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.25390625, y: 0}
+  savedTextUV0: {x: 0, y: 0.2578125}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

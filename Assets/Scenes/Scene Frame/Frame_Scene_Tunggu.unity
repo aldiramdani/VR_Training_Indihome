@@ -1785,7 +1785,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 394.2, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.23046875, y: 0.109375}
+  savedTextUV0: {x: 0.015625, y: 0.05859375}
   savedFill: 0
 --- !u!114 &491535856
 MonoBehaviour:
@@ -3348,7 +3348,7 @@ MonoBehaviour:
   savedPos: {x: -166.1, y: 16.100006, z: 8.599923}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 321.3, y: 361}
-  savedColor: {r: 1, g: 1, b: 1, a: 0.5647059}
+  savedColor: {r: 1, g: 1, b: 1, a: 1}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
 --- !u!114 &994875924
@@ -4982,7 +4982,7 @@ MonoBehaviour:
   savedPos: {x: -172.63638, y: 91.100006, z: 10.961494}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 410.2, y: 227.5}
-  savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  savedColor: {r: 0, g: 0.63529414, b: 0.15686275, a: 1}
   savedTextUV0: {x: 0.28125, y: 0}
   savedFill: 0
 --- !u!114 &1696159140
@@ -4998,7 +4998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0.63529414, b: 0.15686275, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5882,7 +5882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1874400013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5919,7 +5919,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.05859375, y: 0}
+  savedTextUV0: {x: 0.26171875, y: 0}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

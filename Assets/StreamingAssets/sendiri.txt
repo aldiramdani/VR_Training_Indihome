@@ -9,4 +9,5 @@ keterangan|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
 penanggung|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
 jawab|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
 tanggung|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
-bantu|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+sampai|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+tanya|0|null|5|Akhir1|todo2|Kami|Mengontrak2

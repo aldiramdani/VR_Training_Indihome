@@ -19,8 +19,8 @@ kuasa|0|null|60|Cabutan2|todo1|Kami|nulll
 pernyataan|0|null|60|Cabutan2|todo1|Kami|nulll
 perusahaan|0|null|60|Cabutan2|todo1|Kami|nulll
 kops|0|null|60|Cabutan2|todo1|Kami|nulll
-bantu|0|null|10|Akhir1|todo1|Kami|Cabutan2
-
+sampai|0|null|10|Akhir1|todo1|Kami|Cabutan2
+tanya|0|null|10|Akhir1|todo1|Kami|Cabutan2
 
 
 

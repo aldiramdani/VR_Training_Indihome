@@ -2,11 +2,11 @@
 -- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
 
 -- simple text --
-cek|0|null|10|Fup2|todo1|Kami mohon maaf|null
-riksa|0|null|10|Fup2|todo1|Kami mohon maaf|null
-tunggu|0|null|10|Fup2|todo1|Kami mohon maaf|null
-waktu|0|null|10|Fup2|todo1|Kami mohon maaf|null
-nunggu|0|null|10|Fup2|todo1|Kami mohon maaf|null
+cek|0|null|10|Fup1|todo1|Kami mohon maaf|Fup0
+riksa|0|null|10|Fup1|todo1|Kami mohon maaf|Fup0
+tunggu|0|null|10|Fup1|todo1|Kami mohon maaf|Fup0
+waktu|0|null|10|Fup1|todo1|Kami mohon maaf|Fup0
+nunggu|0|null|10|Fup1|todo1|Kami mohon maaf|Fup0
 fup|0|null|10|Fup3|todo2|Kami mohon maaf|null
 lebih|0|null|10|Fup3|todo2|Kami mohon maaf|null
 lewat|0|null|10|Fup3|todo2|Kami mohon maaf|null
@@ -42,5 +42,6 @@ tambah|0|null|11.66|Fup6|todo5|Kami mohon maaf|null
 upgrade|0|null|11.66|Fup6|todo5|Kami mohon maaf|null
 naik|0|null|11.66|Fup6|todo5|Kami mohon maaf|null
 up|0|null|11.66|Fup6|todo5|Kami mohon maaf|null
-bantu|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
+sampai|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
+tanya|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
 

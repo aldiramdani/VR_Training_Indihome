@@ -25,9 +25,12 @@ public class DBTest : MonoBehaviour
                                     reader[1].ToString(),
                                     reader[2].ToString(),
                                     reader[3].ToString(),
-                                    reader[4].ToString()
+                                    reader[4].ToString(),
+                                    reader[5].ToString(),
+                                    reader[6].ToString(),
+                                    reader[7].ToString(),
+                                    reader[8].ToString()
                                     );
-            Debug.Log("Nik: " + nilaiEntity._nik);
             myList.Add(nilaiEntity);
         }
 
@@ -38,21 +41,10 @@ public class DBTest : MonoBehaviour
             txt_nilai.text += myList[i]._nilai + "\n" ;
             txt_tanggal.text += myList[i]._dateCreated + "\n";
             txt_lokasi.text += myList[i]._lok_kerja + "\n";
-            switch (myList[i]._modul)
-            {
-                case "1":
-                    txt_mod1.text = "V";
-                    break;
-                case "2":
-                    txt_mod2.text = "V";
-                    break;
-                case "3":
-                    txt_mod3.text = "V";
-                    break;
-                case "4":
-                    txt_mod4.text = "V";
-                    break;
-            }
+            txt_mod1.text += myList[i]._modul1 + "\n";
+            txt_mod2.text += myList[i]._modul2 + "\n";
+            txt_mod3.text += myList[i]._modul3 + "\n";
+            txt_mod4.text += myList[i]._modul4 + "\n";
         }
     }
                                  
@@ -60,8 +52,15 @@ public class DBTest : MonoBehaviour
     public void addtoDB()
     {
         NilaiDB mNilaiDB = new NilaiDB();
-        mNilaiDB.addData(new NilaiEntity(Profilling.session_nik, PlayerPrefs.GetString("Nama" + Profilling.session_nik), 
-            PlayerPrefs.GetString("Lok Kerja" + Profilling.session_nik), PlayerPrefs.GetString("nilai"),PlayerPrefs.GetString("c_modul")));
+        mNilaiDB.addData(new NilaiEntity(Profilling.session_nik, 
+            PlayerPrefs.GetString("Nama" + Profilling.session_nik), 
+            PlayerPrefs.GetString("Lok Kerja" + Profilling.session_nik), 
+            PlayerPrefs.GetString("nilai"),
+            PlayerPrefs.GetString("c_modul1"), 
+            PlayerPrefs.GetString("c_modul2"), 
+            PlayerPrefs.GetString("c_modul3"), 
+            PlayerPrefs.GetString("c_modul4"), 
+            System.DateTime.Now.ToString("yyyyMMddhhmmss")));
         mNilaiDB.close();
         pf.addToSheet();    
     }

@@ -11,7 +11,7 @@ namespace DataBank
     public class SQLliteHelper
     {
         private const string Tag = "Debug SQLiteHelper:\t";
-        private const string database_name = "Nilai_DB1";
+        private const string database_name = "Nilai_DB2";
 
         public string db_connection_string;
         public IDbConnection db_connection;

@@ -1090,11 +1090,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 384689598}
         m_MethodName: setModul
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 3
           m_BoolArgument: 0
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0.3125, y: 0}
   savedFill: 0
 --- !u!114 &243668194
 MonoBehaviour:
@@ -2146,7 +2146,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 405.7, y: 94.325}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.2109375, y: 0.13671875}
+  savedTextUV0: {x: 0.12109375, y: 0.28515625}
   savedFill: 0
 --- !u!114 &358204952
 MonoBehaviour:
@@ -2493,7 +2493,6 @@ MonoBehaviour:
   benar_salah: 
   stoDo: 
   skipNextScene: 
-  current_mode: 
   isSkipOk: 0
 --- !u!114 &384689599
 MonoBehaviour:
@@ -3054,11 +3053,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 384689598}
         m_MethodName: setModul
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 4
           m_BoolArgument: 0
@@ -4032,7 +4031,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 464.85, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.078125, y: 0.1015625}
+  savedTextUV0: {x: 0.015625, y: 0.05078125}
   savedFill: 0
 --- !u!114 &727159237
 MonoBehaviour:
@@ -6048,7 +6047,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 191.3, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.265625, y: 0.22265625}
+  savedTextUV0: {x: 0.015625, y: 0}
   savedFill: 0
 --- !u!114 &1400651231
 MonoBehaviour:
@@ -6147,7 +6146,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 30.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.33984375}
+  savedTextUV0: {x: 0.16015625, y: 0.13671875}
   savedFill: 0
 --- !u!114 &1438285800
 MonoBehaviour:
@@ -6911,7 +6910,7 @@ MonoBehaviour:
   savedUp: {x: 0.92496735, y: -0.004096984, z: -0.38002446}
   savedRectSize: {x: 464.85, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.078125, y: 0.1015625}
+  savedTextUV0: {x: 0.015625, y: 0.05078125}
   savedFill: 0
 --- !u!114 &1757298813
 MonoBehaviour:
@@ -7329,7 +7328,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0.3125, y: 0}
   savedFill: 0
 --- !u!114 &1855278508
 MonoBehaviour:
@@ -7485,7 +7484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1874400013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7522,7 +7521,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 95.9}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.24609375, y: 0.42578125}
+  savedTextUV0: {x: 0.59765625, y: 0.171875}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:
@@ -7784,7 +7783,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Fup1
+          m_StringArgument: Fup0
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 384689598}
@@ -7822,11 +7821,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 384689598}
         m_MethodName: setModul
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 2
           m_BoolArgument: 0
@@ -8275,7 +8274,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0.3125, y: 0}
   savedFill: 0
 --- !u!114 &1985091863
 MonoBehaviour:
@@ -8522,13 +8521,13 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 384689598}
         m_MethodName: setModul
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 1
+          m_StringArgument: V
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,

@@ -2,10 +2,10 @@
 -- [kata kunci] | [isWajib] | [kataWajib] | [nilai] | [skenario tujuan] | [todo] | [Saran Kata]
 
 -- simple text --
-cek|0|null|5|InternetMati2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|InternetMati1
-meriksa|0|null|5|InternetMati2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|InternetMati1
-waktu|0|null|5|InternetMati2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|InternetMati1
-tunggu|0|null|5|InternetMati2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|InternetMati1
-menunggu|0|null|5|InternetMati2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|InternetMati1
-maaf|0|null|5|InternetMati2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|InternetMati1
-nyamanan|0|null|5|InternetMati2|todo1|Kami mohon maaf atas tidak nyaman/ketidaknyamanan Bpk/Ibu/Sdr . Selanjutnya mohon  ijin  untuk cek/mencek/mengecek/memeriksa/meriksa/periksa di sistem terlebih dahulu, mohon waktu/tunggu/menunggu sebentar|InternetMati1
+cek|0|null|5|InternetMati2|todo1|Kami|InternetMati1
+meriksa|0|null|5|InternetMati2|todo1|Kami|InternetMati1
+waktu|0|null|5|InternetMati2|todo1|Kami|InternetMati1
+tunggu|0|null|5|InternetMati2|todo1|Kami|InternetMati1
+menunggu|0|null|5|InternetMati2|todo1|Kami|InternetMati1
+maaf|0|null|5|InternetMati2|todo1|Kami|InternetMati1
+nyamanan|0|null|5|InternetMati2|todo1|Kami|InternetMati1

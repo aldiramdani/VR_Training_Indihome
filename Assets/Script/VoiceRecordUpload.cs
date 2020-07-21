@@ -6,7 +6,6 @@ using System;
 using System.Threading;
 using System.IO;
 using DBXSync;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class VoiceRecordUpload : MonoBehaviour
@@ -16,7 +15,7 @@ public class VoiceRecordUpload : MonoBehaviour
     Scene m_sceneName;
     string currentScene;
     public Text statusText;
-    public Button btn_Home;
+    public Button btn_Home,btn_upload;
     BasicAudio bs = new BasicAudio();
     private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
     private string _uploadDropboxPath;
@@ -80,18 +79,23 @@ public class VoiceRecordUpload : MonoBehaviour
             // success			
             print($"Upload completed:\n{metadata}");
             statusText.text = $"<color=green>Uploaded. {metadata.id}</color>";
-            btn_Home.interactable = true;
+            btn_Home.gameObject.SetActive(true);
+            btn_upload.gameObject.SetActive(false);
         }, (ex) => {
             // exception
             if (ex is OperationCanceledException)
             {
                 Debug.Log("Upload cancelled");
                 statusText.text = $"<color=orange>Upload canceled.</color>";
+                btn_Home.gameObject.SetActive(false);
+                btn_upload.gameObject.SetActive(true);
             }
             else
             {
                 Debug.LogException(ex);
                 statusText.text = $"<color=red>Upload failed.</color>";
+                btn_Home.gameObject.SetActive(false);
+                btn_upload.gameObject.SetActive(true);
             }
         }, _cancellationTokenSource.Token);
         

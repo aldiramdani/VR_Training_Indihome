@@ -10,4 +10,10 @@ penanggung|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
 jawab|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
 tanggung|0|null|10|Mengontrak2|todo1|Kami|Sendiri1
 sampai|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+disampaikan|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+sampaikan|0|null|5|Akhir1|todo2|Kami|Mengontrak2
 tanya|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+ditanyakan|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+dipertanyakan|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+tanyakan|0|null|5|Akhir1|todo2|Kami|Mengontrak2
+nya|0|null|5|Akhir1|todo2|Kami|Mengontrak2

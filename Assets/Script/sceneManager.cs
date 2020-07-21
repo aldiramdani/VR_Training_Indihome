@@ -11,7 +11,7 @@ public class sceneManager : MonoBehaviour
     Scene m_sceneName; //Variable Scene
     string currentScene; //Variable dapetin nama scene ubah jd string
     double pnDouble, nDouble; //convert nilai ke double
-    public Text debug_txt,txt_status,txt_status_fail; //tampilan text debug dan test
+    public Text debug1_txt,debug2_txt,txt_status,txt_status_fail; //tampilan text debug dan test
     public static string hasilSpeech; //variable tampung hasil speech dari lib
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
     List<Words> nWord = new List<Words>();
@@ -57,6 +57,9 @@ public class sceneManager : MonoBehaviour
             unLoadWord();
         }
         loadNWord();
+        for(int i=0;i<nWord.Count;i++){
+            debug2_txt.text += nWord[i].kataKunci;
+        }
         toDoController();
     }
 
@@ -64,12 +67,8 @@ public class sceneManager : MonoBehaviour
     void Update()
     {
         Debug.Log("Debug Mode"+PlayerPrefs.GetString("c_modul"));
-        if(currentScene.Contains("Tunggu"))
-        {
-            testSpeak();
-            debug_txt.text = currentScene;
-        }
-        
+        testSpeak();
+        debug1_txt.text += hasilSpeech; 
     }
 
     void hideSeekCanvas()
@@ -95,14 +94,46 @@ public class sceneManager : MonoBehaviour
         SceneManager.LoadScene(namaScene);
     }
 
+
+    private void voiceController(string s_Result){
+        getScore();
+        for(int i=0; i < nWord.Count; i++){
+            if(s_Result.Contains(nWord[i].kataKunci)){
+                txt_status.text = "Kamu Berhasil !";
+                resultManager(i,s_Result);
+                break;
+            }
+        }
+    }
+
+    private void resultManager(int pos,string s_Result){
+        if(nWord[pos].isWajib != "1"){
+            benar_salah = "benar";
+            nextScene = nWord[pos].skenarioTujuan;
+            speechManager(pos,s_Result);
+        }
+        if(nWord[pos].isWajib == "1"){
+            if(s_Result.Contains(nWord[pos].kataWajib)){
+            benar_salah = "benar";
+            nextScene = nWord[pos].skenarioTujuan;
+            speechManager(pos,s_Result);
+            }
+            if(!s_Result.Contains(nWord[pos].kataWajib)){
+                benar_salah = "benar";
+                failDialogBoxMode();
+            }
+        }
+        
+    }
+
     void testSpeak(){
         if (currentScene.Contains("Tunggu")){
             if(Input.GetButton("A")){
                 SpeakNow.startSpeech(LanguageUtil.INDONESIAN);
             }
-            else if (Input.GetButtonDown("B"))
+            else if (Input.GetButtonUp("B"))
             {
-                sceneControl(hasilSpeech);
+                voiceController(hasilSpeech);
                 hasilSpeech = "";
             }
         }
@@ -154,10 +185,6 @@ public class sceneManager : MonoBehaviour
         }
     }
 
-    public void testMethod(string test,string test2)
-    {
-        
-    }
 
     public void setModul(int modulNo)
     {

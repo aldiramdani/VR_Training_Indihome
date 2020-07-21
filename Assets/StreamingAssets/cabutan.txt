@@ -20,7 +20,11 @@ pernyataan|0|null|60|Cabutan2|todo1|Kami|nulll
 perusahaan|0|null|60|Cabutan2|todo1|Kami|nulll
 kops|0|null|60|Cabutan2|todo1|Kami|nulll
 sampai|0|null|10|Akhir1|todo1|Kami|Cabutan2
-tanya|0|null|10|Akhir1|todo1|Kami|Cabutan2
+disampaikan|0|null|10|Akhir1|todo1|Kami|Cabutan2
+ditanyakan|0|null|10|Akhir1|todo1|Kami|Cabutan2
+dipertanyakan|0|null|10|Akhir1|todo1|Kami|Cabutan2
+tanyakan|0|null|10|Akhir1|todo1|Kami|Cabutan2
+nya|0|null|10|Akhir1|todo1|Kami|Cabutan2
 
 
 

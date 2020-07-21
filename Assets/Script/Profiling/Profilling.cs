@@ -118,7 +118,6 @@ public class Profilling : MonoBehaviour
         {
             if (_inputAuthBelajar == authBelajar)
             {
-                sceneManager.session_mode = "belajar";
                 sc.changeScene("FirstScene");
                 setProfillingtoScene();
             }

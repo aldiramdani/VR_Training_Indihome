@@ -1598,9 +1598,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug_txt: {fileID: 1874400015}
+  debug1_txt: {fileID: 0}
+  debug2_txt: {fileID: 0}
   txt_status: {fileID: 1696159140}
   txt_status_fail: {fileID: 146185967}
+  hasilSpeech: 
   imgCheckmark0: {fileID: 558881291}
   imgCheckmark1: {fileID: 1599391759}
   imgCheckmark2: {fileID: 149982741}
@@ -6677,7 +6679,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 263.8, y: 114.9}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.09765625, y: 0.12890625}
+  savedTextUV0: {x: 0.1484375, y: 0.07421875}
   savedFill: 0
 --- !u!114 &1735325636
 MonoBehaviour:

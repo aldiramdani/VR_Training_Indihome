@@ -31,11 +31,9 @@ public class videoManager : MonoBehaviour
         {
             if (Input.GetButton("A"))
             {
-                Debug.Log("Dipencet Bor");
                 videoPlayer.Pause();
             }else if (Input.GetButtonUp("A"))
             {
-                Debug.Log("DiLepas Bor");
                 videoPlayer.Play();
             }
         }

@@ -10,6 +10,7 @@ public class DBTest : MonoBehaviour
         txt_nilai,txt_tanggal,txt_lokasi,
         txt_mod1,txt_mod2,txt_mod3,txt_mod4;
     Profilling pf = new Profilling();
+    
     void Start()
     {
         

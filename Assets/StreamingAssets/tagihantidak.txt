@@ -22,6 +22,12 @@ menelepon|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
 tahu|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
 jam|0|null|10|TagihanTidak4|todo2|Kami|TagihanTidak3
 sampai|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
+disampaikan|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
+sampaikan|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
 tanya|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
+tanyakan|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
+ditanyakan|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
+pertanyakan|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
+nya|0|null|10|Akhir1|todo3|Kami|TagihanTidak4
 
 

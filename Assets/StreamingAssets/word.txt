@@ -10,6 +10,10 @@ mau|1|assalamualaikum|5|Awal2|todo1|test|Awal1
 mau|1|pagi|5|Awal2|todo1|Test|Awal1
 mau|1|siang|5|Awal2|todo1|Test|Awal1
 mau|1|sore|5|Awal2|todo1|Test|Awal1
+enak|1|assalamualaikum|5|Awal2|todo1|test|Awal1
+enak|1|pagi|5|Awal2|todo1|Test|Awal1
+enak|1|siang|5|Awal2|todo1|Test|Awal1
+enak|1|sore|5|Awal2|todo1|Test|Awal1
 andri|1|assalamualaikum|0|Awal3|todo1|test|Awal1
 andri|1|pagi|0|Awal3|todo1|Test|Awal1
 andri|1|siang|0|Awal3|todo1|Test|Awal1

@@ -1598,9 +1598,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug_txt: {fileID: 1874400015}
+  debug1_txt: {fileID: 0}
+  debug2_txt: {fileID: 0}
   txt_status: {fileID: 1696159140}
   txt_status_fail: {fileID: 146185967}
+  hasilSpeech: 
   imgCheckmark0: {fileID: 558881291}
   imgCheckmark1: {fileID: 1599391759}
   imgCheckmark2: {fileID: 149982741}
@@ -5070,7 +5072,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461879724}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: ecec1a46ba718914d9e87694d4623a32, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 900f6b0a24215424dae4ce626dfc0a54, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -5760,7 +5762,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 57.03}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.0859375, y: 0.125}
+  savedTextUV0: {x: 0.03125, y: 0}
   savedFill: 0
 --- !u!114 &1685237809
 MonoBehaviour:

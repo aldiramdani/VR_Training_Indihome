@@ -43,5 +43,10 @@ upgrade|0|null|11.66|Fup6|todo5|Kami mohon maaf|null
 naik|0|null|11.66|Fup6|todo5|Kami mohon maaf|null
 up|0|null|11.66|Fup6|todo5|Kami mohon maaf|null
 sampai|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
+disampaikan|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
+sampaikan|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
 tanya|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
+ditanya|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
+dipertanyakan|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
+tanyakan|0|null|11.66|Akhir1|todo6|Kami mohon maaf|Fup6
 

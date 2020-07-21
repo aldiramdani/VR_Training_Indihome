@@ -10,7 +10,9 @@ public class sceneManager : MonoBehaviour
 {
     Scene m_sceneName; //Variable Scene
     string currentScene; //Variable dapetin nama scene ubah jd string
-    double pnDouble, nDouble; //convert nilai ke double
+    static double nDouble;
+    public static bool isAdded;
+    double pnDouble; //convert nilai ke double
     public Text debug1_txt,debug2_txt,txt_status,txt_status_fail; //tampilan text debug dan test
     public static string hasilSpeech; //variable tampung hasil speech dari lib
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
@@ -29,6 +31,7 @@ public class sceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isAdded = false;
         session_nik = Profilling.session_nik;
         hasilSpeech = "";
         nextScene = "";
@@ -68,6 +71,7 @@ public class sceneManager : MonoBehaviour
     {
         Debug.Log("Debug Mode"+PlayerPrefs.GetString("c_modul"));
         testSpeak();
+        hideSeekCanvas();
         debug1_txt.text += hasilSpeech; 
     }
 
@@ -99,31 +103,34 @@ public class sceneManager : MonoBehaviour
         getScore();
         for(int i=0; i < nWord.Count; i++){
             if(s_Result.Contains(nWord[i].kataKunci)){
-                txt_status.text = "Kamu Berhasil !";
                 resultManager(i,s_Result);
-                break;
             }
         }
+        failDialogBoxMode();
     }
 
     private void resultManager(int pos,string s_Result){
+        for(int i=0; i < pos+1; i++){
         if(nWord[pos].isWajib != "1"){
             benar_salah = "benar";
             nextScene = nWord[pos].skenarioTujuan;
             speechManager(pos,s_Result);
+            break;
         }
         if(nWord[pos].isWajib == "1"){
             if(s_Result.Contains(nWord[pos].kataWajib)){
             benar_salah = "benar";
             nextScene = nWord[pos].skenarioTujuan;
             speechManager(pos,s_Result);
+            break;
             }
             if(!s_Result.Contains(nWord[pos].kataWajib)){
                 benar_salah = "benar";
                 failDialogBoxMode();
+                break;
             }
         }
-        
+        }
     }
 
     void testSpeak(){
@@ -131,7 +138,7 @@ public class sceneManager : MonoBehaviour
             if(Input.GetButton("A")){
                 SpeakNow.startSpeech(LanguageUtil.INDONESIAN);
             }
-            else if (Input.GetButtonUp("B"))
+            else if (Input.GetButtonDown("B") && hasilSpeech !="")
             {
                 voiceController(hasilSpeech);
                 hasilSpeech = "";
@@ -149,7 +156,6 @@ public class sceneManager : MonoBehaviour
             {
                 
                 benar_salah = "benar";
-                txt_status.text = "Kamu Berhasil !";
                 if(x.isWajib != "1")
                 {
                     benar_salah = "benar";
@@ -174,12 +180,6 @@ public class sceneManager : MonoBehaviour
                     }
 
                 }
-            }
-            else if (benar_salah == "salah" && !s_Result.Contains(x.kataKunci.ToString()) && s_Result != "")
-            {
-                s_Result = "";
-                hasilSpeech = "";
-                failDialogBoxMode();
             }
             i++;
         }
@@ -226,12 +226,14 @@ public class sceneManager : MonoBehaviour
         else
         {
             nDouble = nWord[pos].nilai;
+          
         }
         stoDo = nWord[pos].toDo;
         nextScene = nWord[pos].skenarioTujuan;
-        dialogBoxMode(nWord[pos].kataSaran,nWord[pos].skenarioTujuan);
         SpeakNow.reset();
         hasilSpeech = "";
+        dialogBoxMode(nWord[pos].kataSaran,nWord[pos].skenarioTujuan);
+        
     }
 
     public void inserToTodo()
@@ -268,6 +270,7 @@ public class sceneManager : MonoBehaviour
 
     void dialogBoxMode(string kataKunci,string namaSceneSelanjutnya)
     {
+        txt_status.text = "Kamu Berhasil !";
         nextSceneCanvas.SetActive(true);
         StartCoroutine(HideObject(namaSceneSelanjutnya));
         inserToTodo();

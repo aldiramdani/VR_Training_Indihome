@@ -583,7 +583,6 @@ MonoBehaviour:
   debug2_txt: {fileID: 0}
   txt_status: {fileID: 0}
   txt_status_fail: {fileID: 0}
-  hasilSpeech: 
   imgCheckmark0: {fileID: 0}
   imgCheckmark1: {fileID: 0}
   imgCheckmark2: {fileID: 0}
@@ -2476,7 +2475,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 30.1}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.1171875, y: 0.296875}
+  savedTextUV0: {x: 0, y: 0.05859375}
   savedFill: 0
 --- !u!114 &991670362
 MonoBehaviour:
@@ -4220,7 +4219,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 261.4, y: 28.6}
   savedColor: {r: 0, g: 0.6320754, b: 0.15615983, a: 1}
-  savedTextUV0: {x: 0.0546875, y: 0.3828125}
+  savedTextUV0: {x: 0, y: 0.34765625}
   savedFill: 0
 --- !u!114 &1865537717
 MonoBehaviour:
@@ -4669,6 +4668,17 @@ MonoBehaviour:
   gvrClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1990728465}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 384689600}
         m_MethodName: uploadFile
         m_Mode: 1

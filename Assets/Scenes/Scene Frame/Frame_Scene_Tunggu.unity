@@ -1452,7 +1452,6 @@ MonoBehaviour:
   debug2_txt: {fileID: 1874400015}
   txt_status: {fileID: 1696159140}
   txt_status_fail: {fileID: 146185967}
-  hasilSpeech: 
   imgCheckmark0: {fileID: 558881291}
   imgCheckmark1: {fileID: 1599391759}
   imgCheckmark2: {fileID: 149982741}
@@ -2474,7 +2473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &816632724
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2511,7 +2510,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 507.5, y: 295.2}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.16796875, y: 0.13671875}
+  savedTextUV0: {x: 0, y: 0.08984375}
   savedFill: 0
 --- !u!114 &816632726
 MonoBehaviour:
@@ -5785,7 +5784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1874400013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5822,7 +5821,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 323.4, y: 696.7}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0, y: 0.0859375}
+  savedTextUV0: {x: 0.23046875, y: 0}
   savedFill: 0
 --- !u!114 &1874400015
 MonoBehaviour:

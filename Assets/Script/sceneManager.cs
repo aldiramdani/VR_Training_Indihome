@@ -13,6 +13,7 @@ public class sceneManager : MonoBehaviour
     static double nDouble;
     public static bool isAdded;
     double pnDouble; //convert nilai ke double
+    double realNilai,realNilai2;
     public Text debug1_txt,debug2_txt,txt_status,txt_status_fail; //tampilan text debug dan test
     public static string hasilSpeech; //variable tampung hasil speech dari lib
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
@@ -21,6 +22,7 @@ public class sceneManager : MonoBehaviour
         imgCheckmark4, imgCheckmark5, imgCheckmark6, imgCheckmark7, imgCheckmark8, 
         imgCheckmark9; //image check list
     [SerializeField] public GameObject nextSceneCanvas, nextSceneFailCanvas;
+    double nilai=0;
     public GameObject fCanvas;
     public static string session_nik, session_mode;
     public static string nextScene, nm_scene_sebelumnya;
@@ -60,9 +62,6 @@ public class sceneManager : MonoBehaviour
             unLoadWord();
         }
         loadNWord();
-        for(int i=0;i<nWord.Count;i++){
-            debug2_txt.text += nWord[i].kataKunci;
-        }
         toDoController();
     }
 
@@ -72,7 +71,8 @@ public class sceneManager : MonoBehaviour
         Debug.Log("Debug Mode"+PlayerPrefs.GetString("c_modul"));
         testSpeak();
         hideSeekCanvas();
-        debug1_txt.text += hasilSpeech; 
+        debug1_txt.text = nDouble.ToString() + " " + realNilai2;
+        debug2_txt.text =  nilai.ToString() + " " + realNilai + " " + realNilai2;
     }
 
     void hideSeekCanvas()
@@ -110,26 +110,21 @@ public class sceneManager : MonoBehaviour
     }
 
     private void resultManager(int pos,string s_Result){
-        for(int i=0; i < pos+1; i++){
         if(nWord[pos].isWajib != "1"){
             benar_salah = "benar";
             nextScene = nWord[pos].skenarioTujuan;
             speechManager(pos,s_Result);
-            break;
         }
         if(nWord[pos].isWajib == "1"){
             if(s_Result.Contains(nWord[pos].kataWajib)){
             benar_salah = "benar";
             nextScene = nWord[pos].skenarioTujuan;
             speechManager(pos,s_Result);
-            break;
             }
             if(!s_Result.Contains(nWord[pos].kataWajib)){
                 benar_salah = "benar";
-                failDialogBoxMode();
-                break;
+            failDialogBoxMode();
             }
-        }
         }
     }
 
@@ -141,6 +136,8 @@ public class sceneManager : MonoBehaviour
             else if (Input.GetButtonDown("B") && hasilSpeech !="")
             {
                 voiceController(hasilSpeech);
+                realNilai2 = double.Parse(PlayerPrefs.GetString("nilai")) + realNilai;
+                PlayerPrefs.SetString("nilai", realNilai2.ToString());
                 hasilSpeech = "";
             }
         }
@@ -220,14 +217,13 @@ public class sceneManager : MonoBehaviour
 
     private void speechManager(int pos,string word){
         if (word.Contains("tidak mungkin") || word.Contains("tidak boleh") || word.Contains("tidak tahu"))
-        {
-            nDouble = 0;
-        }
+            {
+            realNilai = 0;
+            }
         else
-        {
-            nDouble = nWord[pos].nilai;
-          
-        }
+            {
+            realNilai = nWord[pos].nilai;;
+            }
         stoDo = nWord[pos].toDo;
         nextScene = nWord[pos].skenarioTujuan;
         SpeakNow.reset();
@@ -238,10 +234,7 @@ public class sceneManager : MonoBehaviour
 
     public void inserToTodo()
     {
-        pnDouble = double.Parse(PlayerPrefs.GetString("nilai"));
-        double nilai = nDouble + pnDouble;
         PlayerPrefs.SetInt(stoDo,1);
-        PlayerPrefs.SetString("nilai", nilai.ToString());
     }
 
 

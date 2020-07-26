@@ -60,11 +60,19 @@ public class Profilling : MonoBehaviour
 
     void Start()
     {
-        if(sc.sceneName() == "AuthScene")
+        
+        if(sc.sceneName() == "AuthScene" || sc.sceneName() == "FirstScene" )
         {
+            
+            setProfillingtoScene();
             RetrieveAuth();
         }
-        setProfillingtoScene();
+        if(sc.sceneName() == "DataProfilingScene"){
+            inputNik.characterLimit = 8;
+            inputNik.characterValidation = InputField.CharacterValidation.Integer;
+        }
+        
+
     }
 
     // Update is called once per frame

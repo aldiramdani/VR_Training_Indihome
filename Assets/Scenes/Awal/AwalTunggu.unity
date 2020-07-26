@@ -421,7 +421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &146185965
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443494961}
   m_LocalRotation: {x: -0, y: -0.000000014901158, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2090353528}
@@ -1328,7 +1328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9, y: -9}
+  m_AnchoredPosition: {x: 24, y: -45}
   m_SizeDelta: {x: 175.6, y: 175.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443494963
@@ -1344,7 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -172.16454, y: 2.5, z: 11.058052}
+  savedPos: {x: -141.12805, y: -33.5, z: -0.15508023}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 175.6, y: 175.6}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1405,7 +1405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &491535854
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1438,11 +1438,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -164.01242, y: 137, z: 7.6431355}
+  savedPos: {x: -130.01242, y: 90.600006, z: -4.6569104}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 394.2, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.015625, y: 0.05078125}
+  savedTextUV0: {x: 0.0234375, y: 0.04296875}
   savedFill: 0
 --- !u!114 &491535856
 MonoBehaviour:
@@ -2147,14 +2147,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 384689599}
-        m_MethodName: statChangeScene
-        m_Mode: 1
+        m_MethodName: changeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Awal1
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 384689598}
@@ -2661,7 +2661,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994875921}
   m_LocalRotation: {x: -0, y: 0.17248201, z: -0, w: 0.98501277}
-  m_LocalPosition: {x: 0, y: 0, z: 8}
+  m_LocalPosition: {x: 0, y: 0, z: -4.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 491535854}
@@ -2672,8 +2672,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 19.864, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -165, y: 16}
-  m_SizeDelta: {x: -380.3, y: -62.9}
+  m_AnchoredPosition: {x: -131, y: -30.4}
+  m_SizeDelta: {x: -452.6, y: -238.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &994875923
 MonoBehaviour:
@@ -2688,10 +2688,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -165.00003, y: 16, z: 7.999947}
+  savedPos: {x: -131.00003, y: -30.399994, z: -4.299977}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 319.7, y: 363.1}
-  savedColor: {r: 1, g: 1, b: 1, a: 0.53333336}
+  savedRectSize: {x: 247.4, y: 187.1}
+  savedColor: {r: 1, g: 1, b: 1, a: 0}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
 --- !u!114 &994875924
@@ -2707,7 +2707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2993,7 +2993,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1219609402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3002,7 +3002,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219609401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.000030518}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2090353528}
@@ -3010,7 +3010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.0501, y: 121}
+  m_AnchoredPosition: {x: -1, y: 121}
   m_SizeDelta: {x: 394.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219609403
@@ -3030,7 +3030,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 394.2, y: 30}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  savedTextUV0: {x: 0.55078125, y: 0.109375}
+  savedTextUV0: {x: 0.0234375, y: 0.04296875}
   savedFill: 0
 --- !u!114 &1219609404
 MonoBehaviour:
@@ -3297,7 +3297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -53.900013, y: -6.5989914, z: 74.00002}
+  savedPos: {x: -57.68939, y: -6.598999, z: -54.22612}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 100, y: 74.39}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3469,7 +3469,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461879724}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 951adeef96b0c934884517225a066908, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 8d9fd3975c4fb17439315d168094aa80, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -3855,11 +3855,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -150.10002, y: 73.128006, z: 73.999954}
+  savedPos: {x: -148.90442, y: 73.128006, z: -23.660456}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 307.6, y: 64.255}
   savedColor: {r: 1, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.0546875, y: 0.3203125}
+  savedTextUV0: {x: 0, y: 0.0859375}
   savedFill: 0
 --- !u!114 &1685237809
 MonoBehaviour:
@@ -3921,7 +3921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1696159138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3954,7 +3954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -171.5364, y: 91, z: 10.361519}
+  savedPos: {x: -137.5364, y: 19.600006, z: -1.9385272}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 410.2, y: 227.5}
   savedColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -4061,7 +4061,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 384689599}
-        m_MethodName: statChangeScene
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Awal1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 384689598}
+        m_MethodName: unLoadWord
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4069,6 +4080,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 384689598}
+        m_MethodName: loadKeyWord
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: word.txt
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -4151,7 +4173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -177.00005, y: -6.5989914, z: 74.00004}
+  savedPos: {x: -174.41049, y: -6.598999, z: -15.113582}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 100, y: 74.39}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4647,8 +4669,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788215125}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 74}
+  m_LocalRotation: {x: -0, y: 0.16096427, z: -0, w: 0.9869603}
+  m_LocalPosition: {x: 0, y: 0, z: -31.000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1732709756}
@@ -4656,10 +4678,10 @@ RectTransform:
   - {fileID: 1432586821}
   m_Father: {fileID: 1900360381}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 18.526001, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -127, y: 41.001007}
+  m_AnchoredPosition: {x: -127.00137, y: 41.001007}
   m_SizeDelta: {x: -262.9, y: -237.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1788215127
@@ -4675,10 +4697,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -127.00003, y: 41.001007, z: 74.00003}
+  savedPos: {x: -127.00002, y: 41.001007, z: -31.000053}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 437.1, y: 188.15}
-  savedColor: {r: 1, g: 1, b: 1, a: 0.5803922}
+  savedColor: {r: 1, g: 1, b: 1, a: 1}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
 --- !u!114 &1788215128
@@ -4694,7 +4716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5803922}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5224,7 +5246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9, y: -11}
+  m_AnchoredPosition: {x: -9, y: -0}
   m_SizeDelta: {x: 175.6, y: 175.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943623998
@@ -5240,7 +5262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -173.46452, y: 5, z: 11.058052}
+  savedPos: {x: -139.46452, y: -41.399994, z: -1.2418722}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 175.6, y: 175.6}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5439,7 +5461,7 @@ MonoBehaviour:
   savedPos: {x: -163.70004, y: 14.5, z: 7.9999475}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 323.1, y: 366.2}
-  savedColor: {r: 1, g: 1, b: 1, a: 1}
+  savedColor: {r: 1, g: 1, b: 1, a: 0}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
 --- !u!114 &2090353530
@@ -5455,7 +5477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

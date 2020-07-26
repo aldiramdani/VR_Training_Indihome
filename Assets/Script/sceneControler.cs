@@ -27,7 +27,10 @@ public class sceneControler : MonoBehaviour
     }
 
     public void statChangeScene(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Ganti Nanti
+        sceneManager sm = new sceneManager();
+        sm.unLoadWord();
+        sm.loadKeyWord("word.txt");
+        SceneManager.LoadScene("Awal1"); //Ganti Nanti
     }
 
     public string sceneName()

@@ -338,7 +338,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nik
+  m_Text: NIK
 --- !u!222 &188190761
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3663,9 +3663,6 @@ MonoBehaviour:
   drpWitel: {fileID: 1962458117}
   drpPlaza: {fileID: 1699623477}
   drpRegion: {fileID: 1135252723}
-  s_Witel: 
-  s_Plaza: 
-  s_Region: 
 --- !u!4 &1747526206
 Transform:
   m_ObjectHideFlags: 0
@@ -3934,7 +3931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug_txt: {fileID: 0}
+  debug1_txt: {fileID: 0}
+  debug2_txt: {fileID: 0}
   txt_status: {fileID: 0}
   txt_status_fail: {fileID: 0}
   imgCheckmark0: {fileID: 0}
@@ -4098,7 +4096,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Masukan Nik Anda
+  m_Text: Masukan NIK Anda
 --- !u!222 &1893643609
 CanvasRenderer:
   m_ObjectHideFlags: 0

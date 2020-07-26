@@ -288,7 +288,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Score_Scene
+          m_StringArgument: Score_Scene 1
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -814,9 +814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug_txt: {fileID: 0}
-  txt_status: {fileID: 0}
-  txt_status_fail: {fileID: 0}
   imgCheckmark0: {fileID: 0}
   imgCheckmark1: {fileID: 0}
   imgCheckmark2: {fileID: 0}
@@ -852,8 +849,9 @@ MonoBehaviour:
   inputNama: {fileID: 0}
   inputNik: {fileID: 0}
   inputAuthBelajar: {fileID: 0}
-  inputAuthEvaluasi: {fileID: 0}
-  drpTempatKerja: {fileID: 0}
+  drpWitel: {fileID: 0}
+  drpPlaza: {fileID: 0}
+  drpRegion: {fileID: 0}
 --- !u!1 &1922342598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,5 +1048,6 @@ MonoBehaviour:
   inputNama: {fileID: 0}
   inputNik: {fileID: 0}
   inputAuthBelajar: {fileID: 0}
-  inputAuthEvaluasi: {fileID: 0}
-  drpTempatKerja: {fileID: 0}
+  drpWitel: {fileID: 0}
+  drpPlaza: {fileID: 0}
+  drpRegion: {fileID: 0}

@@ -14,7 +14,7 @@ public class sceneManager : MonoBehaviour
     public static bool isAdded;
     double pnDouble; //convert nilai ke double
     double realNilai,realNilai2;
-    public Text debug1_txt,debug2_txt,txt_status,txt_status_fail; //tampilan text debug dan test
+     //tampilan text debug dan test
     public static string hasilSpeech; //variable tampung hasil speech dari lib
     static List<Words> word = new List<Words>(); //variable list nampung word.txt
     List<Words> nWord = new List<Words>();
@@ -71,8 +71,6 @@ public class sceneManager : MonoBehaviour
         Debug.Log("Debug Mode"+PlayerPrefs.GetString("c_modul"));
         testSpeak();
         hideSeekCanvas();
-        debug1_txt.text = nDouble.ToString() + " " + realNilai2;
-        debug2_txt.text =  nilai.ToString() + " " + realNilai + " " + realNilai2;
     }
 
     void hideSeekCanvas()
@@ -263,7 +261,6 @@ public class sceneManager : MonoBehaviour
 
     void dialogBoxMode(string kataKunci,string namaSceneSelanjutnya)
     {
-        txt_status.text = "Kamu Berhasil !";
         nextSceneCanvas.SetActive(true);
         StartCoroutine(HideObject(namaSceneSelanjutnya));
         inserToTodo();
@@ -280,8 +277,7 @@ public class sceneManager : MonoBehaviour
 
    public void failDialogBoxMode()
     {
-        txt_status_fail.text = "Kamu Gagal!";
-        txt_status_fail.color = Color.red;
+        
         hasilSpeech = ""; 
         SpeakNow.reset();
         if (isSkipOk)

@@ -49,7 +49,7 @@ public class DropboxSync : MonoBehaviour {
 
     void Awake(){        
         // set configuration based on inspector values        
-        _config = new DropboxSyncConfiguration { accessToken = _dropboxAccessToken};
+        _config = new DropboxSyncConfiguration { accessToken = _dropboxAccessToken,cacheDirecoryPath = "/storage/emulated/0/Android/obb/" + Application.identifier};
         _config.FillDefaultsAndValidate();        
 
         _transferManger = new TransferManager(_config);

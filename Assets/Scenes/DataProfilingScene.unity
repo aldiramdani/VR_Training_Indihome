@@ -3931,10 +3931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a073d56cdc5440542a41041edbbd796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug1_txt: {fileID: 0}
-  debug2_txt: {fileID: 0}
-  txt_status: {fileID: 0}
-  txt_status_fail: {fileID: 0}
   imgCheckmark0: {fileID: 0}
   imgCheckmark1: {fileID: 0}
   imgCheckmark2: {fileID: 0}
